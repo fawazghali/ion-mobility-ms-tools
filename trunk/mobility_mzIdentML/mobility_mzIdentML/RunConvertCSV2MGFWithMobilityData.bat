@@ -1,0 +1,1 @@
+java -jar "C:\Work\IonMobility\Code\Jan2011\src\mobility_mzIdentML\mobility_mzIdentML\dist\mobility_mzIdentML.jar" 2 test.csv outWithMob.mgf
