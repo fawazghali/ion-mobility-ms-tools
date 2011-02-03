@@ -226,16 +226,21 @@ public class Main {
 
             while ((stringLine = buffer.readLine()) != null) {
                 tokens = stringLine.split(",");
-                m_z_list.add(tokens[m_z_index]);
-                intensity_list.add(tokens[intensity_index]);
-                mobility_list.add(tokens[mobility_index]);
-                parent_list.add(tokens[parent_index]);
-                charge_list.add(tokens[charge_index]);
+
+                if(filterIons(tokens[m_z_index],tokens[mobility_index])){
+
+                    m_z_list.add(tokens[m_z_index]);
+                    intensity_list.add(tokens[intensity_index]);
+                    mobility_list.add(tokens[mobility_index]);
+                    parent_list.add(tokens[parent_index]);
+                    charge_list.add(tokens[charge_index]);
+                }
             }
 
             StringBuilder builder_all = new StringBuilder();
             StringBuilder builder_mobility = new StringBuilder();
             StringBuilder builder_m_z_intensity = new StringBuilder();
+            StringBuilder builder_params = new StringBuilder();
             int count_parent = 1;
 
             for (int i = 0; i < parent_list.size(); i++) {
@@ -244,22 +249,26 @@ public class Main {
                     builder_all.append("\r\n");
                     builder_all.append("TITLE=Spectrum ");
                     builder_all.append(count_parent);
-                    builder_all.append("\r\n");
-                    builder_all.append("PEPMASS=");
-                    builder_all.append(parent_list.get(i));
-                    builder_all.append("\r\n");
-                    builder_all.append("CHARGE=");
-                    builder_all.append(charge_list.get(i));
-                    builder_all.append("\r\n");
+
+                    builder_all.append(" DRIFT_TIME=");
+                    builder_all.append(mobility_list.get(i));
+                    builder_all.append(" ");
+
+
+                    //builder_params.append("\r\n");
+                    builder_params.append("PEPMASS=");
+                    builder_params.append(parent_list.get(i));
+                    builder_params.append("\r\n");
+                    builder_params.append("CHARGE=");
+                    builder_params.append(charge_list.get(i));
+                    builder_params.append("\r\n");
 
                     builder_m_z_intensity.append(m_z_list.get(i));
                     builder_m_z_intensity.append(" ");
                     builder_m_z_intensity.append(intensity_list.get(i));
                     builder_m_z_intensity.append("\r\n");
 
-                    builder_mobility.append("DRIFT_TIME=");
-                    builder_mobility.append(mobility_list.get(i));
-                    builder_mobility.append(" ");
+                   
 
 
                 } else if (i == parent_list.size() - 1) {
@@ -267,6 +276,7 @@ public class Main {
                         builder_all.append(builder_mobility);
                         builder_all.append("\r\n");
                     }
+                    builder_all.append(builder_params);
                     builder_all.append(builder_m_z_intensity);
                     builder_all.append("END IONS");
                     builder_all.append("\r\n");
@@ -278,12 +288,16 @@ public class Main {
 
                     builder_mobility.append(mobility_list.get(i));
                     builder_mobility.append(" ");
+
                     if (!parent_list.get(i).equals(parent_list.get(i + 1))) {
                         count_parent = count_parent + 1;
                         if (mobility == 1) {
                             builder_all.append(builder_mobility);
                             builder_all.append("\r\n");
+
                         }
+                        builder_all.append(builder_params);
+                        builder_params = new StringBuilder();
                         builder_all.append(builder_m_z_intensity);
                         builder_all.append("END IONS");
                         builder_all.append("\r\n");
@@ -291,16 +305,22 @@ public class Main {
                         builder_all.append("\r\n");
                         builder_all.append("TITLE=Spectrum ");
                         builder_all.append(count_parent);
-                        builder_all.append("\r\n");
-                        builder_all.append("PEPMASS=");
-                        builder_all.append(parent_list.get(i + 1));
-                        builder_all.append("\r\n");
-                        builder_all.append("CHARGE=");
-                        builder_all.append(charge_list.get(i + 1));
-                        builder_all.append("\r\n");
+
+                        builder_all.append(" DRIFT_TIME=");
+                        //builder_all.append(mobility_list.get(i));
+                        builder_all.append(" ");
+
+
+                        //builder_params.append("\r\n");
+                        builder_params.append("PEPMASS=");
+                        builder_params.append(parent_list.get(i + 1));
+                        builder_params.append("\r\n");
+                        builder_params.append("CHARGE=");
+                        builder_params.append(charge_list.get(i + 1));
+                        builder_params.append("\r\n");
                         builder_m_z_intensity= new StringBuilder();
                         builder_mobility= new StringBuilder();
-                        builder_mobility.append("DRIFT_TIME=");
+                        //builder_mobility.append("DRIFT_TIME=");
 
                     }
                 }
@@ -327,7 +347,7 @@ public class Main {
 
 
         try {
-            int z = 0;
+            
             int spectrumIdentItemCount = 0;
             HashMap hashMap = new HashMap();
             String inputMobilityFile = inputFile;
@@ -354,7 +374,35 @@ public class Main {
             } else if (type.equals("mgf")) {
                 int count_index = 0;
                 String[] mobility_tokens = null;
+
+                
                 while ((stringLine = buffer.readLine()) != null) {
+               //    System.out.print("1");
+               //    System.out.println("stringLine:" + stringLine);
+                    if (stringLine.startsWith("BEGIN")
+                            || stringLine.startsWith("PEPMASS")
+                            || stringLine.startsWith("CHARGE")
+                            || stringLine.startsWith("END")) {
+                 //       System.out.print("2");
+                        continue;
+                    } else if (stringLine.startsWith("TITLE")) {
+                    //    System.out.print("4");
+                    //    System.out.println("stringLine:" + stringLine);
+                        //stringLine = stringLine.substring(11);
+                        stringLine = stringLine.substring(stringLine.indexOf("DRIFT_TIME=")+11);
+                        stringLine = stringLine.trim();
+                        mobility_tokens = stringLine.split(" ");
+                        count_index = 0;
+                    } else {
+                    //    System.out.print("3");
+                        tokens = stringLine.split(" ");
+                        hashMap.put(tokens[0], mobility_tokens[count_index]);
+                        count_index = count_index + 1;
+                    }
+                }
+                   
+                /*
+                 while ((stringLine = buffer.readLine()) != null) {
                     if (stringLine.startsWith("BEGIN")
                             || stringLine.startsWith("TITLE")
                             || stringLine.startsWith("PEPMASS")
@@ -370,6 +418,8 @@ public class Main {
                         count_index = count_index + 1;
                     }
                 }
+*/
+
 
             }
 
@@ -404,9 +454,10 @@ public class Main {
                                         mobility = (String) hashMap.get(m_mz.get(j).toString());
                                         if (mobility != null) {
                                             m_mobility.add(Float.valueOf(mobility));
-                                            z = z + 1;
+            
                                         } else {
-                                            //todo mscot changed result
+                                           m_mobility.add(Float.valueOf("0"));
+
                                         }
                                     }
                                 }
@@ -432,8 +483,6 @@ public class Main {
             if(outputFile != "" && outputFile != null){
                 fileName = outputFile;
             }
-
-
             m.marshall(mzIdentML_whole, new FileOutputStream(fileName));
             System.out.println("Check the output file: " + fileName);
 
@@ -441,4 +490,33 @@ public class Main {
             System.out.println(ex.toString());
         }
     }
+
+    /*
+     * A method to calculate collision cross section for ions and if exclude them from the MGF file if they fall outside set limits
+     *
+     */
+    public static Boolean filterIons(String mz, String mob){
+        Boolean withinRange = true;
+
+        Double mzDouble = Double.parseDouble(mz);
+        Double mobDouble = Double.parseDouble(mob);
+        Double ccs = mzDouble / mobDouble;
+
+        if(mzDouble < 10 * mobDouble + 180){
+
+            //System.out.println("Acceptable:" + mzDouble + " " + mobDouble);
+        }
+        else{
+
+            //System.out.println("Unacceptable:" + mzDouble + " " + mobDouble);
+        }
+
+        //Approx separation line is y = 10x + 180
+
+
+
+
+        return withinRange;
+    }
+
 }
