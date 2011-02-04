@@ -427,7 +427,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="185.1338 393.236 490.2625"/>
                                 <FragmentArray Measure_ref="m_intensity" values="870.0 2204.0 1443.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0053 0.0115 -0.0147"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.921 38.8241"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.921 38.8241 0.0"/>
                             </IonType>
                             <IonType charge="2" index="2 5 7 8">
                                 <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
@@ -441,14 +441,14 @@
                                 <FragmentArray Measure_ref="m_mz" values="997.5332 860.4582 763.4094 666.3572 519.2857 448.2457 361.2106 175.1235"/>
                                 <FragmentArray Measure_ref="m_intensity" values="589.0 11020.0 4883.0 1535.0 1492.0 849.0 768.0 2958.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0329 0.0169 0.0208 0.0214 0.0183 0.0154 0.0123 0.0045"/>
-                                <FragmentArray Measure_ref="m_mobility" values="98.6085 93.5448 79.5365 55.1741 44.4587 31.4059 16.4064"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 98.6085 93.5448 79.5365 55.1741 44.4587 31.4059 16.4064"/>
                             </IonType>
                             <IonType charge="2" index="10 8 7 6 2">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="570.3035 499.74777 430.7321 382.2044 181.113"/>
                                 <FragmentArray Measure_ref="m_intensity" values="140.0 743.0 5446.0 3078.0 2368.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0126 0.494 0.0078 0.0065 0.0102"/>
-                                <FragmentArray Measure_ref="m_mobility" values="40.0611 23.4338 18.6463 16.5966"/>
+                                <FragmentArray Measure_ref="m_mobility" values="40.0611 0.0 23.4338 18.6463 16.5966"/>
                             </IonType>
                             <IonType charge="1" index="7 6 5 4 3 2 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -462,7 +462,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="561.3035 490.2625"/>
                                 <FragmentArray Measure_ref="m_intensity" values="331.0 1443.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.4741 -0.478"/>
-                                <FragmentArray Measure_ref="m_mobility" values="60.6862"/>
+                                <FragmentArray Measure_ref="m_mobility" values="60.6862 0.0"/>
                             </IonType>
                         </Fragmentation>
                     </SpectrumIdentificationItem>
@@ -653,7 +653,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="84.0525 155.0973"/>
                                 <FragmentArray Measure_ref="m_intensity" values="3592.0 3465.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0081 0.0158"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.2659"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 16.2659"/>
                             </IonType>
                             <IonType charge="2" index="4">
                                 <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
@@ -1129,27 +1129,28 @@
                                 <FragmentArray Measure_ref="m_mz" values="170.09006"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1259.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.4887"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0"/>
                             </IonType>
                             <IonType charge="1" index="8 7 6 5 4 3 2 1">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="1057.5352 943.4869 780.4205 723.3998 626.343 489.2785 361.2104 175.1249"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1061.0 556.0 1879.0 1002.0 633.0 1015.0 1008.0 1392.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0389 0.0336 0.0305 0.0313 0.0272 0.0217 0.0121 0.0059"/>
-                                <FragmentArray Measure_ref="m_mobility" values="110.1375 82.6638 79.9843 68.2627 52.1217 31.4281 16.4562"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 110.1375 82.6638 79.9843 68.2627 52.1217 31.4281 16.4562"/>
                             </IonType>
                             <IonType charge="2" index="9 8 7 6 5 4">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="585.8133 529.2645 472.24677 390.7095 362.20175 313.67"/>
                                 <FragmentArray Measure_ref="m_intensity" values="145.0 308.0 1057.0 865.0 1058.0 868.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0195 0.0127 0.0165 0.0109 0.0138 0.0085"/>
-                                <FragmentArray Measure_ref="m_mobility" values="33.6738 28.1437 20.3635 16.8145"/>
+                                <FragmentArray Measure_ref="m_mobility" values="33.6738 28.1437 0.0 20.3635 0.0 16.8145"/>
                             </IonType>
                             <IonType charge="1" index="6 4 3 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
                                 <FragmentArray Measure_ref="m_mz" values="763.4012 609.3183 472.24677 158.0977"/>
                                 <FragmentArray Measure_ref="m_intensity" values="191.0 183.0 1057.0 425.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0378 0.0291 0.0165 0.0053"/>
-                                <FragmentArray Measure_ref="m_mobility" values="87.051 65.4133 16.2771"/>
+                                <FragmentArray Measure_ref="m_mobility" values="87.051 65.4133 0.0 16.2771"/>
                             </IonType>
                             <IonType charge="2" index="8 6">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -1178,7 +1179,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="272.1844 472.24677"/>
                                 <FragmentArray Measure_ref="m_intensity" values="309.0 1057.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0967 0.043"/>
-                                <FragmentArray Measure_ref="m_mobility" values="23.2482"/>
+                                <FragmentArray Measure_ref="m_mobility" values="23.2482 0.0"/>
                             </IonType>
                             <IonType charge="2" index="3 10">
                                 <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
@@ -1242,7 +1243,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="102.0591 215.1454 362.20175"/>
                                 <FragmentArray Measure_ref="m_intensity" values="660.0 3370.0 1058.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0041 0.0064 -0.0057"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.1451 17.7818"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.1451 17.7818 0.0"/>
                             </IonType>
                             <IonType charge="1" index="1 2">
                                 <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
@@ -1256,7 +1257,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="1057.5352 641.829 272.1844 175.1249"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1061.0 127.0 309.0 1392.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0914 0.4561 0.0127 0.0059"/>
-                                <FragmentArray Measure_ref="m_mobility" values="37.5965 23.2482 16.4562"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 37.5965 23.2482 16.4562"/>
                             </IonType>
                             <IonType charge="2" index="9 8 2">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
@@ -1299,7 +1300,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="170.09006 235.1276 292.1521 340.1811 390.7095 455.229"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1259.0 560.0 357.0 151.0 865.0 165.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0387 0.4775 0.4806 -0.0168 -0.0123 -0.0141"/>
-                                <FragmentArray Measure_ref="m_mobility" values="18.2401 24.1492 29.9812 20.3635 43.5625"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 18.2401 24.1492 29.9812 20.3635 43.5625"/>
                             </IonType>
                             <IonType charge="1" index="7">
                                 <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
@@ -1391,14 +1392,14 @@
                                 <FragmentArray Measure_ref="m_mz" values="1057.5352 944.4815 272.1844 175.1249"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1061.0 303.0 309.0 1392.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0186 0.0118 0.0127 0.0059"/>
-                                <FragmentArray Measure_ref="m_mobility" values="107.8077 23.2482 16.4562"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 107.8077 23.2482 16.4562"/>
                             </IonType>
                             <IonType charge="2" index="9 8 7 2">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="585.8133 529.2645 472.24677 137.0834"/>
                                 <FragmentArray Measure_ref="m_intensity" values="145.0 308.0 1057.0 193.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0092 -0.016 -0.4917 0.4939"/>
-                                <FragmentArray Measure_ref="m_mobility" values="33.6738 28.1437 16.051"/>
+                                <FragmentArray Measure_ref="m_mobility" values="33.6738 28.1437 0.0 16.051"/>
                             </IonType>
                             <IonType charge="1" index="2 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -1498,7 +1499,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="72.0848 129.08733 373.1895"/>
                                 <FragmentArray Measure_ref="m_intensity" values="373.0 529.0 234.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0040 -0.0149 0.0177"/>
-                                <FragmentArray Measure_ref="m_mobility" values="15.998299 19.0953"/>
+                                <FragmentArray Measure_ref="m_mobility" values="15.998299 0.0 19.0953"/>
                             </IonType>
                             <IonType charge="2" index="3 4">
                                 <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
@@ -1512,7 +1513,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="626.343 529.2645 472.24677 175.1249"/>
                                 <FragmentArray Measure_ref="m_intensity" values="633.0 308.0 1057.0 1392.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.019 -0.0448 -0.0411 0.0059"/>
-                                <FragmentArray Measure_ref="m_mobility" values="68.2627 28.1437 16.4562"/>
+                                <FragmentArray Measure_ref="m_mobility" values="68.2627 28.1437 0.0 16.4562"/>
                             </IonType>
                             <IonType charge="2" index="6">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
@@ -1533,6 +1534,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="362.20175"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1058.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.4883"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0"/>
                             </IonType>
                         </Fragmentation>
                     </SpectrumIdentificationItem>
@@ -1575,14 +1577,14 @@
                                 <FragmentArray Measure_ref="m_mz" values="215.1113 344.18497 459.1952 587.2601"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1034.0 765.0 1133.0 288.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0087 0.0397 0.023 0.0294"/>
-                                <FragmentArray Measure_ref="m_mobility" values="18.5082 48.377 67.4821"/>
+                                <FragmentArray Measure_ref="m_mobility" values="18.5082 0.0 48.377 67.4821"/>
                             </IonType>
                             <IonType charge="2" index="3 6 7">
                                 <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="173.0641 342.14703 416.2634"/>
                                 <FragmentArray Measure_ref="m_intensity" values="229.0 1102.0 134.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.4878 -0.4984 0.0838"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.6658 47.0703"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.6658 0.0 47.0703"/>
                             </IonType>
                             <IonType charge="2" index="7">
                                 <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
@@ -1596,21 +1598,21 @@
                                 <FragmentArray Measure_ref="m_mz" values="755.4812 658.4242 511.3476 414.241 343.2499 244.16757 147.119"/>
                                 <FragmentArray Measure_ref="m_intensity" values="875.0 370.0 2962.0 814.0 1239.0 9920.0 1382.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0362 0.0319 0.0237 -0.0301 0.0159 0.0020 0.0062"/>
-                                <FragmentArray Measure_ref="m_mobility" values="110.2758 89.9336 67.6254 46.8379 36.7927 16.4337"/>
+                                <FragmentArray Measure_ref="m_mobility" values="110.2758 89.9336 67.6254 46.8379 36.7927 0.0 16.4337"/>
                             </IonType>
                             <IonType charge="2" index="7 4 3">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="378.19473 208.1163 172.0695"/>
                                 <FragmentArray Measure_ref="m_intensity" values="277.0 219.0 422.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0314 0.4771 -0.0511"/>
-                                <FragmentArray Measure_ref="m_mobility" values="17.8726 16.7756"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 17.8726 16.7756"/>
                             </IonType>
                             <IonType charge="1" index="3 2 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
                                 <FragmentArray Measure_ref="m_mz" values="326.1528 227.09135 130.08194"/>
                                 <FragmentArray Measure_ref="m_intensity" values="202.0 1312.0 1903.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0546 -0.0477 -0.0043"/>
-                                <FragmentArray Measure_ref="m_mobility" values="31.853203"/>
+                                <FragmentArray Measure_ref="m_mobility" values="31.853203 0.0 0.0"/>
                             </IonType>
                             <IonType charge="2" index="10 8 4">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -1639,7 +1641,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="71.0724 244.16757 316.1804 513.3116"/>
                                 <FragmentArray Measure_ref="m_intensity" values="477.0 9920.0 522.0 606.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0176 0.0655 0.0515 -0.3893"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.1525 33.9446 59.524"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.1525 0.0 33.9446 59.524"/>
                             </IonType>
                             <IonType charge="1" index="1 2 4">
                                 <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
@@ -1667,7 +1669,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="587.2601 414.241 385.2378 342.14703 209.095 145.0682 88.0433"/>
                                 <FragmentArray Measure_ref="m_intensity" values="288.0 814.0 492.0 1102.0 1175.0 153.0 1723.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0088 0.0371 -0.4554 -0.0302 -0.0314 0.4631 -0.0198"/>
-                                <FragmentArray Measure_ref="m_mobility" values="67.4821 46.8379 44.3146 16.3658 16.1118"/>
+                                <FragmentArray Measure_ref="m_mobility" values="67.4821 46.8379 44.3146 0.0 0.0 16.3658 16.1118"/>
                             </IonType>
                             <IonType charge="1" index="1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -1681,7 +1683,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="485.3163 377.1476 269.1795 136.06721"/>
                                 <FragmentArray Measure_ref="m_intensity" values="338.0 695.0 177.0 628.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.3897 -0.0323 0.0369 -0.0247"/>
-                                <FragmentArray Measure_ref="m_mobility" values="58.3396 37.7241 29.9446"/>
+                                <FragmentArray Measure_ref="m_mobility" values="58.3396 37.7241 29.9446 0.0"/>
                             </IonType>
                         </Fragmentation>
                     </SpectrumIdentificationItem>
@@ -1696,14 +1698,14 @@
                                 <FragmentArray Measure_ref="m_mz" values="373.17972 472.2465"/>
                                 <FragmentArray Measure_ref="m_intensity" values="623.0 128.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0033 -0.0049"/>
-                                <FragmentArray Measure_ref="m_mobility" values="28.9965"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 28.9965"/>
                             </IonType>
                             <IonType charge="2" index="2 3 4 8">
                                 <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="102.0596 130.08194 187.1161 415.2508"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1985.0 1903.0 1713.0 513.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.4967 0.0083 0.021 0.0208"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.1095 17.3343 46.5274"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.1095 0.0 17.3343 46.5274"/>
                             </IonType>
                             <IonType charge="1" index="2 4">
                                 <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
@@ -1752,7 +1754,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="485.3163 414.241 244.16757 147.119"/>
                                 <FragmentArray Measure_ref="m_intensity" values="338.0 814.0 9920.0 1382.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0081 -0.0301 0.0020 0.0062"/>
-                                <FragmentArray Measure_ref="m_mobility" values="58.3396 46.8379 16.4337"/>
+                                <FragmentArray Measure_ref="m_mobility" values="58.3396 46.8379 0.0 16.4337"/>
                             </IonType>
                             <IonType charge="2" index="12 9 4 3">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
@@ -1766,7 +1768,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="298.1601 227.09135 130.08194"/>
                                 <FragmentArray Measure_ref="m_intensity" values="333.0 1312.0 1903.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.016 -0.0477 -0.0043"/>
-                                <FragmentArray Measure_ref="m_mobility" values="26.9016"/>
+                                <FragmentArray Measure_ref="m_mobility" values="26.9016 0.0 0.0"/>
                             </IonType>
                             <IonType charge="2" index="8 5 4">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -1795,7 +1797,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="173.0641 342.14703"/>
                                 <FragmentArray Measure_ref="m_intensity" values="229.0 1102.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0336 -0.0176"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.6658"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.6658 0.0"/>
                             </IonType>
                             <IonType charge="2" index="7">
                                 <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
@@ -1809,14 +1811,14 @@
                                 <FragmentArray Measure_ref="m_mz" values="102.0596 217.1156 373.17972"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1985.0 5462.0 623.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0046 0.0337 -0.0033"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.1095"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.1095 0.0 0.0"/>
                             </IonType>
                             <IonType charge="2" index="3 4 5 6 9 10">
                                 <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="187.1161 244.16757 288.1307 356.1675 470.1776 513.3116"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1713.0 9920.0 130.0 223.0 297.0 606.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.021 0.051 0.4981 0.0054 0.452 0.07"/>
-                                <FragmentArray Measure_ref="m_mobility" values="17.3343 26.9075 35.96 51.2356 59.524"/>
+                                <FragmentArray Measure_ref="m_mobility" values="17.3343 0.0 26.9075 35.96 51.2356 59.524"/>
                             </IonType>
                             <IonType charge="1" index="3 4">
                                 <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
@@ -1837,7 +1839,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="317.1782 246.12225 175.128"/>
                                 <FragmentArray Measure_ref="m_intensity" values="134.0 518.0 442.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.015 -0.0338 0.0090"/>
-                                <FragmentArray Measure_ref="m_mobility" values="31.9907 16.896"/>
+                                <FragmentArray Measure_ref="m_mobility" values="31.9907 0.0 16.896"/>
                             </IonType>
                             <IonType charge="2" index="12 10 7 3 1">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
@@ -1873,7 +1875,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="145.0682 244.16757"/>
                                 <FragmentArray Measure_ref="m_intensity" values="153.0 9920.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.029 0.0020"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.3658"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.3658 0.0"/>
                             </IonType>
                             <IonType charge="2" index="2 7 9">
                                 <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
@@ -1929,7 +1931,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="460.1938 373.17972 244.16757 147.119"/>
                                 <FragmentArray Measure_ref="m_intensity" values="386.0 623.0 9920.0 1382.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0464 -0.0284 0.0020 0.0062"/>
-                                <FragmentArray Measure_ref="m_mobility" values="48.8425 16.4337"/>
+                                <FragmentArray Measure_ref="m_mobility" values="48.8425 0.0 0.0 16.4337"/>
                             </IonType>
                             <IonType charge="2" index="11 10 6 3">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
@@ -1943,7 +1945,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="443.2081 356.1675 227.09135 130.08194"/>
                                 <FragmentArray Measure_ref="m_intensity" values="116.0 223.0 1312.0 1903.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0055 -0.0141 -0.0477 -0.0043"/>
-                                <FragmentArray Measure_ref="m_mobility" values="47.8812 35.96"/>
+                                <FragmentArray Measure_ref="m_mobility" values="47.8812 35.96 0.0 0.0"/>
                             </IonType>
                         </Fragmentation>
                     </SpectrumIdentificationItem>
@@ -1993,14 +1995,14 @@
                                 <FragmentArray Measure_ref="m_mz" values="129.09872 208.1163"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1334.0 219.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.4773 0.4897"/>
-                                <FragmentArray Measure_ref="m_mobility" values="17.8726"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 17.8726"/>
                             </IonType>
                             <IonType charge="1" index="5 8">
                                 <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
                                 <FragmentArray Measure_ref="m_mz" values="496.2818 780.42706"/>
                                 <FragmentArray Measure_ref="m_intensity" values="188.0 604.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0060 -0.0092"/>
-                                <FragmentArray Measure_ref="m_mobility" values="56.5704"/>
+                                <FragmentArray Measure_ref="m_mobility" values="56.5704 0.0"/>
                             </IonType>
                             <IonType charge="2" index="4 8">
                                 <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
@@ -2014,21 +2016,21 @@
                                 <FragmentArray Measure_ref="m_mz" values="658.4242 361.1639 262.1179 175.128"/>
                                 <FragmentArray Measure_ref="m_intensity" values="370.0 409.0 201.0 442.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-4.0E-4 -0.0555 -0.0331 0.0090"/>
-                                <FragmentArray Measure_ref="m_mobility" values="89.9336 24.0644 16.896"/>
+                                <FragmentArray Measure_ref="m_mobility" values="89.9336 0.0 24.0644 16.896"/>
                             </IonType>
                             <IonType charge="2" index="8 4 3 1">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="415.2508 217.1156 181.07509 88.0433"/>
                                 <FragmentArray Measure_ref="m_intensity" values="513.0 5462.0 1793.0 1723.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0026 0.4837 -0.0382 -0.0198"/>
-                                <FragmentArray Measure_ref="m_mobility" values="46.5274 16.1118"/>
+                                <FragmentArray Measure_ref="m_mobility" values="46.5274 0.0 0.0 16.1118"/>
                             </IonType>
                             <IonType charge="1" index="4 3 2 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
                                 <FragmentArray Measure_ref="m_mz" values="415.2508 344.18497 245.13004 158.1"/>
                                 <FragmentArray Measure_ref="m_intensity" values="513.0 765.0 4392.0 183.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0208 -0.0079 0.0056 0.0076"/>
-                                <FragmentArray Measure_ref="m_mobility" values="46.5274 16.3694"/>
+                                <FragmentArray Measure_ref="m_mobility" values="46.5274 0.0 0.0 16.3694"/>
                             </IonType>
                             <IonType charge="2" index="8 4 3">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -2085,14 +2087,14 @@
                                 <FragmentArray Measure_ref="m_mz" values="1248.7021 1062.5879 975.5664 904.529 775.4836 662.3888 565.33545 451.2873 338.1992 175.1265"/>
                                 <FragmentArray Measure_ref="m_intensity" values="355.0 8805.0 2714.0 2905.0 3460.0 9504.0 680.0 595.0 982.0 2255.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.065 0.0301 0.0406 0.0403 0.0375 0.0268 0.0262 0.021 0.0169 0.0075"/>
-                                <FragmentArray Measure_ref="m_mobility" values="166.4903 140.7348 126.7459 109.6083 96.668 82.6708 52.6717 31.030098 16.4766"/>
+                                <FragmentArray Measure_ref="m_mobility" values="166.4903 140.7348 126.7459 109.6083 96.668 82.6708 0.0 52.6717 31.030098 16.4766"/>
                             </IonType>
                             <IonType charge="2" index="8 7 6 5 2">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
                                 <FragmentArray Measure_ref="m_mz" values="488.2735 452.2919 388.2306 331.6941 170.0678"/>
                                 <FragmentArray Measure_ref="m_intensity" values="356.0 167.0 458.0 720.0 1854.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0070 -0.4561 0.0039 0.0094 0.473"/>
-                                <FragmentArray Measure_ref="m_mobility" values="50.2558 51.7811 18.1017 16.2848"/>
+                                <FragmentArray Measure_ref="m_mobility" values="50.2558 51.7811 0.0 18.1017 16.2848"/>
                             </IonType>
                             <IonType charge="1" index="5 4 3 2 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -2135,7 +2137,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="383.2126 565.33545 723.8838 965.9632"/>
                                 <FragmentArray Measure_ref="m_intensity" values="173.0 680.0 117.0 122.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.0316 -0.0142 0.465 0.4177"/>
-                                <FragmentArray Measure_ref="m_mobility" values="37.8994 51.2482 68.016"/>
+                                <FragmentArray Measure_ref="m_mobility" values="37.8994 0.0 51.2482 68.016"/>
                             </IonType>
                             <IonType charge="1" index="1 2">
                                 <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
@@ -2206,7 +2208,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="87.09284 244.1745 548.3137"/>
                                 <FragmentArray Measure_ref="m_intensity" values="661.0 356.0 396.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0432 0.0453 0.0078"/>
-                                <FragmentArray Measure_ref="m_mobility" values="21.1951 64.2757"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 21.1951 64.2757"/>
                             </IonType>
                             <IonType charge="1" index="6">
                                 <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
@@ -2340,6 +2342,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="142.09903"/>
                                 <FragmentArray Measure_ref="m_intensity" values="931.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.4667"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0"/>
                             </IonType>
                             <IonType charge="1" index="7 4 2 1">
                                 <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
@@ -2353,7 +2356,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="645.369 438.2932 388.2306 338.1992"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1876.0 126.0 458.0 982.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.4307 0.0787 -0.4497 0.0427"/>
-                                <FragmentArray Measure_ref="m_mobility" values="73.5769 48.1272 31.030098"/>
+                                <FragmentArray Measure_ref="m_mobility" values="73.5769 48.1272 0.0 31.030098"/>
                             </IonType>
                             <IonType charge="1" index="10 4 2 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -2367,7 +2370,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="522.7966 458.266 272.1873 229.1164 171.09764"/>
                                 <FragmentArray Measure_ref="m_intensity" values="187.0 208.0 6523.0 296.0 490.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0633 0.054 -0.4344 0.0107 -0.4946"/>
-                                <FragmentArray Measure_ref="m_mobility" values="30.9915 51.6792 24.5949 18.5311"/>
+                                <FragmentArray Measure_ref="m_mobility" values="30.9915 51.6792 24.5949 18.5311 0.0"/>
                             </IonType>
                         </Fragmentation>
                     </SpectrumIdentificationItem>
@@ -2382,7 +2385,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="87.09284 188.0982 559.3138 672.3658"/>
                                 <FragmentArray Measure_ref="m_intensity" values="661.0 440.0 539.0 237.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0376 -0.0048 0.0303 -0.0017"/>
-                                <FragmentArray Measure_ref="m_mobility" values="17.0616 62.1692 42.8649"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 17.0616 62.1692 42.8649"/>
                             </IonType>
                             <IonType charge="2" index="3 4 7 9">
                                 <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
@@ -2396,7 +2399,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="70.0698 171.09764 542.2828"/>
                                 <FragmentArray Measure_ref="m_intensity" values="1784.0 490.0 172.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0411 0.0212 0.0259"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.0405 57.9854"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.0405 0.0 57.9854"/>
                             </IonType>
                             <IonType charge="2" index="2 6 8 9">
                                 <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
@@ -2445,7 +2448,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="452.2919 388.2306 331.6941"/>
                                 <FragmentArray Measure_ref="m_intensity" values="167.0 458.0 720.0"/>
                                 <FragmentArray Measure_ref="m_error" values="-0.4396 0.0204 0.026"/>
-                                <FragmentArray Measure_ref="m_mobility" values="51.7811 18.1017"/>
+                                <FragmentArray Measure_ref="m_mobility" values="51.7811 0.0 18.1017"/>
                             </IonType>
                             <IonType charge="1" index="5 4 2 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -2459,7 +2462,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="615.8467 565.33545 136.0822"/>
                                 <FragmentArray Measure_ref="m_intensity" values="164.0 680.0 1636.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0357 0.0483 -0.4891"/>
-                                <FragmentArray Measure_ref="m_mobility" values="36.222 16.3812"/>
+                                <FragmentArray Measure_ref="m_mobility" values="36.222 0.0 16.3812"/>
                             </IonType>
                         </Fragmentation>
                     </SpectrumIdentificationItem>
@@ -2537,7 +2540,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="603.3567 552.3543 388.2306 187.0939"/>
                                 <FragmentArray Measure_ref="m_intensity" values="127.0 439.0 458.0 3953.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0708 -0.4077 0.0479 -0.0194"/>
-                                <FragmentArray Measure_ref="m_mobility" values="69.5186 82.3283 17.0568"/>
+                                <FragmentArray Measure_ref="m_mobility" values="69.5186 82.3283 0.0 17.0568"/>
                             </IonType>
                             <IonType charge="1" index="5 4 3 2 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
@@ -2601,7 +2604,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="616.3383 566.8171 429.1984 200.1528 171.09764"/>
                                 <FragmentArray Measure_ref="m_intensity" values="286.0 205.0 374.0 206.0 490.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0171 0.0301 -0.0327 0.0498 -0.4946"/>
-                                <FragmentArray Measure_ref="m_mobility" values="37.6791 35.1256 41.3631 17.4422"/>
+                                <FragmentArray Measure_ref="m_mobility" values="37.6791 35.1256 41.3631 17.4422 0.0"/>
                             </IonType>
                         </Fragmentation>
                     </SpectrumIdentificationItem>
@@ -2703,7 +2706,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="87.09284 188.0982 252.148 301.1905 474.2209 522.7966"/>
                                 <FragmentArray Measure_ref="m_intensity" values="661.0 440.0 168.0 452.0 923.0 187.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.025 8.0E-4 0.0214 -0.4703 -0.0244 0.0249"/>
-                                <FragmentArray Measure_ref="m_mobility" values="17.0616 23.0771 30.2083 47.6581 30.9915"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 17.0616 23.0771 30.2083 47.6581 30.9915"/>
                             </IonType>
                             <IonType charge="1" index="1 2 3 5 8 10">
                                 <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
@@ -2753,7 +2756,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="86.1 169.0845 270.13422 608.41437"/>
                                 <FragmentArray Measure_ref="m_intensity" values="8812.0 1035.0 664.0 808.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.0036 -0.049 -0.047 0.0378"/>
-                                <FragmentArray Measure_ref="m_mobility" values="16.1882 16.2663"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.1882 16.2663 0.0 0.0"/>
                             </IonType>
                             <IonType charge="2" index="3 9 10">
                                 <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
@@ -2795,7 +2798,7 @@
                                 <FragmentArray Measure_ref="m_mz" values="551.3564 388.2306 331.6941"/>
                                 <FragmentArray Measure_ref="m_intensity" values="175.0 458.0 720.0"/>
                                 <FragmentArray Measure_ref="m_error" values="0.032 -0.0143 -0.0087"/>
-                                <FragmentArray Measure_ref="m_mobility" values="80.2075 18.1017"/>
+                                <FragmentArray Measure_ref="m_mobility" values="80.2075 0.0 18.1017"/>
                             </IonType>
                             <IonType charge="1" index="5 1">
                                 <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
