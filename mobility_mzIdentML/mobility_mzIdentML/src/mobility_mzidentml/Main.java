@@ -28,6 +28,11 @@ import uk.ac.ebi.jmzidml.xml.io.MzIdentMLObjectCache;
 import uk.ac.ebi.jmzidml.xml.io.MzIdentMLUnmarshaller;
 import uk.ac.ebi.jmzidml.xml.jaxb.unmarshaller.cache.AdapterObjectCache;
 
+
+import java.util.Comparator;
+
+
+
 /**
  * Main.java
  *
@@ -37,12 +42,21 @@ import uk.ac.ebi.jmzidml.xml.jaxb.unmarshaller.cache.AdapterObjectCache;
  */
 public class Main {
 
+    //ARJ - added for the linear regression testing
+    //static double rsquared = 0;
+
+    static HashMap predictedCharges;    //Will be completed with the predicted charge of every MS2 ion, based on mobility values
+
+
     public static void main(String[] args) {
         
 
         Scanner scanner = new Scanner(System.in);
         String selection = null;
-        String csv, mzid, mgf, outputFile = null;
+        String csv, mzid, mgf, outputFile = null;      
+        
+
+
         if (args.length > 1){
         
             if (args[0].equals("1")){
@@ -191,6 +205,9 @@ public class Main {
             String stringLine = null;
             String[] tokens;
 
+            double[][] mz_mob = new double[10000][2];
+            int counter = 0;
+
             BufferedReader buffer = new BufferedReader(new FileReader(csv));
             try {
                 stringLine = buffer.readLine();
@@ -216,7 +233,6 @@ public class Main {
                     charge_index = i;
                 }
 
-
             }
             List<String> m_z_list = new ArrayList();
             List<String> intensity_list = new ArrayList();
@@ -227,15 +243,101 @@ public class Main {
             while ((stringLine = buffer.readLine()) != null) {
                 tokens = stringLine.split(",");
 
-                if(filterIons(tokens[m_z_index],tokens[mobility_index])){
+                //System.out.println("mz:" + tokens[m_z_index] + " mob: " + tokens[mobility_index]);
 
-                    m_z_list.add(tokens[m_z_index]);
-                    intensity_list.add(tokens[intensity_index]);
-                    mobility_list.add(tokens[mobility_index]);
-                    parent_list.add(tokens[parent_index]);
-                    charge_list.add(tokens[charge_index]);
-                }
+                mz_mob[counter][0] = Double.parseDouble(tokens[m_z_index]);
+                mz_mob[counter][1] = Double.parseDouble(tokens[mobility_index]);
+                counter++;
+
+                //if(filterIons(tokens[m_z_index],tokens[mobility_index])){
+
+                m_z_list.add(tokens[m_z_index]);
+                intensity_list.add(tokens[intensity_index]);
+                mobility_list.add(tokens[mobility_index]);
+                parent_list.add(tokens[parent_index]);
+                charge_list.add(tokens[charge_index]);
+                //}
             }
+
+
+            Comparator<double[]> compMZMob = new MZMobComparator();
+
+            java.util.Arrays.sort(mz_mob,compMZMob);    //Sort by Mz/Mob - the fact that these are sorted is not used yet
+            //double coef[] = linear_equation(mz_mob, 1, counter);
+            //print_equation(coef);
+
+            predictedCharges = new HashMap();
+
+            
+            
+            /*
+            for(int j=0; j < 100; j++){  //Keep running until no more improvement  to keep improving value, usually no more improvements after 3 or so
+                double rsqBefore = linear_equation(mz_mob, 1, counter);
+                System.out.println("r-squared before changing charge: " + rsqBefore );
+                for(int i =0; i<counter;i++){
+                    double rsquared = linear_equation(mz_mob, 1, counter);    //This changes the global variable r squared
+                    //System.out.println("MZ: " +mz_mob[i][0]+ " mob: " + mz_mob[i][1] + " mz/mob:" + "" + (mz_mob[i][0]/mz_mob[i][1]) + " r-squared:" + rsquared);
+                    mz_mob[i][1] = mz_mob[i][1] *2; //Try doubling the Mobility value, in case this is a 2+ ion
+                    double rsquared2 = linear_equation(mz_mob, 1, counter);    //This changes the global variable r squared
+                    //System.out.println("MZ: " +mz_mob[i][0]+ " mob: " + mz_mob[i][1] + " mz/mob:" + "" + (mz_mob[i][0]/mz_mob[i][1]) + " r-squared:" + rsquared);
+
+                    if(rsquared2 < rsquared){
+                        mz_mob[i][1] = mz_mob[i][1] /2; //Return value since there is no improvement
+                        predictedCharges.put(mz_mob[i][0], "1");
+                    }
+                    else{
+                        predictedCharges.put(mz_mob[i][0], "2");
+                    }
+                }
+                double rsqAfter = linear_equation(mz_mob, 1, counter);
+                System.out.println("r-squared after changing charge: " + rsqAfter );
+
+                if(rsqBefore == rsqAfter){
+                    j = 100000;
+                }
+                
+            }
+            */
+
+            double rsqBefore = linear_equation(mz_mob, 1, counter);
+            System.out.println("r-squared before changing charge: " + rsqBefore );
+
+            double maxRsq = linear_equation(mz_mob, 1, counter);    //Starting value of r-squared
+            int maxPos = 0;                                         //This is set when the max r-squared is reset
+
+            for(int i =0; i<counter;i++){
+
+                double[][] tempMzMob = new double[counter][2];
+
+                //deep copy into new array
+                for (int y = 0; y < counter; y++){
+                    for (int x = 0; x < 2; x++){
+                            tempMzMob[y][x] = mz_mob[y][x];
+                    }
+                }
+
+
+                System.out.println("max r-squared:" + maxRsq);
+                
+                for(int j =i; j<counter;j++){
+                     tempMzMob[j][1] = tempMzMob[j][1] *2; //Try doubling the Mobility value, in case this is a 2+ ion
+
+                }
+                double rsquaredNew = linear_equation(tempMzMob, 1, counter);    //This changes the global variable r squared
+                System.out.println("New r-squared:" + rsquaredNew);
+
+                if(rsquaredNew > maxRsq){
+                        maxPos = i;
+                        maxRsq = rsquaredNew;
+                }
+                 
+            }
+
+            System.out.println("MaxPos: " + maxPos);
+
+            double rsqAfter = linear_equation(mz_mob, 1, counter);
+            System.out.println("Max rsq: " + maxRsq );
+            
 
             StringBuilder builder_all = new StringBuilder();
             StringBuilder builder_mobility = new StringBuilder();
@@ -253,7 +355,6 @@ public class Main {
                     builder_all.append(" DRIFT_TIME=");
                     builder_all.append(mobility_list.get(i));
                     builder_all.append(" ");
-
 
                     //builder_params.append("\r\n");
                     builder_params.append("PEPMASS=");
@@ -335,6 +436,25 @@ public class Main {
             out.write(builder_all.toString());
             out.close();
             System.out.println("Check the output file: " + fileName);
+
+
+            String chargeFile = fileName.substring(0,fileName.indexOf(".")) + "_charges.csv";
+            BufferedWriter out2 = new BufferedWriter(new FileWriter(chargeFile));
+            out2.write("mz,mob,charge\n");
+            for(int i =0; i<counter;i++){
+
+                if(predictedCharges.get(mz_mob[i][0]).equals("2")){
+                    out2.write((mz_mob[i][0])+ "," + (mz_mob[i][1]/2) + "," + "" + predictedCharges.get(mz_mob[i][0])+"\n");  //convert these mz values back to original
+                }
+                else{
+                    out2.write(mz_mob[i][0]+ "," + mz_mob[i][1] + "," + "" + predictedCharges.get(mz_mob[i][0])+"\n");
+                }
+
+            }
+            out2.close();
+            System.out.println("Check the output file for predicted charges: " + chargeFile);
+
+
         } catch (FileNotFoundException ex) {
             System.out.println(ex.toString());
         } catch (IOException ex) {
@@ -354,6 +474,7 @@ public class Main {
             BufferedReader buffer = new BufferedReader(new FileReader(inputMobilityFile));
             String stringLine;
             String[] tokens;
+
 
             if (type.equals("csv")) {
                 stringLine = buffer.readLine();
@@ -423,6 +544,10 @@ public class Main {
 
             }
 
+
+
+
+
             MzIdentMLUnmarshaller unmarshaller = new MzIdentMLUnmarshaller(new File(mzid));
             MzIdentML mzIdentML_whole = unmarshaller.unmarshal(MzIdentML.class);
             AnalysisData analysisData = mzIdentML_whole.getDataCollection().getAnalysisData();
@@ -491,32 +616,134 @@ public class Main {
         }
     }
 
-    /*
-     * A method to calculate collision cross section for ions and if exclude them from the MGF file if they fall outside set limits
-     *
-     */
-    public static Boolean filterIons(String mz, String mob){
-        Boolean withinRange = true;
+      
 
-        Double mzDouble = Double.parseDouble(mz);
-        Double mobDouble = Double.parseDouble(mob);
-        Double ccs = mzDouble / mobDouble;
 
-        if(mzDouble < 10 * mobDouble + 180){
+    //http://www.angelfire.com/tx4/cus/regress/java.html
+       // Apply least squares to raw data to determine the coefficients for
+   // an n-order equation: y = a0*X^0 + a1*X^1 + ... + an*X^n.
+   // Returns the coefficients for the solved equation, given a number
+   // of y and x data points. The rawData input is given in the form of
+   // {{y0, x0}, {y1, x1},...,{yn, xn}}.   The coefficients returned by
+   // the regression are {a0, a1,...,an} which corresponds to
+   // {X^0, X^1,...,X^n}. The number of coefficients returned is the
+   // requested equation order (norder) plus 1.
+   static double linear_equation(double rawData[][], int norder, int numValues) {
+      double a[][] = new double[norder+1][norder+1];
+      double b[] = new double[norder+1];
+      double term[] = new double[norder+1];
+      double ysquare = 0;
+      double rsquared;
 
-            //System.out.println("Acceptable:" + mzDouble + " " + mobDouble);
+      // step through each raw data entries
+      for (int i = 0; i < numValues; i++) {
+
+         // sum the y values
+         b[0] += rawData[i][0];
+         ysquare += rawData[i][0] * rawData[i][0];
+
+         // sum the x power values
+         double xpower = 1;
+         for (int j = 0; j < norder+1; j++) {
+            term[j] = xpower;
+            a[0][j] += xpower;
+            xpower = xpower * rawData[i][1];
+         }
+
+         // now set up the rest of rows in the matrix - multiplying each row by each term
+         for (int j = 1; j < norder+1; j++) {
+            b[j] += rawData[i][0] * term[j];
+            for (int k = 0; k < b.length; k++) {
+               a[j][k] += term[j] * term[k];
+            }
+         }
+      }
+
+      // solve for the coefficients
+      double coef[] = gauss(a, b);
+
+      // calculate the r-squared statistic
+      double ss = 0;
+      double yaverage = b[0] / numValues;
+      for (int i = 0; i < norder+1; i++) {
+         double xaverage = a[0][i] / numValues;
+         ss += coef[i] * (b[i] - (numValues * xaverage * yaverage));
+      }
+      rsquared = ss / (ysquare - (numValues * yaverage * yaverage));
+
+      // solve the simultaneous equations via gauss
+      return rsquared;
+   }
+
+      // it's been so long since I wrote this, that I don't recall the math
+   // logic behind it. IIRC, it's just a standard gaussian technique for
+   // solving simultaneous equations of the form: |A| = |B| * |C| where we
+   // know the values of |A| and |B|, and we are solving for the coefficients
+   // in |C|
+   static double[] gauss(double ax[][], double bx[]) {
+      double a[][] = new double[ax.length][ax[0].length];
+      double b[] = new double[bx.length];
+      double pivot;
+      double mult;
+      double top;
+      int n = b.length;
+      double coef[] = new double[n];
+
+      // copy over the array values - inplace solution changes values
+      for (int i = 0; i < ax.length; i++) {
+         for (int j = 0; j < ax[i].length; j++) {
+            a[i][j] = ax[i][j];
+         }
+         b[i] = bx[i];
+      }
+
+      for (int j = 0; j < (n-1); j++) {
+         pivot = a[j][j];
+         for (int i = j+1; i < n; i++) {
+            mult = a[i][j] / pivot;
+            for (int k = j+1; k < n; k++) {
+               a[i][k] = a[i][k] - mult * a[j][k];
+            }
+            b[i] = b[i] - mult * b[j];
+         }
+      }
+
+      coef[n-1] = b[n-1] / a[n-1][n-1];
+      for (int i = n-2; i >= 0; i--) {
+         top = b[i];
+         for (int k = i+1; k < n; k ++) {
+            top = top - a[i][k] * coef[k];
+         }
+         coef[i] = top / a[i][i];
+      }
+      return coef;
+   }
+
+   /*
+   // simple routine to print the equation for inspection
+   static void print_equation(double coef[]) {
+      for (int i = 0; i < coef.length; i++) {
+         if (i == 0) {
+            System.out.print("Y = ");
+         } else {
+            System.out.print(" + ");
+         }
+         System.out.print(coef[i] + "*X^" + i);
+      }
+      System.out.println("      [r^2 = " + rsquared + "]");
+   }
+*/
+    
+   static class MZMobComparator implements Comparator<double[]> {
+
+        // Comparator interface requires defining compare method.
+        public int compare(double[] o1, double[] o2) {
+
+            if(o1[0]/o1[1]> o2[0]/o2[1])return 1;               // 1 for ascending order, -1 for descending order
+                 else if(o1[0]/o1[1]< o2[0]/o2[1]) return -1;   // 1 for descending order, -1 for ascending order
+                 else return 0; 
         }
-        else{
 
-            //System.out.println("Unacceptable:" + mzDouble + " " + mobDouble);
-        }
-
-        //Approx separation line is y = 10x + 180
-
-
-
-
-        return withinRange;
     }
 
 }
