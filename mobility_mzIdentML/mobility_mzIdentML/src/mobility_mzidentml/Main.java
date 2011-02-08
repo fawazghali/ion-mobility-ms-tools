@@ -70,7 +70,15 @@ public class Main {
                     }else{
                         outputFile = "result.mgf";
                     }
-                    convertFromCSVtoMGF(csv, 0, outputFile);
+
+                    Boolean removeNon1PlusIons = false;
+                    if(args.length>3){
+                        if(args[3].equals("filter_ions")){
+                            removeNon1PlusIons = true;
+                        }
+                    }
+
+                    convertFromCSVtoMGF(csv, 0, outputFile,removeNon1PlusIons);
                 }
             }else if (args[0].equals("2")){
                 csv = args[1];
@@ -82,7 +90,15 @@ public class Main {
                     }else{
                         outputFile = "result.mgf";
                     }
-                    convertFromCSVtoMGF(csv, 1, outputFile);
+
+                    Boolean removeNon1PlusIons = false;
+                    if(args.length>3){
+                        if(args[3].equals("filter_ions")){
+                            removeNon1PlusIons = true;
+                        }
+                    }
+
+                    convertFromCSVtoMGF(csv, 1, outputFile,removeNon1PlusIons);
                 }
 
             }else if (args[0].equals("3")){
@@ -146,7 +162,7 @@ public class Main {
                 if (csv == null || !csv.endsWith("csv")) {
                     System.out.println("Your input CSV file is either empty or invalid");
                 } else {
-                    convertFromCSVtoMGF(csv, 0, "result.mgf");
+                    convertFromCSVtoMGF(csv, 0, "result.mgf",false);        //Filter ions only available in command line mode
                 }
 
             } else if (selection.equals("2")) {
@@ -155,7 +171,7 @@ public class Main {
                 if (csv == null || !csv.endsWith("csv")) {
                     System.out.println("Your input CSV file is either empty or invalid");
                 } else {
-                    convertFromCSVtoMGF(csv, 1, "result.mgf");
+                    convertFromCSVtoMGF(csv, 1, "result.mgf", false);       //Filter ions only available in command line mode
                 }
 
             } else if (selection.equals("3")) {
@@ -200,7 +216,7 @@ public class Main {
         }
     }
 
-    private static void convertFromCSVtoMGF(String csv, int mobility, String outputFile) {
+    private static void convertFromCSVtoMGF(String csv, int mobility, String outputFile, Boolean removeNon1PlusIons) {
         try {
             String stringLine = null;
             String[] tokens;
@@ -268,36 +284,6 @@ public class Main {
 
             predictedCharges = new HashMap();
 
-            
-            
-            /*
-            for(int j=0; j < 100; j++){  //Keep running until no more improvement  to keep improving value, usually no more improvements after 3 or so
-                double rsqBefore = linear_equation(mz_mob, 1, counter);
-                System.out.println("r-squared before changing charge: " + rsqBefore );
-                for(int i =0; i<counter;i++){
-                    double rsquared = linear_equation(mz_mob, 1, counter);    //This changes the global variable r squared
-                    //System.out.println("MZ: " +mz_mob[i][0]+ " mob: " + mz_mob[i][1] + " mz/mob:" + "" + (mz_mob[i][0]/mz_mob[i][1]) + " r-squared:" + rsquared);
-                    mz_mob[i][1] = mz_mob[i][1] *2; //Try doubling the Mobility value, in case this is a 2+ ion
-                    double rsquared2 = linear_equation(mz_mob, 1, counter);    //This changes the global variable r squared
-                    //System.out.println("MZ: " +mz_mob[i][0]+ " mob: " + mz_mob[i][1] + " mz/mob:" + "" + (mz_mob[i][0]/mz_mob[i][1]) + " r-squared:" + rsquared);
-
-                    if(rsquared2 < rsquared){
-                        mz_mob[i][1] = mz_mob[i][1] /2; //Return value since there is no improvement
-                        predictedCharges.put(mz_mob[i][0], "1");
-                    }
-                    else{
-                        predictedCharges.put(mz_mob[i][0], "2");
-                    }
-                }
-                double rsqAfter = linear_equation(mz_mob, 1, counter);
-                System.out.println("r-squared after changing charge: " + rsqAfter );
-
-                if(rsqBefore == rsqAfter){
-                    j = 100000;
-                }
-                
-            }
-            */
 
             double rsqBefore = linear_equation(mz_mob, 1, counter);
             System.out.println("r-squared before changing charge: " + rsqBefore );
@@ -305,38 +291,60 @@ public class Main {
             double maxRsq = linear_equation(mz_mob, 1, counter);    //Starting value of r-squared
             int maxPos = 0;                                         //This is set when the max r-squared is reset
 
-            for(int i =0; i<counter;i++){
+            double[] scaleFactors = {1.3,1.4,1.5,1.6,1.7,1.8,1.9,2.0,2.1,2.2};  //2+ charge does not appear to double mobility, depending on instrument range from 1.4-2 is the scale factor
 
-                double[][] tempMzMob = new double[counter][2];
+            double maxScaleFactor = 2;
 
-                //deep copy into new array
-                for (int y = 0; y < counter; y++){
-                    for (int x = 0; x < 2; x++){
-                            tempMzMob[y][x] = mz_mob[y][x];
+            for(int h = 0; h<scaleFactors.length; h++){
+                for(int i =0; i<counter;i++){
+
+                    double[][] tempMzMob = new double[counter][2];
+
+                    //deep copy into new array
+                    for (int y = 0; y < counter; y++){
+                        for (int x = 0; x < 2; x++){
+                                tempMzMob[y][x] = mz_mob[y][x];
+                        }
                     }
+
+
+                    //System.out.println("max r-squared:" + maxRsq);
+
+                    for(int j =i; j<counter;j++){
+                         tempMzMob[j][1] = tempMzMob[j][1] * scaleFactors[h]; //Try scaling the Mobility value, in case this is a 2+ ion
+
+                    }
+                    double rsquaredNew = linear_equation(tempMzMob, 1, counter);    //This changes the global variable r squared
+                    //System.out.println("New r-squared:" + rsquaredNew);
+
+                    if(rsquaredNew > maxRsq){
+                            maxPos = i;
+                            maxRsq = rsquaredNew;
+                            maxScaleFactor = scaleFactors[h];
+                    }
+
                 }
-
-
-                System.out.println("max r-squared:" + maxRsq);
-                
-                for(int j =i; j<counter;j++){
-                     tempMzMob[j][1] = tempMzMob[j][1] *2; //Try doubling the Mobility value, in case this is a 2+ ion
-
-                }
-                double rsquaredNew = linear_equation(tempMzMob, 1, counter);    //This changes the global variable r squared
-                System.out.println("New r-squared:" + rsquaredNew);
-
-                if(rsquaredNew > maxRsq){
-                        maxPos = i;
-                        maxRsq = rsquaredNew;
-                }
-                 
             }
 
-            System.out.println("MaxPos: " + maxPos);
+            for(int i =0; i<counter;i++){
 
-            double rsqAfter = linear_equation(mz_mob, 1, counter);
-            System.out.println("Max rsq: " + maxRsq );
+                if(i<maxPos){
+                    predictedCharges.put("" + mz_mob[i][0], "1");
+                    //System.out.println("" + mz_mob[i][0] + " " + predictedCharges.get("" + mz_mob[i][0]) ); //need to convert (double) tokens to strings for use later
+                }
+                else{             
+                    predictedCharges.put("" + mz_mob[i][0], "2");
+                    //System.out.println("Put: " + mz_mob[i][0] + " " + predictedCharges.get("" + mz_mob[i][0]));
+                }
+            }
+
+
+            //System.out.println("MaxPos: " + maxPos);
+
+            //double rsqAfter = linear_equation(mz_mob, 1, counter);
+            //System.out.println("Max rsq: " + maxRsq );
+            System.out.println("r-squared after changing charge: " + maxRsq );
+            System.out.println("Scale factor for 2+ ions: " + maxScaleFactor );
             
 
             StringBuilder builder_all = new StringBuilder();
@@ -352,11 +360,18 @@ public class Main {
                     builder_all.append("TITLE=Spectrum ");
                     builder_all.append(count_parent);
 
-                    builder_all.append(" DRIFT_TIME=");
-                    builder_all.append(mobility_list.get(i));
-                    builder_all.append(" ");
+                    if(mobility==1){
+                        builder_all.append(" DRIFT_TIME=");
 
-                    //builder_params.append("\r\n");
+                        if(!removeNon1PlusIons || predictedCharges.get(m_z_list.get(i)).equals("1") ){
+                            builder_all.append(mobility_list.get(i));
+                            builder_all.append(" ");
+                        }
+                    }
+
+                    
+
+                    builder_params.append("\r\n");
                     builder_params.append("PEPMASS=");
                     builder_params.append(parent_list.get(i));
                     builder_params.append("\r\n");
@@ -364,39 +379,71 @@ public class Main {
                     builder_params.append(charge_list.get(i));
                     builder_params.append("\r\n");
 
-                    builder_m_z_intensity.append(m_z_list.get(i));
-                    builder_m_z_intensity.append(" ");
-                    builder_m_z_intensity.append(intensity_list.get(i));
-                    builder_m_z_intensity.append("\r\n");
-
+                    if(!removeNon1PlusIons || predictedCharges.get(m_z_list.get(i)).equals("1") ){
+                        builder_m_z_intensity.append(m_z_list.get(i));
+                        builder_m_z_intensity.append(" ");
+                        builder_m_z_intensity.append(intensity_list.get(i));
+                        builder_m_z_intensity.append("\r\n");
+                    }
+                    else{
+                        //System.out.println("Filtered out: " + m_z_list.get(i) + " " + intensity_list.get(i));
+                    }
                    
 
 
                 } else if (i == parent_list.size() - 1) {
-                    if (mobility == 1) {
-                        builder_all.append(builder_mobility);
-                        builder_all.append("\r\n");
+
+                    if(!removeNon1PlusIons || predictedCharges.get(m_z_list.get(i)).equals("1") ){
+                        builder_m_z_intensity.append(m_z_list.get(i));
+                        builder_m_z_intensity.append(" ");
+                        builder_m_z_intensity.append(intensity_list.get(i));
+                        builder_m_z_intensity.append("\r\n");
+
+
+                        if (mobility == 1) {
+                            builder_mobility.append(mobility_list.get(i));
+                            builder_mobility.append(" ");
+                            builder_all.append(builder_mobility);
+                        }
+
                     }
+                    else{
+                        //System.out.println("Filtered out: " + m_z_list.get(i) + " " + intensity_list.get(i));
+                    }
+
+
+                    
                     builder_all.append(builder_params);
                     builder_all.append(builder_m_z_intensity);
                     builder_all.append("END IONS");
                     builder_all.append("\r\n");
                 } else {
-                    builder_m_z_intensity.append(m_z_list.get(i));
-                    builder_m_z_intensity.append(" ");
-                    builder_m_z_intensity.append(intensity_list.get(i));
-                    builder_m_z_intensity.append("\r\n");
 
-                    builder_mobility.append(mobility_list.get(i));
-                    builder_mobility.append(" ");
+                    //System.out.println("1: " + m_z_list.get(i) + " " + predictedCharges.get(m_z_list.get(i)));
+
+                    if(!removeNon1PlusIons || predictedCharges.get(m_z_list.get(i)).equals("1") ){
+
+                        builder_m_z_intensity.append(m_z_list.get(i));
+                        builder_m_z_intensity.append(" ");
+                        builder_m_z_intensity.append(intensity_list.get(i));
+                        builder_m_z_intensity.append("\r\n");
+
+                        builder_mobility.append(mobility_list.get(i));
+                        builder_mobility.append(" ");
+                    }
+                    else{
+                        //System.out.println("Filtered out: " + m_z_list.get(i) + " " + intensity_list.get(i));
+                    }
+
+                    
 
                     if (!parent_list.get(i).equals(parent_list.get(i + 1))) {
                         count_parent = count_parent + 1;
                         if (mobility == 1) {
-                            builder_all.append(builder_mobility);
-                            builder_all.append("\r\n");
-
+                            builder_all.append(builder_mobility);   
                         }
+                        
+                        //builder_all.append("\r\n");
                         builder_all.append(builder_params);
                         builder_params = new StringBuilder();
                         builder_all.append(builder_m_z_intensity);
@@ -407,12 +454,15 @@ public class Main {
                         builder_all.append("TITLE=Spectrum ");
                         builder_all.append(count_parent);
 
-                        builder_all.append(" DRIFT_TIME=");
-                        //builder_all.append(mobility_list.get(i));
-                        builder_all.append(" ");
+                        if(mobility==1){
+                            builder_all.append(" DRIFT_TIME=");
+
+                            //builder_all.append(mobility_list.get(i));
+                            builder_all.append(" ");
+                        }
 
 
-                        //builder_params.append("\r\n");
+                        builder_params.append("\r\n");
                         builder_params.append("PEPMASS=");
                         builder_params.append(parent_list.get(i + 1));
                         builder_params.append("\r\n");
@@ -440,15 +490,9 @@ public class Main {
 
             String chargeFile = fileName.substring(0,fileName.indexOf(".")) + "_charges.csv";
             BufferedWriter out2 = new BufferedWriter(new FileWriter(chargeFile));
-            out2.write("mz,mob,charge\n");
-            for(int i =0; i<counter;i++){
-
-                if(predictedCharges.get(mz_mob[i][0]).equals("2")){
-                    out2.write((mz_mob[i][0])+ "," + (mz_mob[i][1]/2) + "," + "" + predictedCharges.get(mz_mob[i][0])+"\n");  //convert these mz values back to original
-                }
-                else{
-                    out2.write(mz_mob[i][0]+ "," + mz_mob[i][1] + "," + "" + predictedCharges.get(mz_mob[i][0])+"\n");
-                }
+            out2.write("mz,mob,charge,mob_scale_factor\n");
+            for(int i =0; i<counter;i++){                
+                    out2.write((mz_mob[i][0])+ "," + mz_mob[i][1] + "," + "" + predictedCharges.get("" + mz_mob[i][0])+ "," + maxScaleFactor +"\n" );
 
             }
             out2.close();
