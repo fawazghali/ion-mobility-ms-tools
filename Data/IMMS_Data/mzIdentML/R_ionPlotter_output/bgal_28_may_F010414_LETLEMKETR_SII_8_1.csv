@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+LETLEMKETR,0.401975280649795,frag: a ion,2,159.0953,318.0,16.4072,1,false
+LETLEMKETR,0.401975280649795,frag: y ion,2,267.1472,310.0,20.9039,1,false
+LETLEMKETR,0.401975280649795,no id,0,296.1437,104,23.8938,1,false

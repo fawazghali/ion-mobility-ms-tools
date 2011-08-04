@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+MHALQKVAR,1.56248883824833,frag: a ion,2,121.1032,153.0,17.4883,1,false
+MHALQKVAR,1.56248883824833,frag: a ion,2,341.2289,152.0,44.0809,1,false
+MHALQKVAR,1.56248883824833,no id,0,136.0989,129,18.3897,1,false

@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+LREILQAMK,0.497961650735513,frag: b ion,2,136.0973,1122.0,18.26,1,false
+LREILQAMK,0.497961650735513,no id,0,357.6888,101,26.3091,1,false
+LREILQAMK,0.497961650735513,no id,0,357.6888,101,26.3091,1,false

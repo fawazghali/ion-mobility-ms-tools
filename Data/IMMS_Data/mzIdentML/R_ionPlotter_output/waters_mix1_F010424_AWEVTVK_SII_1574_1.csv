@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+AWEVTVK,0.0116680961706096,frag: y ion,1,761.4127,29990.0,106.0,1,true
+AWEVTVK,0.0116680961706096,frag: y ion,1,575.3333,147500.0,78.0,1,true
+AWEVTVK,0.0116680961706096,no id,0,631.3137,10988,87.6,1,true
+AWEVTVK,0.0116680961706096,no id,0,701.8685,19844,63.5,1,true

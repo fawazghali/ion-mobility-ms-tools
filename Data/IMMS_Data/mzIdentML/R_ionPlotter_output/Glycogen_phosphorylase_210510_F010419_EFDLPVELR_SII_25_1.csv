@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+EFDLPVELR,7.78387580472815,frag: y ion,2,306.9443,262.0,39.3792,1,false
+EFDLPVELR,7.78387580472815,frag: y ion,2,259.1356,265.0,29.8662,1,false
+EFDLPVELR,7.78387580472815,no id,0,357.6888,101,26.3091,1,false
+EFDLPVELR,7.78387580472815,no id,0,357.6888,101,26.3091,1,false

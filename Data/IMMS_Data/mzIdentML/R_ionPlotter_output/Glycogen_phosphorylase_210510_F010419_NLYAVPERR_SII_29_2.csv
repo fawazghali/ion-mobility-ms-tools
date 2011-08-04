@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+NLYAVPERR,7.74811214401787,frag: a ion,1,87.1122,237.0,16.8242,2,false
+NLYAVPERR,7.74811214401787,frag: a ion,1,363.7018,236.0,27.271,2,false
+NLYAVPERR,7.74811214401787,no id,0,357.6888,101,26.3091,2,false
+NLYAVPERR,7.74811214401787,no id,0,357.6888,101,26.3091,2,false

@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+SARCSAGASGGER,0.425793813457482,frag: a ion,1,534.2614,167.0,53.5719,1,false
+SARCSAGASGGER,0.425793813457482,frag: a ion,1,662.3204,165.0,70.4397,1,false
+SARCSAGASGGER,0.425793813457482,no id,0,296.1437,104,23.8938,1,false

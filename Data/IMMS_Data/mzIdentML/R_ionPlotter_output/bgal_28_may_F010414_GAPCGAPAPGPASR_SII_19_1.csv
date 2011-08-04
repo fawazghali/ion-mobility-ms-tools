@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+GAPCGAPAPGPASR,0.447918857867068,frag: b ion,2,222.1023,218.0,17.4875,1,false
+GAPCGAPAPGPASR,0.447918857867068,frag: b ion,2,342.1307,211.0,31.277,1,false
+GAPCGAPAPGPASR,0.447918857867068,no id,0,296.1437,104,23.8938,1,false

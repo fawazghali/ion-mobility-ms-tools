@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+DIASPQEMAR,2.22431298903962,frag: y ion,2,366.0138,123.0,44.3693,2,false
+DIASPQEMAR,2.22431298903962,frag: y ion,2,317.979,123.0,39.1897,2,false
+DIASPQEMAR,2.22431298903962,no id,0,357.6888,101,26.3091,2,false
+DIASPQEMAR,2.22431298903962,no id,0,357.6888,101,26.3091,2,false

@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+TALHRPQLSSR,0.602836232637309,frag: y ion,2,547.2812,220.0,30.3229,1,false
+TALHRPQLSSR,0.602836232637309,frag: y ion,2,295.2043,220.0,28.0116,1,false
+TALHRPQLSSR,0.602836232637309,no id,0,296.1437,104,23.8938,1,false

@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+GVEVMVGTPGR,0.497961650735513,frag: y ion,1,232.1757,493.0,28.3692,2,false
+GVEVMVGTPGR,0.497961650735513,no id,0,357.6888,101,26.3091,2,false
+GVEVMVGTPGR,0.497961650735513,no id,0,357.6888,101,26.3091,2,false

@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+AVAASQIRR,1.48403530716369,frag: a ion,2,107.0818,150.0,24.3855,2,false
+AVAASQIRR,1.48403530716369,frag: a ion,2,187.1122,150.0,35.1484,2,false
+AVAASQIRR,1.48403530716369,no id,0,242.0954,105,53.9967,2,false
