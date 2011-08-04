@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+AVTYSGTSKHSK,0.604225913675522,frag: a ion,2,123.0614,251.0,16.2782,1,false
+AVTYSGTSKHSK,0.604225913675522,frag: a ion,2,276.1418,250.0,22.3518,1,false
+AVTYSGTSKHSK,0.604225913675522,no id,0,296.1437,104,23.8938,1,false

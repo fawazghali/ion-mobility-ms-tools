@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+HFVHGDPSPGGTDR,0.419136923225008,frag: a ion,1,493.3798,183.0,47.3323,1,false
+HFVHGDPSPGGTDR,0.419136923225008,frag: a ion,1,550.4689,182.0,55.4767,1,false
+HFVHGDPSPGGTDR,0.419136923225008,no id,0,583.4627,103,57.8238,1,false

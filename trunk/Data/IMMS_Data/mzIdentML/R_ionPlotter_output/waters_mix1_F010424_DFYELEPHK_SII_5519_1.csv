@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+DFYELEPHK,0.022080047330189,frag: y ion,2,532.2647,10580.0,49.9,1,true
+DFYELEPHK,0.022080047330189,frag: y ion,2,458.72968,91910.0,42.8,1,true
+DFYELEPHK,0.022080047330189,no id,0,533.27313,43211,46.9,1,true

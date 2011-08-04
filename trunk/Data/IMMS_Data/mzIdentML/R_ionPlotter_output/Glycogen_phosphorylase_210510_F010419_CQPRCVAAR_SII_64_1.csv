@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+CQPRCVAAR,1.67569856577817,frag: a ion,1,133.1075,1007.0,16.9068,1,false
+CQPRCVAAR,1.67569856577817,frag: a ion,1,674.4691,988.0,88.1259,1,false
+CQPRCVAAR,1.67569856577817,no id,0,357.6888,101,26.3091,1,false
+CQPRCVAAR,1.67569856577817,no id,0,357.6888,101,26.3091,1,false
