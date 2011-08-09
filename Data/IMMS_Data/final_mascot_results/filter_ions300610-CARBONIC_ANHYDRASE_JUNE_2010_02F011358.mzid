@@ -1,0 +1,2446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mzIdentML id="" version="1.0.0"
+             xsi:schemaLocation="http://psidev.info/psi/pi/mzIdentML/1.0 http://www.matrixscience.com/xmlns/schema/mzIdentML/mzIdentML1.0.0.xsd"
+             xmlns="http://psidev.info/psi/pi/mzIdentML/1.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             creationDate="2011-08-09T13:20:52">
+  <cvList>
+    <cv id="PSI-MS" fullName="Proteomics Standards Initiative Mass Spectrometry Vocabularies"   URI="http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo" version="2.32.0"></cv>
+    <cv id="UNIMOD" fullName="UNIMOD"        URI="http://www.unimod.org/obo/unimod.obo"></cv>
+    <cv id="UO"     fullName="UNIT-ONTOLOGY" URI="http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/phenotype/unit.obo"></cv>
+  </cvList>
+  <AnalysisSoftwareList>
+    <AnalysisSoftware id="AS_mascot_server" name="Mascot Server" version="2.3.02" URI="http://www.matrixscience.com/search_form_select.html" >
+      <ContactRole Contact_ref="ORG_MSL">
+        <role>
+          <cvParam accession="MS:1001267" name="software vendor" cvRef="PSI-MS"/>
+        </role>
+      </ContactRole>
+      <SoftwareName>
+        <cvParam accession="MS:1001207" name="Mascot" cvRef="PSI-MS"/>
+      </SoftwareName>
+      <Customizations>
+        No customisations
+      </Customizations>
+    </AnalysisSoftware>
+    <AnalysisSoftware id="AS_mascot_parser" name="Mascot Parser" version="2.3.3.0" URI="http://www.matrixscience.com/msparser.html" >
+      <ContactRole Contact_ref="ORG_MSL">
+        <role>
+          <cvParam accession="MS:1001267" name="software vendor" cvRef="PSI-MS"/>
+        </role>
+      </ContactRole>
+      <SoftwareName>
+        <cvParam accession="MS:1001478" name="Mascot Parser" cvRef="PSI-MS"/>
+      </SoftwareName>
+      <Customizations>
+        No customisations
+      </Customizations>
+    </AnalysisSoftware>
+  </AnalysisSoftwareList>
+  <Provider id="PROVIDER">
+    <ContactRole Contact_ref="PERSON_DOC_OWNER">
+      <role>
+        <cvParam accession="MS:1001271" name="researcher" cvRef="PSI-MS" />
+      </role>
+    </ContactRole>
+  </Provider>
+  <AuditCollection>
+    <Person id="">
+      <affiliations Organization_ref="ORG_MSL"/>
+    </Person>
+    <Person id="PERSON_DOC_OWNER" firstName="" lastName="ajones" email="andrew.jones@liv.ac.uk">
+      <affiliations Organization_ref="ORG_DOC_OWNER"/>
+    </Person>
+    <Organization id="ORG_MSL" name="Matrix Science Limited" address="64 Baker Street, London W1U 7GB, UK" email="support@matrixscience.com"  fax="+44 (0)20 7224 1344" phone="+44 (0)20 7486 1050" />
+    <Organization id="ORG_DOC_OWNER" />
+  </AuditCollection>
+  <SequenceCollection>
+    <DBSequence id="DBSeq_1_sp|CAH2_BOVIN|" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="sp|CAH2_BOVIN|" >
+    </DBSequence>
+    <DBSequence id="DBSeq_1_sp|P00921|CAH2_BOVIN" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="sp|P00921|CAH2_BOVIN" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="Carbonic anhydrase 2 OS=Bos taurus GN=CA2 PE=1 SV=3" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_002170" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_002170" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein, conserved | location=NCLIV_chrIa:2041845-2045213(-) | length=645" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_016580" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_016580" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein | location=NCLIV_chrVI:1003996-1008432(-) | length=1478" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_023390" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_023390" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein, conserved | location=NCLIV_chrVIIa:3590761-3605587(+) | length=3758" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_036060" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_036060" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein | location=NCLIV_chrVIII:4836132-4841273(-) | length=550" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_069800" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_069800" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=SRS domain-containing protein | location=unknown:2775667-2777130(-) | length=396" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_069001" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_069001" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=SRS domain-containing protein | location=unknown:1050006-1051440(+) | length=365" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_055700" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_055700" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein, conserved | location=NCLIV_chrXI:2157672-2169928(-) | length=1863" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_033630" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_033630" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein, conserved | location=NCLIV_chrVIII:2840944-2849229(-) | length=1100" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_062660" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_062660" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein | location=NCLIV_chrXII:1930867-1947418(+) | length=2468" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_056530" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_056530" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein, conserved | location=NCLIV_chrXI:2897777-2906990(+) | length=710" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_044180" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_044180" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein | location=NCLIV_chrIX:4744622-4759519(+) | length=4408" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_042790" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_042790" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=2OG-Fe(II) oxygenase family protein, putative | location=NCLIV_chrIX:3581003-3584685(+) | length=939" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_065630" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_065630" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein | location=NCLIV_chrXII:4253113-4262123(+) | length=1576" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_025510" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_025510" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein, conserved | location=NCLIV_chrVIIb:1293045-1299841(+) | length=1180" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_067070" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_067070" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=Ubiquitin--protein ligase, putative | location=NCLIV_chrXII:5347905-5358635(+) | length=1306" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_069650" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_069650" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=Phenylalanine-4-hydroxylase, related | location=unknown:2236715-2240129(-) | length=328" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_069680" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_069680" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein | location=unknown:2256101-2260503(-) | length=405" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_012100" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_012100" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=Vacuolar protein sorting-associated protein, related | location=NCLIV_chrIV:2136197-2169177(+) | length=8656" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_019620" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_019620" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=hypothetical protein, conserved | location=NCLIV_chrVIIa:295472-297121(+) | length=549" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_012050" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_012050" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=ubiquitin carboxyl-terminal hydrolase, putative | location=NCLIV_chrIV:2085130-2104320(+) | length=4150" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_067350" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_067350" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=P-type Ca(2 )-ATPase, putative | location=NCLIV_chrXII:5548592-5558427(+) | length=1341" />
+    </DBSequence>
+    <DBSequence id="DBSeq_1_sp|CAH2_HUMAN|" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="sp|CAH2_HUMAN|" >
+    </DBSequence>
+    <DBSequence id="DBSeq_1_psu|NCLIV_005760" SearchDatabase_ref="SDB_sigma_mix_IMS" accession="psu|NCLIV_005760" >
+      <cvParam accession="MS:1001088" name="protein description" cvRef="PSI-MS" value="| organism=Neospora_caninum | product=SRS domain-containing protein,SRS13, putative | location=NCLIV_chrII:1058876-1060939(+) | length=687" />
+    </DBSequence>
+    <Peptide id="peptide_1_1">
+      <peptideSequence>VLDALDSIK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_2">
+      <peptideSequence>ALLTELEGK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_3">
+      <peptideSequence>LTLAEVEAK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_4">
+      <peptideSequence>LVEGMRLR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_5">
+      <peptideSequence>VIKEELDK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_6">
+      <peptideSequence>LAAAKATAEK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_7">
+      <peptideSequence>LAAAKTAAEK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_8">
+      <peptideSequence>ADVLLSSLR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_9">
+      <peptideSequence>VIVAKSNDK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_1_10">
+      <peptideSequence>VALTLEEAK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_1">
+      <peptideSequence>VLDALDSIK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_2">
+      <peptideSequence>LTLAEVEAK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_3">
+      <peptideSequence>VIKEELDK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_4">
+      <peptideSequence>VIVAKSNDK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_5">
+      <peptideSequence>LVEGMRLR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_6">
+      <peptideSequence>LAAAKATAEK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_7">
+      <peptideSequence>LAAAKTAAEK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_8">
+      <peptideSequence>VALTLEEAK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_2_9">
+      <peptideSequence>ALLTELEGK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_3_1">
+      <peptideSequence>DGPLTGTYR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_4_1">
+      <peptideSequence>DGPLTGTYR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_6_1">
+      <peptideSequence>QSPVDIDTK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_6_2">
+      <peptideSequence>GGTHAPVHAR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_6_3">
+      <peptideSequence>RPSAMPTSR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_7_1">
+      <peptideSequence>QSPVDIDTK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_7_2">
+      <peptideSequence>QSPSGARGSR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_8_1">
+      <peptideSequence>VGDANPALQK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_8_2">
+      <peptideSequence>RDVSVPSPR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_8_3">
+      <peptideSequence>DPTSRLAPR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_8_4">
+      <peptideSequence>ARAELEPAR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_9_1">
+      <peptideSequence>VGDANPALQK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_9_2">
+      <peptideSequence>RDVSVPSPR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_9_3">
+      <peptideSequence>IASHTLDAGK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_10_1">
+      <peptideSequence>VGDANPALQK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_10_2">
+      <peptideSequence>RDVSVPSPR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_10_3">
+      <peptideSequence>IASHTLDAGK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_11_1">
+      <peptideSequence>DFPIANGER</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_12_1">
+      <peptideSequence>DFPIANGER</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_12_2">
+      <peptideSequence>GGTAGEAGSRR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_12_3">
+      <peptideSequence>GGSEAAKGEGR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_13_1">
+      <peptideSequence>DFPIANGER</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_13_2">
+      <peptideSequence>AGEGTGAGRSR</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_14_1">
+      <peptideSequence>EPISVSSQQMLK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_15_1">
+      <peptideSequence>EPISVSSQQMLK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_15_2">
+      <peptideSequence>LASMAAPGCVVVR</peptideSequence>
+      <Modification location="4" residues="M" monoisotopicMassDelta="15.994915">
+        <cvParam accession="UNIMOD:35" name="Oxidation" cvRef="UNIMOD" />
+        <cvParam accession="MS:1001524" name="fragment neutral loss" cvRef="PSI-MS" value="0" unitAccession="UO:0000221" unitName="dalton" unitCvRef="UO"/>
+      </Modification>
+      <Modification location="9" residues="C" monoisotopicMassDelta="57.021464">
+        <cvParam accession="UNIMOD:4" name="Carbamidomethyl" cvRef="UNIMOD" />
+      </Modification>
+    </Peptide>
+    <Peptide id="peptide_16_1">
+      <peptideSequence>EPISVSSQQMLK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_17_1">
+      <peptideSequence>YAAELHLVHWNTK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_18_1">
+      <peptideSequence>YAAELHLVHWNTK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_19_1">
+      <peptideSequence>YAAELHLVHWNTK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_19_2">
+      <peptideSequence>SLGASAAGAPPAGERAAK</peptideSequence>
+    </Peptide>
+    <Peptide id="peptide_20_1">
+      <peptideSequence>YAAELHLVHWNTK</peptideSequence>
+    </Peptide>
+  </SequenceCollection>
+  <AnalysisCollection>
+    <SpectrumIdentification id="SI" SpectrumIdentificationProtocol_ref="SIP"  SpectrumIdentificationList_ref="SIL_1" activityDate="2011-08-09T13:15:50">
+      <InputSpectra SpectraData_ref="SD_1"/>
+      <SearchDatabase SearchDatabase_ref="SDB_sigma_mix_IMS"/>
+    </SpectrumIdentification>
+    <ProteinDetection id="PD_1" ProteinDetectionProtocol_ref="PDP_MascotParser_1" ProteinDetectionList_ref="PDL_1" activityDate="2011-08-09T13:20:55">
+      <InputSpectrumIdentifications SpectrumIdentificationList_ref="SIL_1"/>
+    </ProteinDetection>
+  </AnalysisCollection>
+  <AnalysisProtocolCollection>
+    <SpectrumIdentificationProtocol id="SIP" AnalysisSoftware_ref="AS_mascot_server">
+      <SearchType>
+        <cvParam accession="MS:1001083" name="ms-ms search" cvRef="PSI-MS" value=""/>
+      </SearchType>
+      <AdditionalSearchParams>
+        <userParam name="Mascot Instrument Name" value="Default"/>
+        <cvParam accession="MS:1001211" name="parent mass type mono"    cvRef="PSI-MS"/>
+        <cvParam accession="MS:1001108" name="param: a ion" cvRef="PSI-MS"/>
+        <cvParam accession="MS:1001146" name="param: a ion-NH3" cvRef="PSI-MS"/>
+        <cvParam accession="MS:1001118" name="param: b ion" cvRef="PSI-MS"/>
+        <cvParam accession="MS:1001149" name="param: b ion-NH3" cvRef="PSI-MS"/>
+        <cvParam accession="MS:1001262" name="param: y ion" cvRef="PSI-MS"/>
+        <cvParam accession="MS:1001151" name="param: y ion-NH3" cvRef="PSI-MS"/>
+      </AdditionalSearchParams>
+      <ModificationParams>
+        <SearchModification fixedMod="true" >
+          <ModParam massDelta="57.021464" residues="C">
+            <cvParam accession="UNIMOD:4" name="Carbamidomethyl" cvRef="UNIMOD"/>
+          </ModParam>
+        </SearchModification>
+        <SearchModification fixedMod="false" >
+          <ModParam massDelta="15.994915" residues="M">
+            <cvParam accession="UNIMOD:35" name="Oxidation" cvRef="UNIMOD"/>
+          </ModParam>
+        </SearchModification>
+      </ModificationParams>
+      <Enzymes>
+        <Enzyme id="ENZ_0" CTermGain="OH" NTermGain="H" missedCleavages="1" semiSpecific="0">
+          <SiteRegexp><![CDATA[(?<=[KR])(?!P)]]></SiteRegexp>
+          <EnzymeName>
+            <cvParam accession="MS:1001251" name="Trypsin" cvRef="PSI-MS" />
+          </EnzymeName>
+        </Enzyme>
+      </Enzymes>
+      <MassTable id="MT" msLevel="1 2">
+        <Residue Code="A" Mass="71.037114"/>
+        <Residue Code="C" Mass="103.009185"/>
+        <Residue Code="D" Mass="115.026943"/>
+        <Residue Code="E" Mass="129.042593"/>
+        <Residue Code="F" Mass="147.068414"/>
+        <Residue Code="G" Mass="57.021464"/>
+        <Residue Code="H" Mass="137.058912"/>
+        <Residue Code="I" Mass="113.084064"/>
+        <Residue Code="K" Mass="128.094963"/>
+        <Residue Code="L" Mass="113.084064"/>
+        <Residue Code="M" Mass="131.040485"/>
+        <Residue Code="N" Mass="114.042927"/>
+        <Residue Code="P" Mass="97.052764"/>
+        <Residue Code="Q" Mass="128.058578"/>
+        <Residue Code="R" Mass="156.101111"/>
+        <Residue Code="S" Mass="87.032028"/>
+        <Residue Code="T" Mass="101.047679"/>
+        <Residue Code="U" Mass="150.95363"/>
+        <Residue Code="V" Mass="99.068414"/>
+        <Residue Code="W" Mass="186.079313"/>
+        <Residue Code="Y" Mass="163.063329"/>
+        <AmbiguousResidue Code="B">
+          <cvParam accession="MS:1001360" name="alternate single letter codes" cvRef="PSI-MS" value="D N"/>
+        </AmbiguousResidue>
+        <AmbiguousResidue Code="Z">
+          <cvParam accession="MS:1001360" name="alternate single letter codes" cvRef="PSI-MS" value="E Q"/>
+        </AmbiguousResidue>
+        <AmbiguousResidue Code="X">
+          <cvParam accession="MS:1001360" name="alternate single letter codes" cvRef="PSI-MS" value="A C D E F G H I K L M N O P Q R S T U V W Y"/>
+        </AmbiguousResidue>
+      </MassTable>
+      <FragmentTolerance>
+        <cvParam accession="MS:1001412" name="search tolerance plus value" value="0.05" cvRef="PSI-MS" unitAccession="UO:0000221" unitName="dalton" unitCvRef="UO" />
+        <cvParam accession="MS:1001413" name="search tolerance minus value" value="0.05" cvRef="PSI-MS" unitAccession="UO:0000221" unitName="dalton" unitCvRef="UO" />
+      </FragmentTolerance>
+      <ParentTolerance>
+        <cvParam accession="MS:1001412" name="search tolerance plus value" value="10" cvRef="PSI-MS" unitAccession="UO:0000169" unitName="parts per million" unitCvRef="UO" />
+        <cvParam accession="MS:1001413" name="search tolerance minus value" value="10" cvRef="PSI-MS" unitAccession="UO:0000169" unitName="parts per million" unitCvRef="UO" />
+      </ParentTolerance>
+      <Threshold>
+        <cvParam accession="MS:1001316" name="mascot:SigThreshold" cvRef="PSI-MS" value="0.05"/>
+      </Threshold>
+      <DatabaseFilters>
+        <Filter>
+          <FilterType>
+            <cvParam accession="MS:1001020" name="DB filter taxonomy" cvRef="PSI-MS" />
+          </FilterType>
+        </Filter>
+      </DatabaseFilters>
+    </SpectrumIdentificationProtocol>
+    <ProteinDetectionProtocol id="PDP_MascotParser_1"  AnalysisSoftware_ref="AS_mascot_parser">
+      <AnalysisParams>
+        <cvParam accession="MS:1001316" name="mascot:SigThreshold"                               cvRef="PSI-MS" value="0.05"/>
+        <cvParam accession="MS:1001317" name="mascot:MaxProteinHits"                             cvRef="PSI-MS" value="Auto"/>
+        <cvParam accession="MS:1001318" name="mascot:ProteinScoringMethod"                       cvRef="PSI-MS" value="MudPIT"/>
+        <cvParam accession="MS:1001319" name="mascot:MinMSMSThreshold"                           cvRef="PSI-MS" value="0"/>
+        <cvParam accession="MS:1001320" name="mascot:ShowHomologousProteinsWithSamePeptides"     cvRef="PSI-MS" value=""/>
+        <cvParam accession="MS:1001321" name="mascot:ShowHomologousProteinsWithSubsetOfPeptides" cvRef="PSI-MS" value="0"/>
+        <cvParam accession="MS:1001322" name="mascot:RequireBoldRed"                             cvRef="PSI-MS" value="0"/>
+        <cvParam accession="MS:1001323" name="mascot:UseUnigeneClustering"                       cvRef="PSI-MS" value="false"/>
+        <cvParam accession="MS:1001324" name="mascot:IncludeErrorTolerantMatches"                cvRef="PSI-MS" value="1"/>
+        <cvParam accession="MS:1001325" name="mascot:ShowDecoyMatches"                           cvRef="PSI-MS" value="0"/>
+      </AnalysisParams>
+      <Threshold>
+        <cvParam accession="MS:1001494" name="no threshold" cvRef="PSI-MS" />
+      </Threshold>
+    </ProteinDetectionProtocol>
+  </AnalysisProtocolCollection>
+  <DataCollection>
+    <Inputs>
+      <SourceFile location="file:///../data/20110809/F011358.dat" id="SF_1" >
+        <fileFormat>
+          <cvParam accession="MS:1001199" name="Mascot DAT file" cvRef="PSI-MS" />
+        </fileFormat>
+      </SourceFile>
+      <SearchDatabase location="file:///D:/inetpub/mascot/sequence/sigma_mix_IMS/current/sigma_mix_IMS.fasta" id="SDB_sigma_mix_IMS" name="sigma_mix_IMS" numDatabaseSequences="7461" numResidues="6212289" releaseDate="sigma_mix_IMS.fasta" version="sigma_mix_IMS.fasta">
+        <fileFormat>
+          <cvParam accession="MS:1001348" name="FASTA format" cvRef="PSI-MS" />
+        </fileFormat>
+        <DatabaseName>
+          <userParam name="sigma_mix_IMS.fasta" />
+        </DatabaseName>
+        <cvParam accession="MS:1001073" name="database type amino acid" cvRef="PSI-MS" />
+      </SearchDatabase>
+      <SpectraData location="file:///C:/Work/IonMobility/Code/Jan2011/src/Data/IMMS_Data/final_mgf/filter_ions300610-CARBONIC_ANHYDRASE_JUNE_2010_02_1plusOnlycombined_ppmShift.mgf" id="SD_1">
+        <fileFormat>
+          <cvParam accession="MS:1001062" name="Mascot MGF file" cvRef="PSI-MS" />
+        </fileFormat>
+        <spectrumIDFormat>
+          <cvParam accession="MS:1000774" name="multiple peak list nativeID format" cvRef="PSI-MS" />
+        </spectrumIDFormat>
+      </SpectraData>
+    </Inputs>
+    <AnalysisData>
+      <SpectrumIdentificationList id="SIL_1" numSequencesSearched="7461">
+        <FragmentationTable>
+          <Measure id="m_mz">
+            <cvParam cvRef="PSI-MS" accession="MS:1001225" name="product ion m/z"/>
+          </Measure>
+          <Measure id="m_intensity">
+            <cvParam cvRef="PSI-MS" accession="MS:1001226" name="product ion intensity"/>
+          </Measure>
+          <Measure id="m_error">
+            <cvParam cvRef="PSI-MS" accession="MS:1001227" name="product ion m/z error" unitAccession="MS:1000040" unitName="m/z" unitCvRef="PSI-MS"/>
+          </Measure>
+        </FragmentationTable>
+        <SpectrumIdentificationResult id="SIR_1" spectrumID="index=23" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_1_1"  calculatedMassToCharge="487.2818505" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_1_1_sp|P00921|CAH2_BOVIN_0_159_167" start="159" end="167" pre="K" post="T" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_1_1_sp|CAH2_BOVIN|_0_159_167" start="159" end="167" pre="K" post="T" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="56.82" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="8.11081707970441e-006" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.078825 185.167677 300.1635 371.2417 484.321208 " Measure_ref="m_mz"/>
+                <FragmentArray values="47590 111000 5015 3834 5056" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0020 0.0028 -0.0283 0.0128 0.0082" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="300.1635 400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="5015 5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0101 0.0082" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5 6 8" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="213.160783 328.1865 399.2264 512.3102 627.3401 827.4781 " Measure_ref="m_mz"/>
+                <FragmentArray values="113900 56370 35220 18370 9105 3782" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0010 -0.0002 0.0026 0.0023 0.0053 0.0272" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.4774 761.361164 646.362201 575.3317 462.2575 347.238 260.2026 147.1154 " Measure_ref="m_mz"/>
+                <FragmentArray values="71180 123500 67580 53820 41650 18850 4784 10400" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0106 -0.0428 -0.0148 -0.0082 0.0017 0.0091 0.0057 0.0026" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_2"  calculatedMassToCharge="487.2818425" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_1_2_psu|NCLIV_002170_0_492_500" start="492" end="500" pre="R" post="A" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_002170" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="10.65" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.335787563351994" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="371.2417 " Measure_ref="m_mz"/>
+                <FragmentArray values="3834" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0236" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="186.1692 400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="30570 5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0329 0.0082" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1 2 4 8" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="72.078825 185.167677 399.2264 827.4781 " Measure_ref="m_mz"/>
+                <FragmentArray values="47590 111000 35220 3782" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0344 0.0392 -0.0338 0.0272" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="575.3317 147.1154 " Measure_ref="m_mz"/>
+                <FragmentArray values="53820 10400" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0282 0.0026" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_3"  calculatedMassToCharge="487.2818425" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_3" rank="3" passThreshold="false">
+            <PeptideEvidence id="PE_1_3_psu|NCLIV_016580_0_1312_1320" start="1312" end="1320" pre="K" post="W" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_016580" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="10.23" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.36988320068735" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.095363 371.2417 " Measure_ref="m_mz"/>
+                <FragmentArray values="31930 3834" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0011 -0.0236" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 6 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="186.1692 300.1635 400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="30570 5015 5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0329 -0.0283 0.0082" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3 4 6 8" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="328.1865 399.2264 627.3401 827.4781 " Measure_ref="m_mz"/>
+                <FragmentArray values="56370 35220 9105 3782" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0366 -0.0338 -0.0311 0.0272" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 5 3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="646.362201 575.3317 347.238 147.1154 " Measure_ref="m_mz"/>
+                <FragmentArray values="67580 53820 18850 10400" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0216 0.0282 0.0455 0.0026" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_4"  calculatedMassToCharge="487.2842" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_4" rank="4" passThreshold="false">
+            <PeptideEvidence id="PE_1_4_psu|NCLIV_023390_0_2404_2411" start="2404" end="2411" pre="R" post="S" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_023390" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="9.43" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.444697417148856" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.095363 185.167677 371.2417 502.221 " Measure_ref="m_mz"/>
+                <FragmentArray values="31930 111000 3834 2364" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0011 0.0028 0.0128 -0.0484" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="213.160783 399.2264 " Measure_ref="m_mz"/>
+                <FragmentArray values="113900 35220" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0010 0.0026" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0114" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="761.361164 575.3317 " Measure_ref="m_mz"/>
+                <FragmentArray values="123500 53820" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0475 -0.0129" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="214.1709 " Measure_ref="m_mz"/>
+                <FragmentArray values="31030" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0285" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_5"  calculatedMassToCharge="487.2818425" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_5" rank="5" passThreshold="false">
+            <PeptideEvidence id="PE_1_5_psu|NCLIV_036060_0_51_58" start="51" end="58" pre="R" post="L" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_036060" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="5.57" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.08159484081422" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.078825 185.167677 " Measure_ref="m_mz"/>
+                <FragmentArray values="47590 111000" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0020 0.0028" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0082" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="213.160783 " Measure_ref="m_mz"/>
+                <FragmentArray values="113900" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0192" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="213.160783 827.4781 " Measure_ref="m_mz"/>
+                <FragmentArray values="113900 3782" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0010 0.0272" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="300.1635 " Measure_ref="m_mz"/>
+                <FragmentArray values="5015" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0101" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 6 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.4774 761.361164 147.1154 " Measure_ref="m_mz"/>
+                <FragmentArray values="71180 123500 10400" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0106 -0.0428 0.0026" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_6"  calculatedMassToCharge="487.2874505" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_6" rank="6" passThreshold="false">
+            <PeptideEvidence id="PE_1_6_psu|NCLIV_069800_0_175_184" start="175" end="184" pre="R" post="C" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_069800" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="5.03" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.22479839061173" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.095363 " Measure_ref="m_mz"/>
+                <FragmentArray values="31930" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0011" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 7 9" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="214.1709 300.1635 400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="31030 5015 5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0159 -0.0339 0.0025" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 7 9" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="185.167677 627.3401 827.4781 " Measure_ref="m_mz"/>
+                <FragmentArray values="111000 9105 3782" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0392 -0.0423 0.0160" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="647.3793 347.238 147.1154 " Measure_ref="m_mz"/>
+                <FragmentArray values="30210 18850 10400" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0070 0.0455 0.0026" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="502.221 " Measure_ref="m_mz"/>
+                <FragmentArray values="2364" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0298" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_7"  calculatedMassToCharge="487.2874505" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_7" rank="7" passThreshold="false">
+            <PeptideEvidence id="PE_1_7_psu|NCLIV_069001_0_166_175" start="166" end="175" pre="R" post="C" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_069001" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="5.03" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.22479839061173" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.095363 " Measure_ref="m_mz"/>
+                <FragmentArray values="31930" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0011" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 7 9" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="214.1709 300.1635 400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="31030 5015 5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0159 -0.0339 0.0025" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 7 9" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="185.167677 627.3401 827.4781 " Measure_ref="m_mz"/>
+                <FragmentArray values="111000 9105 3782" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0392 -0.0423 0.0160" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="647.3793 347.238 147.1154 " Measure_ref="m_mz"/>
+                <FragmentArray values="30210 18850 10400" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0070 0.0455 0.0026" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="502.221 " Measure_ref="m_mz"/>
+                <FragmentArray values="2364" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0298" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_8"  calculatedMassToCharge="487.2874655" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_8" rank="8" passThreshold="false">
+            <PeptideEvidence id="PE_1_8_psu|NCLIV_055700_0_1270_1278" start="1270" end="1278" pre="R" post="G" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_055700" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="4.76" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.30336065610185" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="371.2417 484.321208 " Measure_ref="m_mz"/>
+                <FragmentArray values="3834 5056" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0128 0.0082" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="72.078825 399.2264 512.3102 " Measure_ref="m_mz"/>
+                <FragmentArray values="47590 35220 18370" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0344 0.0026 0.0023" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="300.1635 400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="5015 5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0101 0.0082" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="575.3317 462.2575 " Measure_ref="m_mz"/>
+                <FragmentArray values="53820 41650" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0194 -0.0096" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_9"  calculatedMassToCharge="487.2874655" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_9" rank="9" passThreshold="false">
+            <PeptideEvidence id="PE_1_9_psu|NCLIV_033630_0_1055_1063" start="1055" end="1063" pre="K" post="K" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_033630" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="3.06" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.92781167924866" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.078825 185.167677 " Measure_ref="m_mz"/>
+                <FragmentArray values="47590 111000" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0020 0.0028" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0025" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 8" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="213.160783 827.4781 " Measure_ref="m_mz"/>
+                <FragmentArray values="113900 3782" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0010 0.0160" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.4774 147.1154 " Measure_ref="m_mz"/>
+                <FragmentArray values="71180 10400" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0219 0.0026" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_1_10"  calculatedMassToCharge="487.2818425" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_1_10" rank="10" passThreshold="false">
+            <PeptideEvidence id="PE_1_10_psu|NCLIV_062660_0_104_112" start="104" end="112" pre="K" post="S" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_062660" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="2.30" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.2964902558868" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.078825 " Measure_ref="m_mz"/>
+                <FragmentArray values="47590" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0020" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 6 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.078825 300.1635 400.2398 " Measure_ref="m_mz"/>
+                <FragmentArray values="47590 5015 5769" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0162 -0.0283 0.0082" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 8" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="627.3401 827.4781 " Measure_ref="m_mz"/>
+                <FragmentArray values="9105 3782" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0311 0.0272" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="86.095363 " Measure_ref="m_mz"/>
+                <FragmentArray values="31930" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0353" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.4774 347.238 147.1154 " Measure_ref="m_mz"/>
+                <FragmentArray values="71180 18850 10400" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0106 0.0455 0.0026" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="78" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1VLDALDSIK_15V_CE_01.csv DRIFT_TIME=29.7646 47.4165 30.9881 48.1646 36.5994 48.1373 46.2028 48.6517 48.6813 48.208 48.2451 51.2617 49.1824 54.2377 52.3117 51.172 51.187 53.7878 61.6257 65.4073 73.1017 73.7547 73.7375 79.1866 83.8717 84.2155 88.6906 88.0712 99.7565 96.4643 94.2772 102.0616 102.0831 109.797 108.6311 108.3931 107.0122 114.4891 120.2971 122.9443 120.6903 119.6257 130.0021 129.3352 139.3551 133.5191 133.7749 129.3762 137.5582 134.1404 134.0286 134.6835 144.1184 153.6987 153.2417 151.5779 154.7105 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_2" spectrumID="index=24" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_2_1"  calculatedMassToCharge="487.2818505" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_2_1_sp|P00921|CAH2_BOVIN_0_159_167" start="159" end="167" pre="K" post="T" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_2_1_sp|CAH2_BOVIN|_0_159_167" start="159" end="167" pre="K" post="T" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="56.10" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="9.57336477117162e-006" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 3 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.082049 185.167772 300.1599 371.2366 " Measure_ref="m_mz"/>
+                <FragmentArray values="89180 123700 23450 6895" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0013 0.0029 -0.0319 0.0077" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 6 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="186.1675 300.1599 400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="40240 23450 5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0494 -0.0137 0.0024" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="213.161484 328.1828 399.2278 512.3183 " Measure_ref="m_mz"/>
+                <FragmentArray values="89220 25520 21640 2646" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0017 -0.0039 0.0040 0.0104" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.463198 761.365626 646.3624 575.3332 462.2512 347.2279 260.2003 147.1149 " Measure_ref="m_mz"/>
+                <FragmentArray values="86480 145500 82520 59630 51800 42430 16240 15510" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0248 -0.0383 -0.0146 -0.0067 -0.0046 -0.0010 0.0034 0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="437.7397 381.2111 " Measure_ref="m_mz"/>
+                <FragmentArray values="33030 3499" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0079 0.0055" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="857.5065 744.40497 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="2491 7423 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0450 0.0276 0.0035" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="429.2487 " Measure_ref="m_mz"/>
+                <FragmentArray values="2704" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0143" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_2_2"  calculatedMassToCharge="487.2818425" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_2_2_psu|NCLIV_016580_0_1312_1320" start="1312" end="1320" pre="K" post="W" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_016580" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="9.86" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.402776948246945" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.098495 371.2366 " Measure_ref="m_mz"/>
+                <FragmentArray values="64850 6895" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0021 -0.0287" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 6 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="186.1675 300.1599 400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="40240 23450 5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0312 -0.0319 0.0024" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="328.1828 399.2278 528.2764 " Measure_ref="m_mz"/>
+                <FragmentArray values="25520 21640 5454" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0403 -0.0324 -0.0264" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 5 3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="646.3624 575.3332 347.2279 147.1149 " Measure_ref="m_mz"/>
+                <FragmentArray values="82520 59630 42430 15510" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0218 0.0297 0.0354 0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="429.2487 201.1298 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="2704 5897 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0143 0.0064 0.0035" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_2_3"  calculatedMassToCharge="487.2818425" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_3" rank="3" passThreshold="false">
+            <PeptideEvidence id="PE_2_3_psu|NCLIV_036060_0_51_58" start="51" end="58" pre="R" post="L" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_036060" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="6.10" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.957336477117162" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.082049 185.167772 " Measure_ref="m_mz"/>
+                <FragmentArray values="89180 123700" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0013 0.0029" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0024" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="213.161484 " Measure_ref="m_mz"/>
+                <FragmentArray values="89220" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0199" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="213.161484 " Measure_ref="m_mz"/>
+                <FragmentArray values="89220" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0017" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="300.1599 " Measure_ref="m_mz"/>
+                <FragmentArray values="23450" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0137" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="348.2402 " Measure_ref="m_mz"/>
+                <FragmentArray values="10190" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0379" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 6 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.463198 761.365626 147.1149 " Measure_ref="m_mz"/>
+                <FragmentArray values="86480 145500 15510" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0248 -0.0383 0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 6" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="437.7397 381.2111 " Measure_ref="m_mz"/>
+                <FragmentArray values="33030 3499" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0079 0.0055" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 6 5 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="857.5065 744.40497 616.3158 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="2491 7423 3925 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0450 0.0276 0.0334 0.0035" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="429.2487 " Measure_ref="m_mz"/>
+                <FragmentArray values="2704" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0143" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_2_4"  calculatedMassToCharge="487.2874655" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_4" rank="4" passThreshold="false">
+            <PeptideEvidence id="PE_2_4_psu|NCLIV_033630_0_1055_1063" start="1055" end="1063" pre="K" post="K" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_033630" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="5.22" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.17236975802501" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.082049 185.167772 " Measure_ref="m_mz"/>
+                <FragmentArray values="89180 123700" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0013 0.0029" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0033" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="213.161484 " Measure_ref="m_mz"/>
+                <FragmentArray values="89220" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0017" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="348.2402 " Measure_ref="m_mz"/>
+                <FragmentArray values="10190" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0322" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.463198 761.365626 147.1149 " Measure_ref="m_mz"/>
+                <FragmentArray values="86480 145500 15510" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0361 -0.0496 0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="437.7397 381.2111 " Measure_ref="m_mz"/>
+                <FragmentArray values="33030 3499" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0136 -0.0001" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="857.5065 744.40497 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="2491 7423 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0338 0.0163 0.0035" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="429.2487 " Measure_ref="m_mz"/>
+                <FragmentArray values="2704" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0087" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_2_5"  calculatedMassToCharge="487.2842" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_5" rank="5" passThreshold="false">
+            <PeptideEvidence id="PE_2_5_psu|NCLIV_023390_0_2404_2411" start="2404" end="2411" pre="R" post="S" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_023390" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="3.29" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.82837219036654" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 4 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.098495 185.167772 371.2366 771.4207 " Measure_ref="m_mz"/>
+                <FragmentArray values="64850 123700 6895 3013" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0021 0.0029 0.0077 -0.0339" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="186.1675 " Measure_ref="m_mz"/>
+                <FragmentArray values="40240" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0494" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="213.161484 399.2278 " Measure_ref="m_mz"/>
+                <FragmentArray values="89220 21640" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0017 0.0040" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0056" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="761.365626 575.3332 " Measure_ref="m_mz"/>
+                <FragmentArray values="145500 59630" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0430 -0.0114" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="381.2111 " Measure_ref="m_mz"/>
+                <FragmentArray values="3499" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0031" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="744.40497 615.308091 " Measure_ref="m_mz"/>
+                <FragmentArray values="7423 15020" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0229 -0.0314" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="214.1714 " Measure_ref="m_mz"/>
+                <FragmentArray values="21300" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0290" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_2_6"  calculatedMassToCharge="487.2874505" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_6" rank="6" passThreshold="false">
+            <PeptideEvidence id="PE_2_6_psu|NCLIV_069800_0_175_184" start="175" end="184" pre="R" post="C" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_069800" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="2.82" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.03734513709657" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.098495 " Measure_ref="m_mz"/>
+                <FragmentArray values="64850" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 7 9" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="214.1714 300.1599 400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="21300 23450 5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0164 -0.0375 -0.0033" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="185.167772 " Measure_ref="m_mz"/>
+                <FragmentArray values="123700" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0393" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="438.2453 " Measure_ref="m_mz"/>
+                <FragmentArray values="22780" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0258" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="647.3821 347.2279 147.1149 " Measure_ref="m_mz"/>
+                <FragmentArray values="41550 42430 15510" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0098 0.0354 0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="502.2163 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="37300 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0345 0.0035" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0217" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_2_7"  calculatedMassToCharge="487.2874505" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_7" rank="7" passThreshold="false">
+            <PeptideEvidence id="PE_2_7_psu|NCLIV_069001_0_166_175" start="166" end="175" pre="R" post="C" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_069001" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="2.82" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.03734513709657" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.098495 " Measure_ref="m_mz"/>
+                <FragmentArray values="64850" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 7 9" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="214.1714 300.1599 400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="21300 23450 5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0164 -0.0375 -0.0033" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="185.167772 " Measure_ref="m_mz"/>
+                <FragmentArray values="123700" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0393" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="438.2453 " Measure_ref="m_mz"/>
+                <FragmentArray values="22780" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0258" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6 3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="647.3821 347.2279 147.1149 " Measure_ref="m_mz"/>
+                <FragmentArray values="41550 42430 15510" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0098 0.0354 0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="502.2163 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="37300 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0345 0.0035" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 2" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="201.1298 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="5897 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0246 0.0217" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_2_8"  calculatedMassToCharge="487.2818425" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_8" rank="8" passThreshold="false">
+            <PeptideEvidence id="PE_2_8_psu|NCLIV_062660_0_104_112" start="104" end="112" pre="K" post="S" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_062660" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="2.30" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.2964902558868" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.082049 " Measure_ref="m_mz"/>
+                <FragmentArray values="89180" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0013" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 6 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.082049 300.1599 400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="89180 23450 5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0195 -0.0319 0.0024" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="86.098495 " Measure_ref="m_mz"/>
+                <FragmentArray values="64850" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0385" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.463198 347.2279 147.1149 " Measure_ref="m_mz"/>
+                <FragmentArray values="86480 42430 15510" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0248 0.0354 0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="437.7397 " Measure_ref="m_mz"/>
+                <FragmentArray values="33030" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0080" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="857.5065 201.1298 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="2491 5897 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0450 0.0064 0.0035" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="429.2487 " Measure_ref="m_mz"/>
+                <FragmentArray values="2704" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0143" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_2_9"  calculatedMassToCharge="487.2818425" chargeState="2" experimentalMassToCharge="487.284799" Peptide_ref="peptide_2_9" rank="9" passThreshold="false">
+            <PeptideEvidence id="PE_2_9_psu|NCLIV_002170_0_492_500" start="492" end="500" pre="R" post="A" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_002170" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="1.55" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.72938378440887" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="371.2366 " Measure_ref="m_mz"/>
+                <FragmentArray values="6895" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0287" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="186.1675 400.234 " Measure_ref="m_mz"/>
+                <FragmentArray values="40240 5665" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0312 0.0024" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1 2 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="72.082049 185.167772 399.2278 528.2764 " Measure_ref="m_mz"/>
+                <FragmentArray values="89180 123700 21640 5454" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0377 0.0393 -0.0324 -0.0264" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="575.3332 147.1149 " Measure_ref="m_mz"/>
+                <FragmentArray values="59630 15510" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0297 0.0021" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="429.2487 316.1578 187.0753 130.0898 " Measure_ref="m_mz"/>
+                <FragmentArray values="2704 8880 4891 4428" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0143 0.0075 -0.0324 0.0035" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="78" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1VLDALDSIK_20V_CE_01.csv DRIFT_TIME=28.2382 29.1039 48.3273 29.35 29.6484 32.7597 48.6832 31.657501 31.300102 33.6925 33.5291 36.9547 37.4064 48.498 47.0316 48.5289 48.4084 48.8014 40.6577 48.4324 51.3413 50.0649 52.6273 52.4579 51.4865 51.663 53.0921 61.8504 62.2455 66.2887 66.7382 67.2209 73.2618 72.3403 72.3939 72.37 77.0238 79.2824 53.5925 77.4275 74.2141 83.5966 83.6065 85.5152 83.1238 81.9819 62.672 63.2695 65.5425 65.5476 65.3291 88.576 88.5956 68.4312 70.7484 95.6069 92.3311 90.8941 93.2827 70.4787 70.5678 69.8453 94.378 94.2943 101.1281 100.7569 106.8045 109.5404 108.7852 109.8678 109.884 108.547 107.2374 113.6358 111.3746 108.5105 111.6359 122.0907 120.5619 119.423 123.6548 129.5194 132.0866 129.4316 134.6737 139.2911 128.453 134.0401 134.0129 129.2625 138.9255 134.1097 134.0761 134.1084 135.3413 148.2816 148.1992 152.4055 155.9085 153.3683 155.1817 149.3634 152.4166 156.3719 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_3" spectrumID="index=6" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_3_1"  calculatedMassToCharge="490.245809" chargeState="2" experimentalMassToCharge="490.248748" Peptide_ref="peptide_3_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_3_1_sp|P00921|CAH2_BOVIN_0_81_89" start="81" end="89" pre="K" post="L" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_3_1_sp|CAH2_BOVIN|_0_81_89" start="81" end="89" pre="K" post="L" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="37.04" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.00102802421285817" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="355.1992 456.2543 " Measure_ref="m_mz"/>
+                <FragmentArray values="29040 3280" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0016 0.0090" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="270.1098 383.1951 484.2395 " Measure_ref="m_mz"/>
+                <FragmentArray values="20850 24930 36910" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0014 0.0026 -0.0007" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="271.1179 " Measure_ref="m_mz"/>
+                <FragmentArray values="1633" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0166" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 6 5 4 3 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="807.448193 710.3883 597.2863 496.2383 439.2356 338.1897 " Measure_ref="m_mz"/>
+                <FragmentArray values="8341 10130 67240 68630 11390 7068" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0123 0.0051 -0.0128 -0.0131 0.0056 0.0074" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="20" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="104" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1DGPLTGTYR_15V_CE_01.csv DRIFT_TIME=27.36 50.7259 54.643 55.7579 55.1468 78.4844 74.6665 83.0242 82.4365 78.0715 81.62 82.6254 93.0278 93.6464 93.7337 94.0498 93.7435 97.9487 96.889 98.9713 103.7634 103.8387 104.0136 118.3282 117.0451 118.3823 138.7343 136.1697 139.7555 153.7053 156.9128 155.2278 158.7053 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_4" spectrumID="index=7" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_4_1"  calculatedMassToCharge="490.245809" chargeState="2" experimentalMassToCharge="490.248748" Peptide_ref="peptide_4_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_4_1_sp|P00921|CAH2_BOVIN_0_81_89" start="81" end="89" pre="K" post="L" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_4_1_sp|CAH2_BOVIN|_0_81_89" start="81" end="89" pre="K" post="L" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="36.55" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.00115080924899493" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="88.0401 145.0637 355.1994 456.252214 " Measure_ref="m_mz"/>
+                <FragmentArray values="3551 6163 26740 7015" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0008 0.0029 0.0018 0.0069" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="173.058778 270.1071 383.1979 484.2454 " Measure_ref="m_mz"/>
+                <FragmentArray values="5098 37610 11850 11610" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0031 -0.0013 0.0054 0.0052" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="6" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="271.1178 " Measure_ref="m_mz"/>
+                <FragmentArray values="4021" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0167" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="807.444984 710.3816 597.2797 496.2377 439.2336 338.1884 175.1215 " Measure_ref="m_mz"/>
+                <FragmentArray values="9516 24890 83330 77500 13260 7506 5337" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0091 -0.0016 -0.0194 -0.0137 0.0036 0.0061 0.0025" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="88.0401 " Measure_ref="m_mz"/>
+                <FragmentArray values="3551" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0230" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="20" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="104" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1DGPLTGTYR_20V_CE_01.csv DRIFT_TIME=27.7603 27.1882 36.9467 34.9556 41.223 39.3621 42.5976 48.4211 57.3647 50.1461 59.5093 55.281 66.1366 55.9553 56.9946 77.9065 72.1277 79.8622 74.8733 81.9908 80.4145 78.2083 81.9966 90.4718 93.7794 95.1295 91.5568 94.3492 95.8192 97.2947 97.4143 98.892 103.4519 102.9167 101.63 104.2827 113.4661 116.9985 117.3946 117.5364 118.3238 132.5325 135.8187 139.2466 139.048 154.4277 151.1394 154.1476 157.4724 153.4342 156.8244 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_6" spectrumID="index=17" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_6_1"  calculatedMassToCharge="501.7587485" chargeState="2" experimentalMassToCharge="501.761688" Peptide_ref="peptide_6_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_6_1_sp|P00921|CAH2_BOVIN_0_28_36" start="28" end="36" pre="R" post="A" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_6_1_sp|CAH2_BOVIN|_0_28_36" start="28" end="36" pre="R" post="A" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="44.96" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.000229790725567255" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="188.104 " Measure_ref="m_mz"/>
+                <FragmentArray values="4466" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0010" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="367.2024 " Measure_ref="m_mz"/>
+                <FragmentArray values="3239" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0048" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="216.0998 " Measure_ref="m_mz"/>
+                <FragmentArray values="13620" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0019" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 5 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="395.196942 510.2245 623.31 " Measure_ref="m_mz"/>
+                <FragmentArray values="7552 9186 2837" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0044 0.0050 0.0065" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 5 4 3 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="787.4213 591.3012 476.277 363.1895 248.1617 " Measure_ref="m_mz"/>
+                <FragmentArray values="23930 17660 9062 11720 8442" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0017 0.0028 0.0055 0.0021 0.0012" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_6_2"  calculatedMassToCharge="501.765035" chargeState="2" experimentalMassToCharge="501.761688" Peptide_ref="peptide_6_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_6_2_psu|NCLIV_056530_0_11_20" start="11" end="20" pre="K" post="R" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_056530" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="0.95" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="5.78538807973644" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="3 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="188.104 592.3087 " Measure_ref="m_mz"/>
+                <FragmentArray values="4466 4337" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0010 -0.0115" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="216.0998 " Measure_ref="m_mz"/>
+                <FragmentArray values="13620" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0019" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="787.4213 " Measure_ref="m_mz"/>
+                <FragmentArray values="23930" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0109" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_6_3"  calculatedMassToCharge="501.7610905" chargeState="2" experimentalMassToCharge="501.761688" Peptide_ref="peptide_6_3" rank="3" passThreshold="false">
+            <PeptideEvidence id="PE_6_3_psu|NCLIV_044180_0_2013_2021" start="2013" end="2021" pre="R" post="F" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_044180" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="0.61" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="6.25651509086138" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="367.2024 " Measure_ref="m_mz"/>
+                <FragmentArray values="3239" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0064" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="395.196942 623.31 " Measure_ref="m_mz"/>
+                <FragmentArray values="7552 2837" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0068 0.0130" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="591.3012 363.1895 " Measure_ref="m_mz"/>
+                <FragmentArray values="17660 11720" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0093 -0.0092" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="21" />
+          <cvParam accession="MS:1001370" name="mascot:homology threshold"  cvRef="PSI-MS" value="16" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="144" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1QSPVDIDTK_15V_CE_01.csv DRIFT_TIME=43.9263 50.2543 57.5498 74.5212 80.5331 81.5061 84.0493 100.1061 94.5327 112.1099 111.9681 116.7176 142.4465 141.6528 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_7" spectrumID="index=18" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_7_1"  calculatedMassToCharge="501.7587485" chargeState="2" experimentalMassToCharge="501.761688" Peptide_ref="peptide_7_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_7_1_sp|P00921|CAH2_BOVIN_0_28_36" start="28" end="36" pre="R" post="A" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_7_1_sp|CAH2_BOVIN|_0_28_36" start="28" end="36" pre="R" post="A" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="71.42" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="5.19197385011687e-007" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="188.1049 " Measure_ref="m_mz"/>
+                <FragmentArray values="11380" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0019" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="171.0794 367.1999 " Measure_ref="m_mz"/>
+                <FragmentArray values="7864 7254" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0030 0.0023" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="216.0997 " Measure_ref="m_mz"/>
+                <FragmentArray values="15290" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0018" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="199.0744 296.1277 395.1986 510.2271 738.3568 " Measure_ref="m_mz"/>
+                <FragmentArray values="3785 5152 2301 8388 1588" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0031 0.0036 0.0061 0.0076 0.0263" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4 6" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="198.0897 312.1597 " Measure_ref="m_mz"/>
+                <FragmentArray values="7562 8246" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0102 0.0043" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 6 5 4 3 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.463479 787.416 690.3722 591.2985 476.2742 363.1891 248.1613 " Measure_ref="m_mz"/>
+                <FragmentArray values="5202 37360 10480 26460 12790 11730 21250" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0118 -0.0036 0.0054 0.0001 0.0027 0.0017 0.0008" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="296.1277 " Measure_ref="m_mz"/>
+                <FragmentArray values="5152" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0252" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_7_2"  calculatedMassToCharge="501.757398" chargeState="2" experimentalMassToCharge="501.761688" Peptide_ref="peptide_7_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_7_2_psu|NCLIV_042790_0_368_377" start="368" end="377" pre="K" post="R" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_042790" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="9.23" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.859671435214276" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="188.1049 " Measure_ref="m_mz"/>
+                <FragmentArray values="11380" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0019" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="171.0794 " Measure_ref="m_mz"/>
+                <FragmentArray values="7864" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0030" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="216.0997 " Measure_ref="m_mz"/>
+                <FragmentArray values="15290" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0018" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="199.0744 296.1277 " Measure_ref="m_mz"/>
+                <FragmentArray values="3785 5152" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0031 0.0036" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9 8 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="874.463479 787.416 690.3722 " Measure_ref="m_mz"/>
+                <FragmentArray values="5202 37360 10480" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0145 -0.0009 0.0080" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="21" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="144" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1QSPVDIDTK_20V_CE_01.csv DRIFT_TIME=43.319 45.254 40.3573 38.9893 43.4403 48.1437 46.8337 50.4838 57.1809 66.7018 69.432 74.133 81.2465 83.0456 99.8103 94.91 93.8842 102.0031 112.2745 113.037 125.0315 126.3929 126.1129 141.7636 142.7733 140.07 142.9163 146.2504 149.8959 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_8" spectrumID="index=20" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_8_1"  calculatedMassToCharge="506.7747245" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_8_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_8_1_sp|P00921|CAH2_BOVIN_0_149_158" start="149" end="158" pre="K" post="V" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_8_1_sp|CAH2_BOVIN|_0_149_158" start="149" end="158" pre="K" post="V" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="54.14" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.3491742518302e-005" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.0799 " Measure_ref="m_mz"/>
+                <FragmentArray values="5207" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0009" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="157.0987 272.1266 343.165 457.2073 " Measure_ref="m_mz"/>
+                <FragmentArray values="3210 2893 6640 9417" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0015 0.0025 0.0038 0.0032" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="440.182 " Measure_ref="m_mz"/>
+                <FragmentArray values="2540" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0044" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9 8 7 6 5 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="913.477567 856.4568 741.4282 670.3907 556.3447 275.1733 " Measure_ref="m_mz"/>
+                <FragmentArray values="13870 3944 4911 10540 18840 1968" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0038 0.0045 0.0028 0.0024 -0.0006 0.0019" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="457.2073 " Measure_ref="m_mz"/>
+                <FragmentArray values="9417" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0332" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_8_2"  calculatedMassToCharge="506.7803475" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_8_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_8_2_psu|NCLIV_065630_0_1202_1210" start="1202" end="1210" pre="R" post="R" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_065630" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="16.43" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.0796284100770225" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="343.165 " Measure_ref="m_mz"/>
+                <FragmentArray values="6640" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0438" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1 2 5 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="157.0987 272.1266 557.351724 741.4282 " Measure_ref="m_mz"/>
+                <FragmentArray values="3210 2893 4962 4911" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0097 -0.0087 0.0475 0.0392" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="856.4568 741.4282 272.1266 " Measure_ref="m_mz"/>
+                <FragmentArray values="3944 4911 2893" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0045 0.0028 -0.0451" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_8_3"  calculatedMassToCharge="506.7803395" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_8_3" rank="3" passThreshold="false">
+            <PeptideEvidence id="PE_8_3_psu|NCLIV_025510_0_308_316" start="308" end="316" pre="R" post="S" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_025510" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="0.76" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.93810995281789" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="6 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="670.3907 741.4282 " Measure_ref="m_mz"/>
+                <FragmentArray values="10540 4911" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0388 0.0392" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="343.165 272.1266 " Measure_ref="m_mz"/>
+                <FragmentArray values="6640 2893" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0438 -0.0451" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_8_4"  calculatedMassToCharge="506.7803245" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_8_4" rank="4" passThreshold="false">
+            <PeptideEvidence id="PE_8_4_psu|NCLIV_067070_0_471_479" start="471" end="479" pre="R" post="Y" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_067070" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="0.54" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="3.09077965146497" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="72.0799 670.3907 " Measure_ref="m_mz"/>
+                <FragmentArray values="5207 10540" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0355 0.0388" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="343.165 " Measure_ref="m_mz"/>
+                <FragmentArray values="6640" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0438" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="70" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1VGDANPALQK_15V_CE_01.csv DRIFT_TIME=30.3505 38.7652 61.5603 61.1941 72.6117 85.2505 86.5106 113.6793 111.4796 114.0504 111.8882 123.7846 133.2093 146.1727 158.4809 155.0562 157.0734 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_9" spectrumID="index=21" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_9_1"  calculatedMassToCharge="506.7747245" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_9_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_9_1_sp|P00921|CAH2_BOVIN_0_149_158" start="149" end="158" pre="K" post="V" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_9_1_sp|CAH2_BOVIN|_0_149_158" start="149" end="158" pre="K" post="V" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="56.91" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="7.12964727197002e-006" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.0791 129.1025 315.1682 " Measure_ref="m_mz"/>
+                <FragmentArray values="17920 7077 4955" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0017 0.0003 0.0019" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="412.1879 " Measure_ref="m_mz"/>
+                <FragmentArray values="4676" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0052" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="157.0984 272.1241 343.1632 457.2074 " Measure_ref="m_mz"/>
+                <FragmentArray values="4224 16460 8803 11650" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0012 0.0000 0.0020 0.0033" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="440.1805 " Measure_ref="m_mz"/>
+                <FragmentArray values="7641" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0029" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9 8 7 6 5 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="913.4652 856.454734 741.4285 670.3881 556.3402 388.2591 275.1741 147.1141 " Measure_ref="m_mz"/>
+                <FragmentArray values="35850 19090 14340 21310 39650 3645 7096 6702" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0086 0.0024 0.0031 -0.0002 -0.0051 0.0037 0.0027 0.0013" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="457.2074 " Measure_ref="m_mz"/>
+                <FragmentArray values="11650" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0331" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_9_2"  calculatedMassToCharge="506.7803475" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_9_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_9_2_psu|NCLIV_065630_0_1202_1210" start="1202" end="1210" pre="R" post="R" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_065630" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="8.98" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.442657721614903" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="129.1025 343.1632 " Measure_ref="m_mz"/>
+                <FragmentArray values="7077 8803" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0110 -0.0456" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1 2 5 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="157.0984 272.1241 557.3526 741.4285 " Measure_ref="m_mz"/>
+                <FragmentArray values="4224 16460 16590 14340" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0100 -0.0112 0.0484 0.0395" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="856.454734 741.4285 272.1241 " Measure_ref="m_mz"/>
+                <FragmentArray values="19090 14340 16460" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0024 0.0031 -0.0476" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_9_3"  calculatedMassToCharge="506.7747245" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_9_3" rank="3" passThreshold="false">
+            <PeptideEvidence id="PE_9_3_psu|NCLIV_069650_0_80_89" start="80" end="89" pre="R" post="D" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_069650" />
+            <PeptideEvidence id="PE_9_3_psu|NCLIV_069680_0_78_87" start="78" end="87" pre="R" post="D" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_069680" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="4.06" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.3742572738986" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="157.0984 " Measure_ref="m_mz"/>
+                <FragmentArray values="4224" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0351" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="272.1241 " Measure_ref="m_mz"/>
+                <FragmentArray values="16460" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0364" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="741.4285 275.1741 204.1368 147.1141 " Measure_ref="m_mz"/>
+                <FragmentArray values="14340 7096 5146 6702" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0395 0.0027 0.0025 0.0013" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="70" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1VGDANPALQK_20V_CE_01.csv DRIFT_TIME=29.0313 28.707 35.8578 37.1832 37.4398 40.1376 49.6469 57.3639 60.4399 60.7261 66.0541 71.6518 70.4604 83.1172 80.7981 78.4565 82.1263 93.7411 84.0752 88.2147 113.8526 113.5157 115.412 110.1607 123.0688 125.0348 133.1935 132.9961 140.1836 137.7977 140.7891 148.0756 145.3768 148.8961 146.4544 156.9586 156.1074 155.0898 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_10" spectrumID="index=22" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_10_1"  calculatedMassToCharge="506.7747245" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_10_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_10_1_sp|P00921|CAH2_BOVIN_0_149_158" start="149" end="158" pre="K" post="V" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_10_1_sp|CAH2_BOVIN|_0_149_158" start="149" end="158" pre="K" post="V" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="57.21" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="6.65377397973155e-006" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 4 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="72.079 129.1033 315.1684 526.2325 " Measure_ref="m_mz"/>
+                <FragmentArray values="22630 10780 3239 1697" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0018 0.0011 0.0021 -0.0295" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="157.0984 272.1249 " Measure_ref="m_mz"/>
+                <FragmentArray values="6049 15790" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0012 0.0008" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9 8 7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="913.4706 856.4536 741.4331 670.3932 556.3415 459.2985 388.2561 275.1748 147.1131 " Measure_ref="m_mz"/>
+                <FragmentArray values="23210 9028 8741 11000 35940 2958 10630 4552 6967" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0032 0.0013 0.0077 0.0049 -0.0038 0.0059 0.0007 0.0034 0.0003" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="258.1471 130.0869 " Measure_ref="m_mz"/>
+                <FragmentArray values="6529 4404" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0023 0.0006" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="186.1266 " Measure_ref="m_mz"/>
+                <FragmentArray values="3089" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0085" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_10_2"  calculatedMassToCharge="506.7803475" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_10_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_10_2_psu|NCLIV_065630_0_1202_1210" start="1202" end="1210" pre="R" post="R" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_065630" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="5.78" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.924843065062681" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="129.1033 " Measure_ref="m_mz"/>
+                <FragmentArray values="10780" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0102" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1 2 5 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="157.0984 272.1249 557.3526 741.4331 " Measure_ref="m_mz"/>
+                <FragmentArray values="6049 15790 14480 8741" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0100 -0.0104 0.0484 0.0441" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="186.1266 " Measure_ref="m_mz"/>
+                <FragmentArray values="3089" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0211" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="856.4536 741.4331 272.1249 " Measure_ref="m_mz"/>
+                <FragmentArray values="9028 8741 15790" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0013 0.0077 -0.0468" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_10_3"  calculatedMassToCharge="506.7747245" chargeState="2" experimentalMassToCharge="506.777672" Peptide_ref="peptide_10_3" rank="3" passThreshold="false">
+            <PeptideEvidence id="PE_10_3_psu|NCLIV_069650_0_80_89" start="80" end="89" pre="R" post="D" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_069650" />
+            <PeptideEvidence id="PE_10_3_psu|NCLIV_069680_0_78_87" start="78" end="87" pre="R" post="D" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_069680" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="1.95" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.23392220166692" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="157.0984 " Measure_ref="m_mz"/>
+                <FragmentArray values="6049" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0351" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="272.1249 " Measure_ref="m_mz"/>
+                <FragmentArray values="15790" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0356" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="741.4331 275.1748 204.1362 147.1131 " Measure_ref="m_mz"/>
+                <FragmentArray values="8741 4552 4892 6967" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0441 0.0034 0.0019 0.0003" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="258.1471 130.0869 " Measure_ref="m_mz"/>
+                <FragmentArray values="6529 4404" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0023 0.0006" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="70" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1VGDANPALQK_25V_CE_01.csv DRIFT_TIME=29.682 28.9452 28.6894 34.7644 34.3154 37.9105 37.5399 39.2978 42.0114 44.067 49.4122 53.6509 59.0327 58.1823 57.8234 60.9506 61.1173 71.0202 67.1715 66.4825 69.6261 80.4591 84.4178 79.0784 85.7416 89.6437 91.3764 98.169 95.8733 113.2722 113.067 116.0095 111.4882 115.1438 117.3034 120.9736 123.03 126.5761 122.4345 133.0849 135.1277 137.8157 138.5317 147.8798 147.0334 157.3012 155.671 158.8327 155.2377 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_11" spectrumID="index=5" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_11_1"  calculatedMassToCharge="509.751249" chargeState="2" experimentalMassToCharge="509.754197" Peptide_ref="peptide_11_1" rank="1" passThreshold="false">
+            <PeptideEvidence id="PE_11_1_sp|P00921|CAH2_BOVIN_0_19_27" start="19" end="27" pre="K" post="Q" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_11_1_sp|CAH2_BOVIN|_0_19_27" start="19" end="27" pre="K" post="Q" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="15.30" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.241999156586644" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="235.106062 " Measure_ref="m_mz"/>
+                <FragmentArray values="46800" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0017" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="263.1019 360.1553 473.2396 " Measure_ref="m_mz"/>
+                <FragmentArray values="13660 10120 2870" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0007 -0.0001 0.0001" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="361.1791 " Measure_ref="m_mz"/>
+                <FragmentArray values="8657" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0039" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="22" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="164" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1DFPIANGER_20V_CE.csv DRIFT_TIME=34.2519 39.9513 48.7892 55.3908 55.2485 54.9393 54.9709 57.1861 57.1087 66.2476 69.4634 70.403 74.5983 83.6142 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_12" spectrumID="index=3" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_12_1"  calculatedMassToCharge="509.751249" chargeState="2" experimentalMassToCharge="509.754197" Peptide_ref="peptide_12_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_12_1_sp|P00921|CAH2_BOVIN_0_19_27" start="19" end="27" pre="K" post="Q" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_12_1_sp|CAH2_BOVIN|_0_19_27" start="19" end="27" pre="K" post="Q" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="23.77" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.0344202366872626" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="235.1002 " Measure_ref="m_mz"/>
+                <FragmentArray values="40430" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0075" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="263.0994 360.1545 473.2395 544.2769 " Measure_ref="m_mz"/>
+                <FragmentArray values="28070 13120 10590 9923" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0032 -0.0009 0.0000 0.0003" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 4 3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="546.2617 475.228 361.1729 " Measure_ref="m_mz"/>
+                <FragmentArray values="14100 6819 5233" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0013 0.0021 -0.0101" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_12_2"  calculatedMassToCharge="509.7548575" chargeState="2" experimentalMassToCharge="509.754197" Peptide_ref="peptide_12_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_12_2_psu|NCLIV_012100_0_2767_2777" start="2767" end="2777" pre="R" post="G" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_012100" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="5.77" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.1717701136575" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2 6 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="115.0861 473.2395 544.2769 " Measure_ref="m_mz"/>
+                <FragmentArray values="3758 10590 9923" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0359 0.0404 0.0407" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="546.2617 475.228 " Measure_ref="m_mz"/>
+                <FragmentArray values="14100 6819" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0490 -0.0456" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_12_3"  calculatedMassToCharge="509.7492345" chargeState="2" experimentalMassToCharge="509.754197" Peptide_ref="peptide_12_3" rank="3" passThreshold="false">
+            <PeptideEvidence id="PE_12_3_psu|NCLIV_019620_0_325_335" start="325" end="335" pre="R" post="R" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_019620" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="3.00" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="4.10973531574364" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="115.0861 473.2395 " Measure_ref="m_mz"/>
+                <FragmentArray values="3758 10590" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0359 0.0404" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="546.2617 361.1729 " Measure_ref="m_mz"/>
+                <FragmentArray values="14100 5233" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0377 -0.0101" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="22" />
+          <cvParam accession="MS:1001370" name="mascot:homology threshold"  cvRef="PSI-MS" value="20" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="164" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1DFPIANGER_15V_CE.csv DRIFT_TIME=39.0817 49.0179 55.6419 55.1316 54.999 57.2006 57.132 69.7527 70.4688 83.2186 83.2801 81.1829 81.4869 81.3621 87.7125 90.9245 90.1024 89.9388 89.5376 89.8379 103.9997 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_13" spectrumID="index=4" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_13_1"  calculatedMassToCharge="509.751249" chargeState="2" experimentalMassToCharge="509.754197" Peptide_ref="peptide_13_1" rank="1" passThreshold="false">
+            <PeptideEvidence id="PE_13_1_sp|P00921|CAH2_BOVIN_0_19_27" start="19" end="27" pre="K" post="Q" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_13_1_sp|CAH2_BOVIN|_0_19_27" start="19" end="27" pre="K" post="Q" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="20.93" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.0661932724804047" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="235.1014 " Measure_ref="m_mz"/>
+                <FragmentArray values="51060" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0063" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="263.1001 360.1546 473.2391 544.2742 " Measure_ref="m_mz"/>
+                <FragmentArray values="36220 16510 12280 5803" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0025 -0.0008 -0.0004 -0.0024" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 6 5 4 3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="756.3895 659.3439 546.2615 475.2249 361.176 " Measure_ref="m_mz"/>
+                <FragmentArray values="40800 4373 16050 1707 6123" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0104 -0.0032 -0.0015 -0.0010 -0.0070" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="378.688749 " Measure_ref="m_mz"/>
+                <FragmentArray values="52770" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0148" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="370.1915 " Measure_ref="m_mz"/>
+                <FragmentArray values="3136" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0012" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_13_2"  calculatedMassToCharge="509.7548575" chargeState="2" experimentalMassToCharge="509.754197" Peptide_ref="peptide_13_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_13_2_psu|NCLIV_012050_0_1845_1855" start="1845" end="1855" pre="K" post="L" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_012050" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="4.65" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.81069584968089" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="6 7 9" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="473.2391 544.2742 757.3763 " Measure_ref="m_mz"/>
+                <FragmentArray values="12280 5803 22200" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0400 0.0380 0.0176" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="379.186658 " Measure_ref="m_mz"/>
+                <FragmentArray values="28330" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0036" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 5 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="761.4061 546.2615 475.2249 " Measure_ref="m_mz"/>
+                <FragmentArray values="10660 16050 1707" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0048 -0.0492 -0.0487" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="10" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="474.2427 " Measure_ref="m_mz"/>
+                <FragmentArray values="2067" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0064" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="22" />
+          <cvParam accession="MS:1001370" name="mascot:homology threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="164" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1DFPIANGER_15V_CE_02.csv DRIFT_TIME=49.2211 68.8742 69.1139 72.486 71.7625 90.0371 90.5484 68.3865 71.6719 73.2926 72.933 73.7067 72.8023 70.7108 108.5037 109.9932 105.4461 105.3157 119.3127 116.4485 117.2606 117.9795 136.9445 134.9428 135.0449 144.6791 144.3665 149.2891 145.1805 139.2018 149.3588 145.8019 142.9779 151.2732 148.9066 168.9552 169.2259 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_14" spectrumID="index=8" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_14_1"  calculatedMassToCharge="673.852842" chargeState="2" experimentalMassToCharge="673.855794" Peptide_ref="peptide_14_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_14_1_sp|P00921|CAH2_BOVIN_0_213_224" start="213" end="224" pre="K" post="F" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_14_1_sp|CAH2_BOVIN|_0_213_224" start="213" end="224" pre="K" post="F" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="57.78" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="9.67003383279616e-006" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="199.1112 " Measure_ref="m_mz"/>
+                <FragmentArray values="4567" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0035" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="392.2101 " Measure_ref="m_mz"/>
+                <FragmentArray values="5372" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0123" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="227.1073 340.192 427.2274 526.3 613.3313 " Measure_ref="m_mz"/>
+                <FragmentArray values="4236 10290 4484 10540 3306" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0047 0.0053 0.0087 0.0129 0.0121" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="10 11" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="1070.5104 1183.6033 " Measure_ref="m_mz"/>
+                <FragmentArray values="3140 3604" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0281 0.0369" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="10 9 8 7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="1120.622168 1007.512 920.49 821.3852 734.3811 647.3622 519.3071 391.216431 260.1995 147.1144 " Measure_ref="m_mz"/>
+                <FragmentArray values="9088 24210 28800 90170 35090 13760 15710 34110 15120 18140" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0191 -0.0070 0.0030 -0.0334 -0.0054 0.0077 0.0112 -0.0209 0.0026 0.0016" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="260.1995 " Measure_ref="m_mz"/>
+                <FragmentArray values="15120" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0479" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="804.400769 " Measure_ref="m_mz"/>
+                <FragmentArray values="5518" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0088" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="20" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="116" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1EPISVSSQQMLK_20V_CE_01.csv DRIFT_TIME=28.9778 34.5314 42.4268 42.2531 44.4873 58.4878 64.109 66.5126 67.4582 70.2974 71.196 77.9846 71.1119 73.1262 72.8461 76.2613 85.8622 85.8629 86.6854 86.3847 84.2912 85.0672 83.8282 86.8021 88.507 88.7977 95.6964 95.4715 96.1358 96.5323 98.4873 97.0934 100.6957 107.3778 108.2216 106.2838 120.1328 120.6402 120.0159 123.2001 125.6967 121.5737 129.3302 130.4439 129.2277 143.2879 142.1731 141.3237 134.9597 145.8488 145.2001 146.1219 146.8693 147.4475 158.2303 162.039 159.4634 162.9004 161.4803 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_15" spectrumID="index=10" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_15_1"  calculatedMassToCharge="673.852842" chargeState="2" experimentalMassToCharge="673.855794" Peptide_ref="peptide_15_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_15_1_sp|P00921|CAH2_BOVIN_0_213_224" start="213" end="224" pre="K" post="F" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_15_1_sp|CAH2_BOVIN|_0_213_224" start="213" end="224" pre="K" post="F" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="51.54" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="4.06844073083583e-005" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="199.1102 " Measure_ref="m_mz"/>
+                <FragmentArray values="17130" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0025" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="392.2109 " Measure_ref="m_mz"/>
+                <FragmentArray values="13440" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0131" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1 2 3 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="130.0903 227.1068 340.1949 427.2293 " Measure_ref="m_mz"/>
+                <FragmentArray values="3378 10790 5038 7505" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0404 0.0042 0.0082 0.0106" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="10 9 8 7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="1120.6182 1007.5101 920.4918 821.4013 734.393 647.3643 519.3029 391.202773 260.201 147.1155 " Measure_ref="m_mz"/>
+                <FragmentArray values="16250 50470 16200 63470 26960 4780 13130 45940 10750 8781" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0151 -0.0089 0.0048 -0.0173 0.0065 0.0098 0.0070 -0.0346 0.0041 0.0027" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="260.201 " Measure_ref="m_mz"/>
+                <FragmentArray values="10750" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0494" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 5 4 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="804.411986 630.3439 502.2811 130.0903 " Measure_ref="m_mz"/>
+                <FragmentArray values="5479 2751 5861 3378" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0200 0.0159 0.0117 0.0040" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_15_2"  calculatedMassToCharge="673.8495915" chargeState="2" experimentalMassToCharge="673.855794" Peptide_ref="peptide_15_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_15_2_psu|NCLIV_067350_0_290_302" start="290" end="302" pre="K" post="E" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_067350" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="1.87" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="3.77075220398993" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 4 5 7" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="86.0945 391.202773 462.2789 630.3439 " Measure_ref="m_mz"/>
+                <FragmentArray values="29170 45940 13970 2751" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0019 0.0018 0.0408 0.0159" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="344.1659 " Measure_ref="m_mz"/>
+                <FragmentArray values="4418" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0124" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="490.2714 " Measure_ref="m_mz"/>
+                <FragmentArray values="20620" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0384" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="274.1451 " Measure_ref="m_mz"/>
+                <FragmentArray values="3984" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0423" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="12 3" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="617.3033 187.1124 " Measure_ref="m_mz"/>
+                <FragmentArray values="2627 4222" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0043 -0.0191" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="20" />
+          <cvParam accession="MS:1001370" name="mascot:homology threshold"  cvRef="PSI-MS" value="17" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="116" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1EPISVSSQQMLK_30V_CE_01.csv DRIFT_TIME=25.341 28.7043 32.2817 34.9308 37.8566 42.2329 41.1057 42.6825 42.0725 40.0726 41.8998 44.1103 43.536 49.9131 45.0959 58.8542 55.7926 58.8746 64.4662 62.0748 64.2967 68.3741 65.822 70.781 71.9981 79.4181 71.3946 72.8996 73.1134 77.0646 75.9377 84.8909 85.4451 87.0903 84.7646 85.2123 84.2831 91.003 87.9478 93.0375 95.157 96.2238 93.7851 96.926 98.997 105.7745 107.9913 106.9216 109.0118 119.3951 119.26 113.8156 123.2469 125.7501 129.7638 129.8586 129.5517 142.0398 143.7306 141.9883 146.2757 145.772 145.7286 160.9512 160.4912 160.2787 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_16" spectrumID="index=9" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_16_1"  calculatedMassToCharge="673.852842" chargeState="2" experimentalMassToCharge="673.855794" Peptide_ref="peptide_16_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_16_1_sp|P00921|CAH2_BOVIN_0_213_224" start="213" end="224" pre="K" post="F" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_16_1_sp|CAH2_BOVIN|_0_213_224" start="213" end="224" pre="K" post="F" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="47.70" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="9.84981318427811e-005" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2 5" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="199.1098 498.3092 " Measure_ref="m_mz"/>
+                <FragmentArray values="24650 6393" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0021 0.0170" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="200.1174 " Measure_ref="m_mz"/>
+                <FragmentArray values="3167" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0019" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 11" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001235" name="frag: a ion - NH3"/>
+                <FragmentArray values="392.217934 578.3183 " Measure_ref="m_mz"/>
+                <FragmentArray values="35250 2789" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0201 0.0289" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="1 2 3 4 5 6 8 9 10" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="130.0888 227.1063 340.1919 427.2262 526.301093 613.3332 828.4334 956.4882 1087.538188 " Measure_ref="m_mz"/>
+                <FragmentArray values="6011 18200 19050 20740 15570 8571 2295 6789 4149" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0389 0.0037 0.0052 0.0075 0.0140 0.0140 0.0236 0.0198 0.0294" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9 10" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001232" name="frag: b ion - NH3"/>
+                <FragmentArray values="939.4749 1070.5246 " Measure_ref="m_mz"/>
+                <FragmentArray values="5363 8943" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0331 0.0423" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="10 9 8 7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="1120.6172 1007.4959 920.4801 821.3782 734.3765 647.3616 519.3039 391.204442 260.1988 147.1137 " Measure_ref="m_mz"/>
+                <FragmentArray values="32470 90330 65990 111100 63230 12800 28480 86640 29450 27800" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0141 -0.0231 -0.0069 -0.0404 -0.0100 0.0071 0.0080 -0.0329 0.0019 0.0009" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="4" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="260.1988 " Measure_ref="m_mz"/>
+                <FragmentArray values="29450" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0472" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9 7 6 5 4 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="990.524268 804.4043 717.3755 630.3427 502.2833 130.0888 " Measure_ref="m_mz"/>
+                <FragmentArray values="9617 8003 4802 6210 3643 6011" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0318 0.0123 0.0155 0.0147 0.0139 0.0025" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="20" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="116" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1EPISVSSQQMLK_25V_CE_01.csv DRIFT_TIME=26.493 28.0655 29.1368 64.2547 28.7661 29.3793 32.9358 32.489 35.0954 34.878 38.2845 41.8217 40.3875 42.7962 42.7585 40.3824 41.9703 42.3775 44.3727 43.5077 42.3634 49.7768 45.0123 58.839 59.6975 61.3525 54.634 58.39 64.464 64.0955 62.3662 66.2665 67.5761 67.9484 70.3341 71.2817 72.8835 71.6318 79.4892 71.1426 71.5463 79.0387 72.0139 73.0891 73.5647 76.8005 76.3487 75.6931 84.476 84.9246 86.8962 86.2944 84.5159 84.305 85.0299 84.9347 87.5486 90.9841 88.3807 88.4089 96.1537 96.0138 95.2773 91.8896 95.3885 93.3832 96.5041 97.8101 97.9194 97.7322 100.1076 99.4918 107.0814 107.5567 107.4498 105.5298 109.8754 109.3467 114.9092 119.5059 119.5032 119.4548 115.5486 125.7827 117.8926 127.2251 123.9103 124.2099 121.4551 129.3023 129.6959 129.0778 132.2633 128.4962 129.2523 129.5568 132.872 129.3567 121.1052 129.3615 142.6394 143.1666 143.7434 133.3475 136.0158 134.974 134.922 135.9044 149.3535 148.9826 146.0481 148.7697 145.2535 146.2903 144.8361 146.8251 147.0885 150.1687 149.1182 150.4313 147.4163 160.5918 161.08 160.0616 161.1103 164.5494 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_17" spectrumID="index=26" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_17_1"  calculatedMassToCharge="791.4122445" chargeState="2" experimentalMassToCharge="791.415199" Peptide_ref="peptide_17_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_17_1_sp|P00921|CAH2_BOVIN_0_114_126" start="114" end="126" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_17_1_sp|CAH2_HUMAN|_0_113_125" start="113" end="125" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_HUMAN|" />
+            <PeptideEvidence id="PE_17_1_sp|CAH2_BOVIN|_0_114_126" start="114" end="126" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="20.25" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="0.037290404613294" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="5 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="548.2941 685.3524 " Measure_ref="m_mz"/>
+                <FragmentArray values="2246 4838" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0226 0.0220" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="5 4" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="685.3524 548.2941 " Measure_ref="m_mz"/>
+                <FragmentArray values="4838 2246" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0108 0.0114" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="79" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1YAAELHLVHWNTK_25V_CE_01.csv DRIFT_TIME=88.3264 102.2929 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_18" spectrumID="index=28" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_18_1"  calculatedMassToCharge="791.4122445" chargeState="2" experimentalMassToCharge="791.415199" Peptide_ref="peptide_18_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_18_1_sp|P00921|CAH2_BOVIN_0_114_126" start="114" end="126" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_18_1_sp|CAH2_HUMAN|_0_113_125" start="113" end="125" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_HUMAN|" />
+            <PeptideEvidence id="PE_18_1_sp|CAH2_BOVIN|_0_114_126" start="114" end="126" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="61.77" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="2.62782896699688e-006" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="4 5 6 7 8 9" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="435.1965 548.2915 685.3488 798.4307 897.503 1034.5628 " Measure_ref="m_mz"/>
+                <FragmentArray values="4702 7684 11190 4306 4876 8858" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0091 0.0200 0.0184 0.0162 0.0201 0.0210" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 6 5 4 3 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="1034.5628 897.503 784.4178 685.3488 548.2915 362.211 248.1651 " Measure_ref="m_mz"/>
+                <FragmentArray values="8858 4876 5702 11190 7684 4027 2904" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0098 0.0089 0.0078 0.0072 0.0088 0.0076 0.0046" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="79" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1YAAELHLVHWNTK_30V_CE_01.csv DRIFT_TIME=49.2192 64.212 72.8807 87.3817 102.3763 102.0234 112.5489 116.2697 123.9791 124.946 138.6305 138.8777 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_19" spectrumID="index=30" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_19_1"  calculatedMassToCharge="791.4122445" chargeState="2" experimentalMassToCharge="791.415199" Peptide_ref="peptide_19_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_19_1_sp|P00921|CAH2_BOVIN_0_114_126" start="114" end="126" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_19_1_sp|CAH2_HUMAN|_0_113_125" start="113" end="125" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_HUMAN|" />
+            <PeptideEvidence id="PE_19_1_sp|CAH2_BOVIN|_0_114_126" start="114" end="126" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="70.87" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="3.23293591313241e-007" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 4 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="136.0764 207.1162 407.2012 657.3512 " Measure_ref="m_mz"/>
+                <FragmentArray values="16140 14100 4527 6332" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0007 0.0034 0.0087 0.0157" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5 6 7 8 9" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="235.1107 306.1499 435.1939 548.2898 685.3448 798.4301 897.4991 1034.5655 " Measure_ref="m_mz"/>
+                <FragmentArray values="15720 12060 10080 14920 23890 8808 14360 12140" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0030 0.0051 0.0065 0.0183 0.0144 0.0156 0.0162 0.0237" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="1034.5655 897.4991 784.4163 685.3448 548.2898 362.2087 248.1655 147.1167 " Measure_ref="m_mz"/>
+                <FragmentArray values="12140 14360 10630 23890 14920 11080 8860 4204" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0125 0.0050 0.0063 0.0032 0.0071 0.0053 0.0050 0.0039" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="345.182 " Measure_ref="m_mz"/>
+                <FragmentArray values="3157" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0051" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <SpectrumIdentificationItem id="SII_19_2"  calculatedMassToCharge="791.420789" chargeState="2" experimentalMassToCharge="791.415199" Peptide_ref="peptide_19_2" rank="2" passThreshold="false">
+            <PeptideEvidence id="PE_19_2_psu|NCLIV_005760_0_305_322" start="305" end="322" pre="R" post="R" missedCleavages="1" isDecoy="false" DBSequence_Ref="DBSeq_1_psu|NCLIV_005760" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="0.85" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="3.24785846729093" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="2 6 9 10" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="201.0916 487.2896 686.3521 783.3792 " Measure_ref="m_mz"/>
+                <FragmentArray values="4111 3660 11050 7302" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0318 0.0385 0.0053 -0.0203" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="8 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="799.4332 147.1167 " Measure_ref="m_mz"/>
+                <FragmentArray values="4349 4204" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0089 0.0039" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="12 4" charge="2">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="548.2898 223.16 " Measure_ref="m_mz"/>
+                <FragmentArray values="14920 2893" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0091 0.0123" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="7 3 2" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="685.3448 272.1292 201.0916 " Measure_ref="m_mz"/>
+                <FragmentArray values="23890 4944 4111" Measure_ref="m_intensity"/>
+                <FragmentArray values="-0.0180 -0.0313 -0.0318" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="79" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1YAAELHLVHWNTK_40V_CE_01.csv DRIFT_TIME=25.8259 31.296898 33.7546 33.3958 37.8113 40.7113 43.7591 48.2939 47.2711 49.1789 53.043 51.5058 61.8275 57.1299 61.2468 67.1472 63.527298 63.6522 67.321 70.8736 72.7149 73.2184 77.0816 82.1766 87.4485 87.1921 92.3689 102.1965 102.4792 102.7442 111.5273 112.4917 112.3713 117.1451 117.0442 124.6804 124.2912 137.3961 138.789 " />
+        </SpectrumIdentificationResult>
+        <SpectrumIdentificationResult id="SIR_20" spectrumID="index=29" SpectraData_ref="SD_1">
+          <SpectrumIdentificationItem id="SII_20_1"  calculatedMassToCharge="791.4122445" chargeState="2" experimentalMassToCharge="791.415199" Peptide_ref="peptide_20_1" rank="1" passThreshold="true">
+            <PeptideEvidence id="PE_20_1_sp|P00921|CAH2_BOVIN_0_114_126" start="114" end="126" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" />
+            <PeptideEvidence id="PE_20_1_sp|CAH2_HUMAN|_0_113_125" start="113" end="125" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_HUMAN|" />
+            <PeptideEvidence id="PE_20_1_sp|CAH2_BOVIN|_0_114_126" start="114" end="126" pre="K" post="Y" missedCleavages="0" isDecoy="false" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="63.73" />
+            <cvParam accession="MS:1001172" name="mascot:expectation value" cvRef="PSI-MS" value="1.67338971589569e-006" />
+            <cvParam accession="MS:1001363" name="peptide unique to one protein" cvRef="PSI-MS" />
+            <Fragmentation>
+              <IonType index="1 2 4 5 6" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001229" name="frag: a ion"/>
+                <FragmentArray values="136.0776 207.1157 407.2026 520.2915 657.3507 " Measure_ref="m_mz"/>
+                <FragmentArray values="11650 11380 5750 5280 7873" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0019 0.0029 0.0101 0.0149 0.0152" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="2 3 4 5 6 7 8 9" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001224" name="frag: b ion"/>
+                <FragmentArray values="235.1113 306.15 435.1932 548.2888 685.3403 798.4245 897.496 1034.5556 " Measure_ref="m_mz"/>
+                <FragmentArray values="14410 12820 16710 21670 31950 13360 25180 15380" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0036 0.0052 0.0058 0.0173 0.0099 0.0100 0.0131 0.0138" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="9 8 7 6 5 4 3 2 1" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001220" name="frag: y ion"/>
+                <FragmentArray values="1147.6595 1034.5556 897.496 784.4148 685.3403 548.2888 362.2077 248.1647 147.1166 " Measure_ref="m_mz"/>
+                <FragmentArray values="3893 15380 25180 17360 31950 21670 14710 10850 3904" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0224 0.0026 0.0019 0.0048 -0.0013 0.0061 0.0043 0.0042 0.0038" Measure_ref="m_error"/>
+              </IonType>
+              <IonType index="3" charge="1">
+                <cvParam cvRef="PSI-MS" accession="MS:1001233" name="frag: y ion - NH3"/>
+                <FragmentArray values="345.1863 " Measure_ref="m_mz"/>
+                <FragmentArray values="3503" Measure_ref="m_intensity"/>
+                <FragmentArray values="0.0094" Measure_ref="m_error"/>
+              </IonType>
+            </Fragmentation>
+          </SpectrumIdentificationItem>
+          <cvParam accession="MS:1001371" name="mascot:identity threshold"  cvRef="PSI-MS" value="18" />
+          <cvParam accession="MS:1001030" name="number of peptide seqs compared to each spectrum"  cvRef="PSI-MS" value="79" />
+          <cvParam accession="MS:1000796" name="spectrum title"  cvRef="PSI-MS" value="Spectrum 1YAAELHLVHWNTK_35V_CE_01.csv DRIFT_TIME=26.053 30.6744 33.7875 33.3736 37.238 40.5352 44.136 47.4418 49.2813 53.8532 51.5153 60.9742 60.3063 57.0715 62.3091 67.0613 64.0323 63.461 66.9375 70.8731 73.2716 72.8462 86.8084 87.3215 87.7484 93.185 101.9313 102.0949 102.3702 110.9069 112.1282 111.8432 116.9318 116.3308 125.0415 124.334 124.0307 137.2122 138.0526 135.773 138.6827 150.4279 151.2787 " />
+        </SpectrumIdentificationResult>
+      </SpectrumIdentificationList>
+      <ProteinDetectionList id="PDL_1">
+        <ProteinAmbiguityGroup id="PAG_hit_1" >
+          <ProteinDetectionHypothesis id="PDH_sp|CAH2_BOVIN|_0" DBSequence_ref="DBSeq_1_sp|CAH2_BOVIN|"  passThreshold="true">
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_1_1_sp|CAH2_BOVIN|_0_159_167" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_2_1_sp|CAH2_BOVIN|_0_159_167" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_3_1_sp|CAH2_BOVIN|_0_81_89" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_4_1_sp|CAH2_BOVIN|_0_81_89" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_6_1_sp|CAH2_BOVIN|_0_28_36" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_7_1_sp|CAH2_BOVIN|_0_28_36" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_8_1_sp|CAH2_BOVIN|_0_149_158" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_9_1_sp|CAH2_BOVIN|_0_149_158" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_10_1_sp|CAH2_BOVIN|_0_149_158" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_11_1_sp|CAH2_BOVIN|_0_19_27" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_12_1_sp|CAH2_BOVIN|_0_19_27" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_13_1_sp|CAH2_BOVIN|_0_19_27" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_14_1_sp|CAH2_BOVIN|_0_213_224" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_15_1_sp|CAH2_BOVIN|_0_213_224" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_16_1_sp|CAH2_BOVIN|_0_213_224" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_17_1_sp|CAH2_BOVIN|_0_114_126" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_18_1_sp|CAH2_BOVIN|_0_114_126" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_19_1_sp|CAH2_BOVIN|_0_114_126" />
+            <PeptideHypothesis  PeptideEvidence_Ref="PE_20_1_sp|CAH2_BOVIN|_0_114_126" />
+            <cvParam accession="MS:1001171" name="mascot:score" cvRef="PSI-MS" value="574.045555555555" />
+            <cvParam accession="MS:1001097" name="distinct peptide sequences" cvRef="PSI-MS" value="7" />
+          </ProteinDetectionHypothesis>
+        </ProteinAmbiguityGroup>
+      </ProteinDetectionList>
+    </AnalysisData>
+  </DataCollection>
+  <BibliographicReference authors="David N. Perkins, Darryl J. C. Pappin, David M. Creasy, John S. Cottrell" editor="" id="10.1002/(SICI)1522-2683(19991201)20:18&lt;3551::AID-ELPS3551&gt;3.0.CO;2-2" name="Probability-based protein identification by searching sequence databases using mass spectrometry data" issue="18" pages="3551-3567" publication="Electrophoresis" volume="20" year="1999" publisher="Wiley VCH" title="Probability-based protein identification by searching sequence databases using mass spectrometry data"/>
+</mzIdentML>

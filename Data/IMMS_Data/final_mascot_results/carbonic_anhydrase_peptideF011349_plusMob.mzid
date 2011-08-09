@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mzIdentML version="1.0.0" creationDate="2011-08-09T12:13:31+01:00" id="" xmlns="http://psidev.info/psi/pi/mzIdentML/1.0">
+    <cvList>
+        <cv id="PSI-MS" URI="http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo" version="2.32.0" fullName="Proteomics Standards Initiative Mass Spectrometry Vocabularies"/>
+        <cv id="UNIMOD" URI="http://www.unimod.org/obo/unimod.obo" fullName="UNIMOD"/>
+        <cv id="UO" URI="http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/phenotype/unit.obo" fullName="UNIT-ONTOLOGY"/>
+    </cvList>
+    <AnalysisSoftwareList>
+        <AnalysisSoftware URI="http://www.matrixscience.com/search_form_select.html" version="2.3.02" name="Mascot Server" id="AS_mascot_server">
+            <ContactRole Contact_ref="ORG_MSL">
+                <role>
+                    <cvParam accession="MS:1001267" cvRef="PSI-MS" name="software vendor"/>
+                </role>
+            </ContactRole>
+            <SoftwareName>
+                <cvParam accession="MS:1001207" cvRef="PSI-MS" name="Mascot"/>
+            </SoftwareName>
+            <Customizations>
+        No customisations
+      </Customizations>
+        </AnalysisSoftware>
+        <AnalysisSoftware URI="http://www.matrixscience.com/msparser.html" version="2.3.3.0" name="Mascot Parser" id="AS_mascot_parser">
+            <ContactRole Contact_ref="ORG_MSL">
+                <role>
+                    <cvParam accession="MS:1001267" cvRef="PSI-MS" name="software vendor"/>
+                </role>
+            </ContactRole>
+            <SoftwareName>
+                <cvParam accession="MS:1001478" cvRef="PSI-MS" name="Mascot Parser"/>
+            </SoftwareName>
+            <Customizations>
+        No customisations
+      </Customizations>
+        </AnalysisSoftware>
+    </AnalysisSoftwareList>
+    <Provider id="PROVIDER">
+        <ContactRole Contact_ref="PERSON_DOC_OWNER">
+            <role>
+                <cvParam accession="MS:1001271" cvRef="PSI-MS" name="researcher"/>
+            </role>
+        </ContactRole>
+    </Provider>
+    <AuditCollection>
+        <Person id="">
+            <affiliations Organization_ref="ORG_MSL"/>
+        </Person>
+        <Person firstName="" lastName="ajones" email="andrew.jones@liv.ac.uk" id="PERSON_DOC_OWNER">
+            <affiliations Organization_ref="ORG_DOC_OWNER"/>
+        </Person>
+        <Organization fax="+44 (0)20 7224 1344" email="support@matrixscience.com" phone="+44 (0)20 7486 1050" address="64 Baker Street, London W1U 7GB, UK" name="Matrix Science Limited" id="ORG_MSL"/>
+        <Organization id="ORG_DOC_OWNER"/>
+    </AuditCollection>
+    <SequenceCollection>
+        <DBSequence accession="sp|CAH2_BOVIN|" SearchDatabase_ref="SDB_sigma_mix_IMS" id="DBSeq_1_sp|CAH2_BOVIN|"/>
+        <DBSequence accession="sp|P00921|CAH2_BOVIN" SearchDatabase_ref="SDB_sigma_mix_IMS" id="DBSeq_1_sp|P00921|CAH2_BOVIN">
+            <cvParam accession="MS:1001088" cvRef="PSI-MS" value="Carbonic anhydrase 2 OS=Bos taurus GN=CA2 PE=1 SV=3" name="protein description"/>
+        </DBSequence>
+        <Peptide id="peptide_2_1">
+            <peptideSequence>VLDALDSIK</peptideSequence>
+        </Peptide>
+        <Peptide id="peptide_4_1">
+            <peptideSequence>QSPVDIDTK</peptideSequence>
+        </Peptide>
+        <Peptide id="peptide_5_1">
+            <peptideSequence>VGDANPALQK</peptideSequence>
+        </Peptide>
+        <Peptide id="peptide_6_1">
+            <peptideSequence>DFPIANGER</peptideSequence>
+        </Peptide>
+        <Peptide id="peptide_8_1">
+            <peptideSequence>EPISVSSQQMLK</peptideSequence>
+        </Peptide>
+        <Peptide id="peptide_12_1">
+            <peptideSequence>YGDFGTAAQQPDGLAVVGVFLK</peptideSequence>
+        </Peptide>
+    </SequenceCollection>
+    <AnalysisCollection>
+        <SpectrumIdentification SpectrumIdentificationList_ref="SIL_1" SpectrumIdentificationProtocol_ref="SIP" activityDate="2011-08-09T11:52:20+01:00" id="SI">
+            <InputSpectra SpectraData_ref="SD_1"/>
+            <SearchDatabase SearchDatabase_ref="SDB_sigma_mix_IMS"/>
+        </SpectrumIdentification>
+        <ProteinDetection ProteinDetectionProtocol_ref="PDP_MascotParser_1" ProteinDetectionList_ref="PDL_1" activityDate="2011-08-09T12:13:31+01:00" id="PD_1">
+            <InputSpectrumIdentifications SpectrumIdentificationList_ref="SIL_1"/>
+        </ProteinDetection>
+    </AnalysisCollection>
+    <AnalysisProtocolCollection>
+        <SpectrumIdentificationProtocol AnalysisSoftware_ref="AS_mascot_server" id="SIP">
+            <SearchType>
+                <cvParam accession="MS:1001083" cvRef="PSI-MS" value="" name="ms-ms search"/>
+            </SearchType>
+            <AdditionalSearchParams>
+                <cvParam accession="MS:1001211" cvRef="PSI-MS" name="parent mass type mono"/>
+                <cvParam accession="MS:1001108" cvRef="PSI-MS" name="param: a ion"/>
+                <cvParam accession="MS:1001146" cvRef="PSI-MS" name="param: a ion-NH3"/>
+                <cvParam accession="MS:1001118" cvRef="PSI-MS" name="param: b ion"/>
+                <cvParam accession="MS:1001149" cvRef="PSI-MS" name="param: b ion-NH3"/>
+                <cvParam accession="MS:1001262" cvRef="PSI-MS" name="param: y ion"/>
+                <cvParam accession="MS:1001151" cvRef="PSI-MS" name="param: y ion-NH3"/>
+                <userParam value="Default" name="Mascot Instrument Name"/>
+            </AdditionalSearchParams>
+            <ModificationParams>
+                <SearchModification fixedMod="true">
+                    <ModParam residues="C" massDelta="57.021465">
+                        <cvParam accession="UNIMOD:4" cvRef="UNIMOD" name="Carbamidomethyl"/>
+                    </ModParam>
+                </SearchModification>
+                <SearchModification fixedMod="false">
+                    <ModParam residues="M" massDelta="15.994915">
+                        <cvParam accession="UNIMOD:35" cvRef="UNIMOD" name="Oxidation"/>
+                    </ModParam>
+                </SearchModification>
+            </ModificationParams>
+            <Enzymes>
+                <Enzyme missedCleavages="1" semiSpecific="false" CTermGain="OH" NTermGain="H" id="ENZ_0">
+                    <SiteRegexp>(?&lt;=[KR])(?!P)</SiteRegexp>
+                    <EnzymeName>
+                        <cvParam accession="MS:1001251" cvRef="PSI-MS" name="Trypsin"/>
+                    </EnzymeName>
+                </Enzyme>
+            </Enzymes>
+            <MassTable msLevel="1 2" id="MT">
+                <Residue Mass="71.03712" Code="A"/>
+                <Residue Mass="103.009186" Code="C"/>
+                <Residue Mass="115.02694" Code="D"/>
+                <Residue Mass="129.04259" Code="E"/>
+                <Residue Mass="147.06842" Code="F"/>
+                <Residue Mass="57.021465" Code="G"/>
+                <Residue Mass="137.05891" Code="H"/>
+                <Residue Mass="113.08406" Code="I"/>
+                <Residue Mass="128.09496" Code="K"/>
+                <Residue Mass="113.08406" Code="L"/>
+                <Residue Mass="131.04048" Code="M"/>
+                <Residue Mass="114.04293" Code="N"/>
+                <Residue Mass="97.052765" Code="P"/>
+                <Residue Mass="128.05858" Code="Q"/>
+                <Residue Mass="156.1011" Code="R"/>
+                <Residue Mass="87.03203" Code="S"/>
+                <Residue Mass="101.047676" Code="T"/>
+                <Residue Mass="150.95363" Code="U"/>
+                <Residue Mass="99.06841" Code="V"/>
+                <Residue Mass="186.07932" Code="W"/>
+                <Residue Mass="163.06332" Code="Y"/>
+                <AmbiguousResidue Code="B">
+                    <cvParam accession="MS:1001360" cvRef="PSI-MS" value="D N" name="alternate single letter codes"/>
+                </AmbiguousResidue>
+                <AmbiguousResidue Code="Z">
+                    <cvParam accession="MS:1001360" cvRef="PSI-MS" value="E Q" name="alternate single letter codes"/>
+                </AmbiguousResidue>
+                <AmbiguousResidue Code="X">
+                    <cvParam accession="MS:1001360" cvRef="PSI-MS" value="A C D E F G H I K L M N O P Q R S T U V W Y" name="alternate single letter codes"/>
+                </AmbiguousResidue>
+            </MassTable>
+            <FragmentTolerance>
+                <cvParam accession="MS:1001412" cvRef="PSI-MS" unitCvRef="UO" unitName="dalton" unitAccession="UO:0000221" value="0.05" name="search tolerance plus value"/>
+                <cvParam accession="MS:1001413" cvRef="PSI-MS" unitCvRef="UO" unitName="dalton" unitAccession="UO:0000221" value="0.05" name="search tolerance minus value"/>
+            </FragmentTolerance>
+            <ParentTolerance>
+                <cvParam accession="MS:1001412" cvRef="PSI-MS" unitCvRef="UO" unitName="parts per million" unitAccession="UO:0000169" value="10" name="search tolerance plus value"/>
+                <cvParam accession="MS:1001413" cvRef="PSI-MS" unitCvRef="UO" unitName="parts per million" unitAccession="UO:0000169" value="10" name="search tolerance minus value"/>
+            </ParentTolerance>
+            <Threshold>
+                <cvParam accession="MS:1001316" cvRef="PSI-MS" value="0.05" name="mascot:SigThreshold"/>
+            </Threshold>
+            <DatabaseFilters>
+                <Filter>
+                    <FilterType>
+                        <cvParam accession="MS:1001020" cvRef="PSI-MS" name="DB filter taxonomy"/>
+                    </FilterType>
+                </Filter>
+            </DatabaseFilters>
+        </SpectrumIdentificationProtocol>
+        <ProteinDetectionProtocol AnalysisSoftware_ref="AS_mascot_parser" id="PDP_MascotParser_1">
+            <AnalysisParams>
+                <cvParam accession="MS:1001316" cvRef="PSI-MS" value="0.05" name="mascot:SigThreshold"/>
+                <cvParam accession="MS:1001317" cvRef="PSI-MS" value="Auto" name="mascot:MaxProteinHits"/>
+                <cvParam accession="MS:1001318" cvRef="PSI-MS" value="MudPIT" name="mascot:ProteinScoringMethod"/>
+                <cvParam accession="MS:1001319" cvRef="PSI-MS" value="0" name="mascot:MinMSMSThreshold"/>
+                <cvParam accession="MS:1001320" cvRef="PSI-MS" value="" name="mascot:ShowHomologousProteinsWithSamePeptides"/>
+                <cvParam accession="MS:1001321" cvRef="PSI-MS" value="0" name="mascot:ShowHomologousProteinsWithSubsetOfPeptides"/>
+                <cvParam accession="MS:1001322" cvRef="PSI-MS" value="0" name="mascot:RequireBoldRed"/>
+                <cvParam accession="MS:1001323" cvRef="PSI-MS" value="false" name="mascot:UseUnigeneClustering"/>
+                <cvParam accession="MS:1001324" cvRef="PSI-MS" value="1" name="mascot:IncludeErrorTolerantMatches"/>
+                <cvParam accession="MS:1001325" cvRef="PSI-MS" value="0" name="mascot:ShowDecoyMatches"/>
+            </AnalysisParams>
+            <Threshold>
+                <cvParam accession="MS:1001494" cvRef="PSI-MS" name="no threshold"/>
+            </Threshold>
+        </ProteinDetectionProtocol>
+    </AnalysisProtocolCollection>
+    <DataCollection>
+        <Inputs>
+            <SourceFile location="file:///../data/20110809/F011349.dat" id="SF_1">
+                <fileFormat>
+                    <cvParam accession="MS:1001199" cvRef="PSI-MS" name="Mascot DAT file"/>
+                </fileFormat>
+            </SourceFile>
+            <SearchDatabase numResidues="6212289" numDatabaseSequences="7461" releaseDate="sigma_mix_IMS.fasta" version="sigma_mix_IMS.fasta" location="file:///D:/inetpub/mascot/sequence/sigma_mix_IMS/current/sigma_mix_IMS.fasta" name="sigma_mix_IMS" id="SDB_sigma_mix_IMS">
+                <fileFormat>
+                    <cvParam accession="MS:1001348" cvRef="PSI-MS" name="FASTA format"/>
+                </fileFormat>
+                <DatabaseName>
+                    <userParam name="sigma_mix_IMS.fasta"/>
+                </DatabaseName>
+                <cvParam accession="MS:1001073" cvRef="PSI-MS" name="database type amino acid"/>
+            </SearchDatabase>
+            <SpectraData location="file:///C:/Work/IonMobility/Code/Jan2011/src/Data/IMMS_Data/final_mgf/carbonic_anhydrase_peptidecombined_ppmShift.mgf" id="SD_1">
+                <fileFormat>
+                    <cvParam accession="MS:1001062" cvRef="PSI-MS" name="Mascot MGF file"/>
+                </fileFormat>
+                <spectrumIDFormat>
+                    <cvParam accession="MS:1000774" cvRef="PSI-MS" name="multiple peak list nativeID format"/>
+                </spectrumIDFormat>
+            </SpectraData>
+        </Inputs>
+        <AnalysisData>
+            <SpectrumIdentificationList numSequencesSearched="7461" id="SIL_1">
+                <FragmentationTable>
+                    <Measure id="m_mz">
+                        <cvParam accession="MS:1001225" cvRef="PSI-MS" name="product ion m/z"/>
+                    </Measure>
+                    <Measure id="m_intensity">
+                        <cvParam accession="MS:1001226" cvRef="PSI-MS" name="product ion intensity"/>
+                    </Measure>
+                    <Measure id="m_error">
+                        <cvParam accession="MS:1001227" cvRef="PSI-MS" unitCvRef="PSI-MS" unitName="m/z" unitAccession="MS:1000040" name="product ion m/z error"/>
+                    </Measure>
+                    <Measure id="m_mobility">
+                        <cvParam accession="MS:TODO" cvRef="PSI-MS" name="product ion mobility"/>
+                    </Measure>
+                </FragmentationTable>
+                <SpectrumIdentificationResult SpectraData_ref="SD_1" spectrumID="index=9" id="SIR_2">
+                    <SpectrumIdentificationItem passThreshold="true" rank="1" Peptide_ref="peptide_2_1" calculatedMassToCharge="487.2818505" experimentalMassToCharge="487.2845" chargeState="2" id="SII_2_1">
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="T" pre="K" end="167" start="159" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" id="PE_2_1_sp|P00921|CAH2_BOVIN_0_159_167"/>
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="T" pre="K" end="167" start="159" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" id="PE_2_1_sp|CAH2_BOVIN|_0_159_167"/>
+                        <cvParam accession="MS:1001171" cvRef="PSI-MS" value="19.88" name="mascot:score"/>
+                        <cvParam accession="MS:1001172" cvRef="PSI-MS" value="0.039064619328806" name="mascot:expectation value"/>
+                        <cvParam accession="MS:1001363" cvRef="PSI-MS" name="peptide unique to one protein"/>
+                        <Fragmentation>
+                            <IonType charge="1" index="2 6">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="185.1653 599.3071"/>
+                                <FragmentArray Measure_ref="m_intensity" values="1632.0 433.0"/>
+                                <FragmentArray Measure_ref="m_error" values="5.0E-4 -0.0328"/>
+                                <FragmentArray Measure_ref="m_mobility" values="22.3774 88.7224"/>
+                            </IonType>
+                            <IonType charge="2" index="6">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="300.13327"/>
+                                <FragmentArray Measure_ref="m_intensity" values="2411.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0403"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0"/>
+                            </IonType>
+                            <IonType charge="1" index="2 4">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="213.1632 399.2295"/>
+                                <FragmentArray Measure_ref="m_intensity" values="508.0 250.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0034 0.0057"/>
+                                <FragmentArray Measure_ref="m_mobility" values="24.8065 55.3055"/>
+                            </IonType>
+                            <IonType charge="1" index="8 7 6 5 4 3 2 1">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="874.4885 761.4022 646.3806 575.342 462.2563 347.2333 260.1981 147.1133"/>
+                                <FragmentArray Measure_ref="m_intensity" values="2345.0 7919.0 3422.0 2260.0 5559.0 7036.0 2534.0 1799.0"/>
+                                <FragmentArray Measure_ref="m_error" values="5.0E-4 -0.0018 0.0036 0.0021 5.0E-4 0.0044 0.0012 5.0E-4"/>
+                                <FragmentArray Measure_ref="m_mobility" values="152.3795 122.9103 103.1562 0.0 62.0682 0.0 34.0002 17.0041"/>
+                            </IonType>
+                            <IonType charge="2" index="8">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="437.7348"/>
+                                <FragmentArray Measure_ref="m_intensity" values="129.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0128"/>
+                                <FragmentArray Measure_ref="m_mobility" values="38.5358"/>
+                            </IonType>
+                            <IonType charge="1" index="7 4 1">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="744.3955 445.2347 130.06168"/>
+                                <FragmentArray Measure_ref="m_intensity" values="469.0 293.0 3976.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0181 0.0054 -0.0246"/>
+                                <FragmentArray Measure_ref="m_mobility" values="119.1495 61.3727 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="8 2">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="429.2413 122.0811"/>
+                                <FragmentArray Measure_ref="m_intensity" values="131.0 1023.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0069 -0.0077"/>
+                                <FragmentArray Measure_ref="m_mobility" values="59.3296 16.4157"/>
+                            </IonType>
+                        </Fragmentation>
+                    </SpectrumIdentificationItem>
+                    <cvParam accession="MS:1001371" cvRef="PSI-MS" value="18" name="mascot:identity threshold"/>
+                    <cvParam accession="MS:1001030" cvRef="PSI-MS" value="76" name="number of peptide seqs compared to each spectrum"/>
+                    <cvParam accession="MS:1000796" cvRef="PSI-MS" value="Spectrum 1VLDALDSIK.csv DRIFT_TIME=17.6202 16.187 16.2544 17.9023 16.3019 16.4954 16.4337 17.4934 16.2947 18.237 16.3914 16.7747 16.4157 16.224 16.5184 16.8143 16.7596 16.6513 19.3668 17.983 16.5274 17.8549 16.7331 19.139 18.999 19.2102 17.0406 19.143 16.8655 16.7979 18.5998 16.8851 17.0041 19.6691 19.638 19.2428 19.2194 19.1757 17.9072 18.4124 16.7241 17.8568 17.8141 19.4521 17.2431 18.8255 17.0094 17.0905 20.3949 20.8585 21.9648 19.3311 19.6383 21.7506 19.1769 19.2935 21.0052 17.6935 19.0948 18.2754 18.164 20.5889 20.6222 17.9428 20.2403 21.33 21.6128 21.7623 18.7024 19.6478 22.3774 22.3558 21.8962 18.2583 22.3194 21.177 16.347 20.0253 23.5972 20.1394 20.0788 24.1065 19.955 20.0285 22.6255 21.9303 22.3927 21.4643 19.4138 21.3107 24.9746 21.3729 21.2094 22.1623 23.4698 19.9315 19.6225 16.2448 24.8065 19.8521 20.0028 19.7323 23.719 19.4515 22.9887 24.9498 26.1173 22.5036 24.8472 23.5649 25.9682 30.3146 25.3732 25.6799 26.3322 26.0179 26.2071 26.1756 19.7632 24.6478 24.9647 29.2937 25.5408 27.3897 22.1976 21.8879 31.1824 22.0223 22.0732 29.0627 22.78 21.8782 25.5339 30.2993 25.3643 29.831 26.2995 25.7824 32.1303 31.024399 27.5978 27.8972 23.832 23.6808 21.1264 34.0002 23.7573 21.731 34.3267 23.732 23.7087 23.4162 21.4802 27.3389 28.3054 31.980698 26.5129 16.5168 21.3489 33.7653 30.5426 27.509 33.691 31.586998 35.4181 16.8572 16.9996 16.5548 17.8499 24.0313 23.5949 16.6778 23.5624 23.6303 28.1196 16.7917 23.9301 23.4521 27.7158 33.2622 23.9894 29.1155 37.5859 31.459198 28.9571 32.3479 27.4554 37.2899 30.43 30.4633 33.5069 31.9823 17.1448 44.8337 23.9591 35.282 23.8427 17.0695 24.0483 17.0508 29.3255 38.2039 17.025 24.0951 40.0018 16.8224 23.8821 32.6799 39.7386 38.9718 17.2958 24.8198 41.2924 17.1153 29.0779 25.7659 27.4871 29.8418 17.0521 31.2928 17.0578 16.9015 30.9751 17.0729 28.995 31.351501 17.296 17.041 40.4767 39.8164 17.2746 17.4011 39.9612 17.2951 17.4775 37.6967 17.2791 42.5664 41.8526 29.0491 17.2227 37.0703 27.3991 40.022 29.096 17.4291 36.0134 18.263 37.4002 18.3572 28.7443 18.2144 18.0169 18.2713 44.7126 43.5226 17.5056 35.8524 17.729 17.5486 42.5175 29.1552 36.9565 43.9968 38.8367 28.6473 35.4972 44.4556 17.8014 35.4868 17.8969 17.7995 18.0717 29.8237 17.8415 34.319 45.0915 17.8411 45.3046 44.7092 26.5942 36.903 26.1255 26.2825 18.2285 47.99 26.2445 32.7033 48.6152 40.2903 37.6884 33.9052 50.2607 18.2579 36.2048 45.3526 19.1622 19.7084 54.1472 45.0655 54.0449 48.9657 26.5125 39.8372 49.693 26.6046 43.8746 52.3876 26.7554 26.605 32.9071 52.7943 36.9567 43.7661 25.9134 43.8828 42.7915 21.1993 57.1675 56.3315 33.2412 51.146 27.0016 51.3061 27.2385 47.0483 49.8443 26.4921 56.7363 28.4149 28.2721 31.2705 31.3032 52.0936 37.5918 51.8758 27.2004 44.9281 55.3055 59.1554 31.799599 31.742401 44.1576 31.911 25.8956 33.0313 50.059 32.981 33.0516 57.3274 32.542 49.2066 53.2321 58.4456 53.0318 55.8686 42.0834 55.7915 55.4619 29.2313 40.4527 28.9803 59.2171 58.053 58.5054 34.1934 58.1282 33.2191 58.2113 33.3283 33.4283 59.3296 33.2842 57.4013 39.485 32.4996 38.5358 61.599 62.9059 23.9547 59.8379 54.1764 59.378 34.0149 52.8107 61.3727 62.3098 35.2439 59.7975 33.3005 33.6096 24.759 24.9749 24.8644 64.2593 47.8287 32.3228 23.5797 69.1425 65.7119 61.7536 60.3303 21.8145 60.5749 23.0272 23.4905 23.3068 62.0682 61.8996 63.222 36.1312 62.122 33.4098 61.3442 67.4601 33.1116 69.7825 46.6382 66.0384 66.9242 66.6853 68.9178 70.3947 68.4572 65.8107 65.8355 65.2035 35.5616 37.098 76.4378 77.8703 80.9496 64.706 70.3651 80.464 46.1521 69.925 36.3663 71.9225 71.9373 71.6063 71.9176 68.1883 68.0391 68.1742 36.46 73.1061 77.7077 76.0238 80.6051 84.6815 80.7145 82.2474 82.8992 82.3576 82.885 89.6793 85.4917 82.3769 84.6375 87.3095 87.0658 87.5213 85.3905 82.0347 88.1093 87.5443 68.7503 88.1715 88.2978 88.7224 90.7721 92.2129 91.7982 98.3903 103.1562 103.9641 101.3879 104.9435 108.0848 109.8017 114.797 113.4056 114.3228 119.1495 122.9103 122.8143 121.0807 124.7653 129.1185 121.5879 137.0764 152.3795 153.0227 149.1791 146.24 " name="spectrum title"/>
+                </SpectrumIdentificationResult>
+                <SpectrumIdentificationResult SpectraData_ref="SD_1" spectrumID="index=6" id="SIR_4">
+                    <SpectrumIdentificationItem passThreshold="false" rank="1" Peptide_ref="peptide_4_1" calculatedMassToCharge="501.7587485" experimentalMassToCharge="501.762" chargeState="2" id="SII_4_1">
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="A" pre="R" end="36" start="28" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" id="PE_4_1_sp|P00921|CAH2_BOVIN_0_28_36"/>
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="A" pre="R" end="36" start="28" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" id="PE_4_1_sp|CAH2_BOVIN|_0_28_36"/>
+                        <cvParam accession="MS:1001171" cvRef="PSI-MS" value="14.00" name="mascot:score"/>
+                        <cvParam accession="MS:1001172" cvRef="PSI-MS" value="0.288627698651285" name="mascot:expectation value"/>
+                        <cvParam accession="MS:1001363" cvRef="PSI-MS" name="peptide unique to one protein"/>
+                        <Fragmentation>
+                            <IonType charge="1" index="1 2">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="101.0709 188.07408"/>
+                                <FragmentArray Measure_ref="m_intensity" values="770.0 2006.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0 -0.0289"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.3109 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="3 7">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="143.0816 364.1941"/>
+                                <FragmentArray Measure_ref="m_intensity" values="890.0 590.0"/>
+                                <FragmentArray Measure_ref="m_error" values="1.0E-4 0.0094"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.6895 45.4549"/>
+                            </IonType>
+                            <IonType charge="1" index="2 4 5">
+                                <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="171.076 367.2029 482.2406"/>
+                                <FragmentArray Measure_ref="m_intensity" values="3442.0 186.0 204.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-4.0E-4 0.0053 0.0161"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 49.6747 36.8263"/>
+                            </IonType>
+                            <IonType charge="1" index="1 3 4 8">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="129.05827 313.1587 412.1773 856.44806"/>
+                                <FragmentArray Measure_ref="m_intensity" values="4208.0 916.0 106.0 623.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0076 0.0081 -0.0418 0.0433"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 39.1069 50.5095 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="3">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="157.05356"/>
+                                <FragmentArray Measure_ref="m_intensity" values="597.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0254"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0"/>
+                            </IonType>
+                            <IonType charge="1" index="1 2 4 5 6 7">
+                                <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="112.0073 199.0743 395.20847 510.2338 623.30707 738.3461"/>
+                                <FragmentArray Measure_ref="m_intensity" values="143.0 323.0 740.0 601.0 338.0 357.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.032 0.0030 0.0159 0.0143 0.0036 0.0156"/>
+                                <FragmentArray Measure_ref="m_mobility" values="18.3111 20.0795 0.0 65.4839 0.0 107.7924"/>
+                            </IonType>
+                            <IonType charge="2" index="6">
+                                <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="312.1547"/>
+                                <FragmentArray Measure_ref="m_intensity" values="4831.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-7.0E-4"/>
+                                <FragmentArray Measure_ref="m_mobility" values="39.3895"/>
+                            </IonType>
+                            <IonType charge="1" index="8 7 6 5 4 2 1">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="874.4537 787.4137 690.366 591.297 476.2722 248.15472 147.08426"/>
+                                <FragmentArray Measure_ref="m_intensity" values="285.0 3950.0 1763.0 3710.0 1751.0 7244.0 2129.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0021 -0.0059 -8.0E-4 -0.0014 7.0E-4 -0.0058 -0.0285"/>
+                                <FragmentArray Measure_ref="m_mobility" values="143.6717 0.0 0.0 0.0 71.0028 0.0 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="8 7">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="437.7204 394.20715"/>
+                                <FragmentArray Measure_ref="m_intensity" values="156.0 4354.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0091 -0.0063"/>
+                                <FragmentArray Measure_ref="m_mobility" values="32.1415 0.0"/>
+                            </IonType>
+                            <IonType charge="1" index="7 5 4 2 1">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="770.36224 574.2895 459.2934 231.1425 130.0531"/>
+                                <FragmentArray Measure_ref="m_intensity" values="258.0 157.0 277.0 219.0 3990.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0308 0.0176 0.0485 0.0086 -0.0332"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 83.2425 71.013 25.9922 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="7 4">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="385.6606 230.1498"/>
+                                <FragmentArray Measure_ref="m_intensity" values="934.0 916.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0396 0.0237"/>
+                                <FragmentArray Measure_ref="m_mobility" values="28.096 26.831"/>
+                            </IonType>
+                        </Fragmentation>
+                    </SpectrumIdentificationItem>
+                    <cvParam accession="MS:1001371" cvRef="PSI-MS" value="21" name="mascot:identity threshold"/>
+                    <cvParam accession="MS:1001030" cvRef="PSI-MS" value="145" name="number of peptide seqs compared to each spectrum"/>
+                    <cvParam accession="MS:1000796" cvRef="PSI-MS" value="Spectrum 1QSPVDIDTK.csv DRIFT_TIME=16.3109 17.4302 16.1662 16.2331 18.3111 18.0107 18.5116 17.578 17.6177 16.7346 16.3758 16.472 16.3154 16.3802 19.6293 16.3675 16.6832 19.4341 16.5111 17.4179 16.805 19.1957 18.6356 19.6001 19.2269 19.7772 20.3938 20.2672 16.9727 16.93 16.2134 16.6895 19.1746 19.9379 17.0404 19.1594 19.1424 16.1663 18.8846 19.4815 19.2256 16.978 19.0959 16.9047 19.6971 16.6117 17.2521 20.6366 17.6265 22.2857 17.4287 18.8176 17.2453 19.1924 17.383 20.3269 20.0316 19.2953 20.5635 19.9641 21.9953 17.0804 18.9713 18.2432 18.2883 18.6866 19.2425 17.9951 18.4928 17.3199 20.8427 17.3371 17.1495 20.6615 21.8125 18.1817 20.7466 17.7148 20.5603 20.3279 28.7725 18.6489 20.3238 21.6269 17.9722 21.6381 22.2889 20.3028 20.1245 21.8319 18.7967 19.1222 21.2471 21.6706 21.5672 18.5187 19.8859 23.8644 22.8842 23.9223 20.2981 20.0795 21.629 21.3312 21.3767 22.5037 27.83 21.3212 21.2979 21.7158 21.1421 20.5915 22.1718 26.9127 22.0244 22.1365 19.6439 19.6864 22.2776 24.0751 23.325 20.8746 23.0005 22.8301 23.1176 26.4051 26.1683 22.957 22.5079 31.3396 24.3789 26.561 22.4034 24.2643 26.831 25.9922 24.7363 25.6058 25.3607 28.0546 32.449 22.2663 22.7066 22.3107 28.6127 28.8056 29.7715 22.8509 29.0583 30.7498 25.2309 28.6208 28.6617 25.5139 29.0317 28.9271 25.7645 25.5655 25.5432 25.5182 20.6496 25.6878 25.2971 28.9461 30.9368 28.1692 29.9053 23.6527 21.5094 34.8969 23.1393 23.3577 22.4465 28.6525 28.3575 30.1198 30.858 26.1948 26.4002 21.3799 26.1401 26.2068 34.051 26.1138 31.5191 28.2942 31.852402 30.1928 31.1344 23.7129 16.389 31.204498 24.2868 23.7693 32.1665 31.576 30.0006 25.0098 33.2319 24.2115 29.7343 35.1454 31.2416 27.7697 30.3817 32.7877 28.9171 32.594 28.9794 29.2051 31.1744 31.281403 30.4946 34.2667 23.7948 35.3327 31.674202 17.1231 36.3993 20.7361 16.9539 24.1785 33.2026 16.9309 16.8926 40.6603 16.8687 32.2272 27.7645 25.4275 34.6218 25.4907 27.1881 17.0499 31.070099 17.2551 33.1986 31.132797 17.1153 31.2835 27.9708 31.494102 31.328697 39.3895 30.8382 39.1069 38.5889 31.051598 37.9651 25.6988 17.3509 17.4182 17.3062 17.5521 27.0874 35.1274 37.8778 44.4056 35.8624 29.0174 46.0845 28.275 37.0884 17.517 18.2645 18.1518 18.0763 42.9753 18.4123 44.9268 31.0481 34.3152 23.8841 23.6993 36.0017 23.4796 17.9624 36.5245 48.7147 36.9267 34.6887 39.9066 43.0726 29.1938 35.246 29.3034 36.9662 26.2877 36.3793 45.4849 17.8181 35.108 43.0727 17.8577 17.9237 34.9574 42.7756 35.0931 45.2503 35.2116 36.5769 47.2262 26.5621 36.7896 36.9336 48.1326 17.7877 34.3917 29.239 42.4935 26.3138 18.704 36.1545 26.1583 45.1703 19.0623 18.7279 45.4549 45.7551 50.3684 49.6747 26.5911 19.2588 42.0367 41.6373 42.2339 32.8891 27.201 33.5592 51.903 34.5015 33.8841 23.1091 42.8403 48.1753 23.2874 34.2009 22.8963 43.0022 53.0952 26.4479 42.5832 41.8033 43.099 30.1081 28.096 28.6355 26.8718 54.4317 27.636 27.2308 27.2622 28.7546 52.2424 30.4542 30.2862 53.098 30.5669 30.5269 51.604 59.7125 34.4253 59.4934 43.2003 50.0469 30.9824 34.6533 28.7509 49.9231 29.0678 44.136 37.8456 31.881302 32.612 48.9901 32.8182 55.851 54.2294 50.5095 51.1416 39.5653 33.0601 33.261 23.0277 23.1185 23.0044 48.9935 59.2186 58.5274 33.4799 54.9468 58.3254 32.3015 39.3975 58.7852 38.5456 32.1415 32.1328 32.9589 33.2026 55.8576 33.0649 33.1776 33.2115 58.3301 33.1508 58.5956 59.1734 33.4799 33.496 33.3064 24.5501 24.6294 24.9408 40.6344 57.6643 34.5537 58.0201 34.7111 64.7764 51.0693 71.013 35.1638 53.2954 51.2133 54.2256 68.3131 60.8589 71.0028 71.7133 71.3659 38.6414 36.8263 63.4591 36.8867 33.9967 36.9889 70.068 36.7579 37.2519 37.1267 70.0389 46.2317 63.454605 37.2044 60.922 37.4275 37.4548 37.6195 37.2383 38.2619 38.1462 38.023 59.173 37.7186 36.0864 39.8129 78.877 39.5191 78.8781 39.5637 38.8023 102.825 38.8958 65.3099 65.4839 67.4679 60.792 74.7242 75.0251 75.354 78.9853 87.0191 87.3736 88.7005 83.3449 83.2425 86.9423 86.728 90.1866 69.157 85.7858 85.2887 92.1352 89.593 94.1244 87.6464 91.4784 92.1744 102.2425 103.9713 102.3812 103.2552 104.5576 103.2651 118.1624 109.9967 105.535 107.7924 115.3126 114.1919 114.4082 126.799 120.163 124.8621 119.4559 119.0755 124.4537 127.8156 131.1184 124.4596 130.0432 118.7473 131.1568 137.2153 131.5182 143.6717 149.1756 156.769 " name="spectrum title"/>
+                </SpectrumIdentificationResult>
+                <SpectrumIdentificationResult SpectraData_ref="SD_1" spectrumID="index=8" id="SIR_5">
+                    <SpectrumIdentificationItem passThreshold="false" rank="1" Peptide_ref="peptide_5_1" calculatedMassToCharge="506.7747245" experimentalMassToCharge="506.7775" chargeState="2" id="SII_5_1">
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="V" pre="K" end="158" start="149" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" id="PE_5_1_sp|P00921|CAH2_BOVIN_0_149_158"/>
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="V" pre="K" end="158" start="149" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" id="PE_5_1_sp|CAH2_BOVIN|_0_149_158"/>
+                        <cvParam accession="MS:1001171" cvRef="PSI-MS" value="10.71" name="mascot:score"/>
+                        <cvParam accession="MS:1001172" cvRef="PSI-MS" value="0.29721316626271" name="mascot:expectation value"/>
+                        <cvParam accession="MS:1001363" cvRef="PSI-MS" name="peptide unique to one protein"/>
+                        <Fragmentation>
+                            <IonType charge="1" index="2 4 5 6 7">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="129.08614 315.14227 429.2061 526.2255 597.2742"/>
+                                <FragmentArray Measure_ref="m_intensity" values="5663.0 1141.0 298.0 1538.0 118.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0161 -0.024 -0.0031 -0.0365 -0.0249"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 0.0 55.9439 67.6819 83.4005"/>
+                            </IonType>
+                            <IonType charge="2" index="4 9">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="158.0927 419.7002"/>
+                                <FragmentArray Measure_ref="m_intensity" values="717.0 582.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0059 -0.0243"/>
+                                <FragmentArray Measure_ref="m_mobility" values="17.2405 33.1053"/>
+                            </IonType>
+                            <IonType charge="1" index="5 6">
+                                <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="412.18158 509.2114"/>
+                                <FragmentArray Measure_ref="m_intensity" values="983.0 5075.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0011 -0.024"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="9">
+                                <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="411.2384"/>
+                                <FragmentArray Measure_ref="m_intensity" values="629.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0272"/>
+                                <FragmentArray Measure_ref="m_mobility" values="56.1383"/>
+                            </IonType>
+                            <IonType charge="1" index="2 3 4 5 6 7 8">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="157.08041 272.11087 343.16022 457.20215 554.2645 625.2954 738.3434"/>
+                                <FragmentArray Measure_ref="m_intensity" values="1499.0 3586.0 848.0 2713.0 227.0 336.0 199.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0167 -0.0132 -0.0010 -0.0020 0.0076 0.0014 -0.0347"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 0.0 0.0 0.0 75.1258 84.8261 108.2933"/>
+                            </IonType>
+                            <IonType charge="2" index="7">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="313.1134"/>
+                                <FragmentArray Measure_ref="m_intensity" values="475.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0372"/>
+                                <FragmentArray Measure_ref="m_mobility" values="36.1214"/>
+                            </IonType>
+                            <IonType charge="1" index="5 6 7">
+                                <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="440.17517 537.2368 608.2619"/>
+                                <FragmentArray Measure_ref="m_intensity" values="1078.0 165.0 234.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0024 0.0064 -0.0056"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 74.0145 82.7713"/>
+                            </IonType>
+                            <IonType charge="2" index="8 9">
+                                <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="361.1809 425.2128"/>
+                                <FragmentArray Measure_ref="m_intensity" values="935.0 831.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0015 0.0041"/>
+                                <FragmentArray Measure_ref="m_mobility" values="45.6586 0.0"/>
+                            </IonType>
+                            <IonType charge="1" index="9 8 7 6 5 4 3 2 1">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="913.4607 856.4495 741.4191 670.3844 556.3379 459.2844 388.2532 275.16357 147.09938"/>
+                                <FragmentArray Measure_ref="m_intensity" values="4245.0 1474.0 1703.0 2405.0 9572.0 1454.0 4011.0 3500.0 2328.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0131 -0.0028 -0.0063 -0.0039 -0.0074 -0.0082 -0.0022 -0.0078 -0.0134"/>
+                                <FragmentArray Measure_ref="m_mobility" values="148.0584 135.1651 114.6036 101.8418 87.4458 0.0 54.0265 0.0 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="9 7">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="457.20215 371.2346"/>
+                                <FragmentArray Measure_ref="m_intensity" values="2713.0 179.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0384 0.0183"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 50.3089"/>
+                            </IonType>
+                            <IonType charge="1" index="9 6 5 3 2 1">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="896.4469 653.3565 539.3214 371.2346 258.1038 130.06828"/>
+                                <FragmentArray Measure_ref="m_intensity" values="529.0 426.0 717.0 179.0 5252.0 5190.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-3.0E-4 -0.0052 0.0026 0.0057 -0.041 -0.018"/>
+                                <FragmentArray Measure_ref="m_mobility" values="142.1787 99.945 82.1346 50.3089 0.0 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="9 8 7 3">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="448.70117 420.2035 362.6546 186.11203"/>
+                                <FragmentArray Measure_ref="m_intensity" values="956.0 254.0 940.0 1336.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0261 -0.013 -0.0484 -0.0061"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 32.934 26.2919 0.0"/>
+                            </IonType>
+                        </Fragmentation>
+                    </SpectrumIdentificationItem>
+                    <cvParam accession="MS:1001371" cvRef="PSI-MS" value="18" name="mascot:identity threshold"/>
+                    <cvParam accession="MS:1001030" cvRef="PSI-MS" value="70" name="number of peptide seqs compared to each spectrum"/>
+                    <cvParam accession="MS:1000796" cvRef="PSI-MS" value="Spectrum 1VGDANPALQK.csv DRIFT_TIME=16.2986 16.2867 16.1969 16.221 16.2803 16.2266 16.479 18.083 16.221 16.2856 18.5381 16.4646 18.5629 17.9249 16.4688 18.5619 18.2201 18.405 16.2325 16.5298 16.6527 16.3645 16.3223 16.381 16.4124 16.4313 16.5157 19.5234 16.6696 19.2908 16.6162 19.2565 16.3084 16.637 17.1668 16.4673 18.5374 18.9343 18.659 19.2645 16.9434 20.7842 16.9061 16.4999 16.6785 16.9171 16.5821 19.5313 16.9119 18.6965 20.2154 17.028 19.3177 16.9681 18.4368 17.0777 20.3211 16.8214 19.8753 17.5466 17.2405 19.333 17.7354 20.5123 17.6479 20.2422 19.4796 17.2441 21.0048 22.0163 19.1314 17.5347 18.489 17.1963 18.2018 17.8747 20.9355 17.9324 20.5482 17.0726 21.489 19.1494 18.0512 18.3763 18.5727 18.4169 20.2837 20.0714 21.9398 20.2279 22.0534 19.9199 19.1543 18.3821 19.1408 20.9872 20.3697 20.5019 21.6813 21.1917 21.7605 21.6276 18.6791 21.1693 18.9852 21.5256 19.1304 24.1784 20.1775 23.375 21.6531 20.1618 21.4228 22.7532 22.6275 21.9849 21.3043 20.6672 26.0803 20.9016 22.0763 25.6996 22.0721 21.2097 22.1249 21.9196 25.331 22.1032 23.2282 23.539 23.4486 24.0864 23.0685 22.8728 27.9797 22.1795 28.1939 22.8404 26.7431 23.8183 20.8259 23.947 22.6427 28.598 16.155 27.6233 22.6314 24.0606 24.3947 25.9649 26.1811 24.1859 24.6355 28.6341 25.8753 29.7593 27.8757 27.8418 22.3193 30.1731 22.5436 25.6181 27.5011 29.3956 29.1725 28.4741 29.2788 27.8686 25.8041 25.5373 25.4657 25.6644 25.5688 27.9096 25.0708 27.2492 39.2064 26.0763 28.7159 30.3439 28.9894 25.2087 28.6244 34.4549 29.8216 29.6049 17.8939 21.7961 31.013802 34.0873 23.4898 28.2921 27.9922 30.0116 27.2274 29.9894 27.0956 30.1319 29.1615 29.3694 26.3896 29.6512 16.3806 29.1018 33.5226 30.4015 26.0468 31.9566 30.9447 31.6408 31.8316 16.8748 33.778 31.5727 30.056 31.324402 30.1796 30.5142 16.6217 18.4707 18.5684 23.5811 32.0026 32.0561 30.3495 41.3313 27.6939 33.1179 41.6055 19.5985 24.2315 33.5957 31.9301 34.9885 29.2991 27.7201 16.6675 30.3154 31.9096 30.7503 33.6124 30.4632 31.9346 30.6849 30.5415 32.7857 30.7273 35.4874 21.205 35.4332 17.0098 21.1145 17.002 31.8469 36.6766 17.0406 32.2448 39.2317 16.8804 41.8736 33.9416 34.7044 16.714 24.5879 34.9947 28.9413 34.7116 34.131 42.8434 35.1181 36.4193 29.3949 25.3571 27.8019 28.9892 31.135002 32.1818 31.0009 17.216 31.3623 17.2313 32.6752 23.5734 33.5942 30.9164 30.8814 39.9195 31.075699 36.1214 29.8852 31.1507 38.9319 26.0956 36.039 37.3482 37.4875 17.3357 17.4748 17.3955 25.4429 34.6909 25.6584 16.9389 35.0379 28.8705 35.0592 46.1057 27.9333 29.0003 28.9605 49.7819 37.1093 22.0601 37.8571 48.3903 22.0133 28.7967 28.9497 21.8577 37.9983 17.6769 33.045 18.2273 39.3564 43.5477 18.2559 18.2452 37.9867 17.9853 45.1424 22.0954 31.756798 30.9846 37.4056 23.7399 23.8601 23.5626 17.7426 23.4517 37.8833 23.3662 17.5078 22.1925 39.2745 39.5343 31.739899 39.3563 42.859 43.8081 29.1069 39.9142 35.0044 45.964 28.3525 40.6548 28.8951 35.2884 39.8358 50.2686 37.0836 24.0938 41.8106 49.7034 26.5071 29.4114 42.7469 26.3296 26.7618 34.6463 44.1569 17.8198 35.1269 17.7676 17.8627 35.207 17.8998 17.985 35.1606 45.7033 17.6466 35.2975 35.5677 36.4299 31.312 24.4386 32.066 20.2841 37.9804 50.1086 19.2553 17.9436 44.6771 40.0013 44.128 32.4911 32.8148 29.4085 40.6982 33.1201 41.7666 29.7877 40.6566 44.4854 45.6586 26.4502 34.1406 46.9047 26.2919 18.5599 36.1853 45.1531 26.3052 26.049 18.8124 36.1826 50.5451 44.7905 25.5262 18.8313 36.0364 20.1039 17.2801 19.5983 19.928 47.8318 26.7682 32.7642 46.8916 33.3294 45.1123 25.841 34.1941 47.6367 27.2257 50.3089 26.7556 33.3144 31.8107 31.7308 34.1688 20.239 31.128502 19.9875 33.3299 27.5949 50.1139 27.1462 26.7489 49.8936 26.0143 34.05 25.8894 27.7485 50.5977 27.6363 27.6242 36.7947 43.2922 51.2768 43.1447 49.2601 34.6903 23.2459 43.0626 26.7608 49.9497 53.7601 27.4299 22.7463 43.4869 27.1592 52.6435 27.6304 43.1704 43.0431 42.0706 28.1445 33.5743 48.6813 28.1222 27.1134 33.2755 26.0614 34.0253 54.0265 60.501 54.0886 35.4125 54.913 28.47 27.3927 52.0309 28.96 34.3586 29.1459 56.4167 28.3997 53.7242 28.2911 20.0692 28.7037 49.0635 48.4015 53.6623 52.8199 47.92 28.1533 43.2287 27.1443 56.2062 28.6997 35.1823 43.3631 28.6699 28.6583 43.3037 29.1746 30.4653 35.059 29.223 36.0563 42.4617 33.6415 50.0061 31.4697 30.9649 27.9013 50.2342 49.1454 30.1095 30.0556 29.9964 18.9872 28.7696 58.8197 31.670998 57.2928 31.5779 56.1383 30.2186 29.8271 51.8946 30.2805 30.2021 52.3394 60.1637 39.0298 46.8497 36.7426 28.9575 35.5204 46.7647 32.9145 33.1053 32.934 31.858398 35.8748 31.122498 61.0544 30.8442 51.8323 31.1988 59.5417 30.9187 53.4087 33.0929 63.1008 34.2525 63.563797 30.846 28.8101 54.3628 29.3719 32.7461 38.597 24.1761 50.351 29.121 29.883 24.1599 60.2161 42.4335 55.9439 33.3248 42.8527 33.2611 33.2541 42.7359 30.1412 32.826 36.6059 32.2041 32.6549 39.4505 32.5854 32.6297 39.4473 59.1029 29.8752 29.7909 39.1483 29.4248 58.6397 52.4868 30.3293 32.3146 54.6393 31.582802 31.754898 31.131401 55.1654 55.4055 33.2532 33.1424 64.455 34.4484 53.6943 57.6762 34.7851 34.5105 33.8418 33.3308 40.4305 42.7854 31.034302 33.3962 42.3073 33.0485 32.0456 43.0057 31.757797 58.615 62.0667 25.0778 24.8785 24.7014 34.7001 40.0798 24.4874 58.2316 34.9737 24.2331 34.6683 57.413 62.7398 55.2813 33.8839 34.4695 58.7054 34.0071 32.963 32.8855 59.6233 59.4431 69.9793 33.1684 70.7704 34.188 52.5482 34.0354 60.6708 34.0971 52.447 52.3149 61.2258 64.2128 33.5583 33.5655 33.346 65.3988 66.1954 39.3737 35.0385 61.984 34.804 34.0773 62.1654 34.3552 34.0684 64.2626 45.2293 45.4505 45.4325 56.9856 61.4681 62.2775 62.7463 36.5131 63.6024 36.0768 35.7519 35.0435 34.8567 35.0231 36.6633 63.257797 63.6063 36.7763 62.7854 38.6653 39.1643 33.9134 38.3108 64.7858 38.3605 38.3581 36.6219 36.7205 36.4807 37.1205 38.8482 38.9154 38.679 70.3338 38.2453 46.077 37.026 70.8174 35.8552 46.3061 36.7898 46.1271 60.8707 71.4088 38.1579 38.2295 64.2305 38.3574 38.5985 38.254 38.6395 67.3673 37.5996 37.5993 36.8771 37.7655 68.7084 38.8552 101.3594 38.9666 40.8016 71.6625 77.3538 100.6417 40.9379 40.7635 79.3497 40.3613 50.4504 65.3679 39.0838 38.9992 50.4218 65.3181 38.7033 69.1609 38.8548 50.1114 67.1826 75.5154 37.2314 77.4458 76.8194 74.7241 72.2144 73.245 78.5924 71.424 67.6819 66.8712 68.9138 71.3208 74.0145 73.9015 82.2091 82.1346 83.6413 72.766 75.9993 53.431 76.3405 76.1114 74.842 75.1258 87.4458 79.0387 88.2068 87.5029 88.1399 78.2018 81.3489 87.1578 87.4283 81.1443 81.8083 80.0809 79.7834 76.6469 81.1567 97.263 68.0224 84.1182 92.3173 85.9765 83.4005 51.6993 83.9663 86.4972 82.7713 90.9918 90.9015 88.7556 87.9104 87.9302 89.1856 88.2968 88.775 84.8261 90.7457 91.0002 90.2 93.8077 92.8446 94.1092 92.828 98.9547 99.945 93.8908 102.2717 96.2783 103.4268 100.9891 102.9628 101.7432 101.8418 100.3517 101.5191 102.434 102.9461 98.076 102.5607 102.2309 114.0567 109.2883 109.3313 108.2933 109.8643 113.7512 114.6036 114.4684 112.8823 122.1143 119.5144 125.811 117.0686 110.7349 115.6613 116.3564 111.3191 110.212 109.8335 114.3389 121.1378 113.7076 117.6604 110.0323 118.7225 114.6467 115.6978 120.4143 119.6838 129.9886 124.6643 110.1647 121.3597 124.8847 117.3477 119.5523 131.742 130.4699 135.1651 136.0279 137.9276 145.2647 135.9228 143.1108 145.7995 142.1787 139.0762 148.0584 150.794 149.7934 " name="spectrum title"/>
+                </SpectrumIdentificationResult>
+                <SpectrumIdentificationResult SpectraData_ref="SD_1" spectrumID="index=1" id="SIR_6">
+                    <SpectrumIdentificationItem passThreshold="false" rank="1" Peptide_ref="peptide_6_1" calculatedMassToCharge="509.751249" experimentalMassToCharge="509.754" chargeState="2" id="SII_6_1">
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="Q" pre="K" end="27" start="19" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" id="PE_6_1_sp|P00921|CAH2_BOVIN_0_19_27"/>
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="Q" pre="K" end="27" start="19" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" id="PE_6_1_sp|CAH2_BOVIN|_0_19_27"/>
+                        <cvParam accession="MS:1001171" cvRef="PSI-MS" value="3.63" name="mascot:score"/>
+                        <cvParam accession="MS:1001172" cvRef="PSI-MS" value="3.55478920277774" name="mascot:expectation value"/>
+                        <cvParam accession="MS:1001363" cvRef="PSI-MS" name="peptide unique to one protein"/>
+                        <Fragmentation>
+                            <IonType charge="1" index="2">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="235.1039"/>
+                                <FragmentArray Measure_ref="m_intensity" values="7524.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0038"/>
+                                <FragmentArray Measure_ref="m_mobility" values="17.5717"/>
+                            </IonType>
+                            <IonType charge="1" index="1 3">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="116.0709 360.1537"/>
+                                <FragmentArray Measure_ref="m_intensity" values="314.0 132.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0367 -0.0017"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.0212 28.5065"/>
+                            </IonType>
+                            <IonType charge="2" index="4 6 8">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="237.1104 329.6239 422.6738"/>
+                                <FragmentArray Measure_ref="m_intensity" values="186.0 135.0 452.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.013 -0.0395 -0.0216"/>
+                                <FragmentArray Measure_ref="m_mobility" values="17.5171 16.5826 18.1356"/>
+                            </IonType>
+                            <IonType charge="1" index="7 6 5 4 3 1">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="756.3864 659.34 546.2542 475.18326 361.1804 175.1014"/>
+                                <FragmentArray Measure_ref="m_intensity" values="6849.0 4763.0 10830.0 2958.0 1460.0 3214.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0135 -0.0071 -0.0088 -0.0427 -0.0026 -0.0175"/>
+                                <FragmentArray Measure_ref="m_mobility" values="77.831 0.0 51.3482 0.0 29.1278 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="8 7">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="452.1975 378.6958"/>
+                                <FragmentArray Measure_ref="m_intensity" values="1742.0 8552.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0403 -0.0078"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 17.2671"/>
+                            </IonType>
+                            <IonType charge="1" index="7 6 5 4 1">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="739.3693 642.3156 529.2336 458.1887 158.0906"/>
+                                <FragmentArray Measure_ref="m_intensity" values="445.0 166.0 416.0 970.0 579.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0040 -0.0050 -0.0029 -0.0107 -0.0018"/>
+                                <FragmentArray Measure_ref="m_mobility" values="75.3138 63.858 46.3898 0.0 16.1835"/>
+                            </IonType>
+                            <IonType charge="2" index="8 7 2">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="443.7034 370.1814 144.0797"/>
+                                <FragmentArray Measure_ref="m_intensity" values="784.0 410.0 243.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0211 -0.0089 0.0086"/>
+                                <FragmentArray Measure_ref="m_mobility" values="20.8454 17.2257 16.0131"/>
+                            </IonType>
+                        </Fragmentation>
+                    </SpectrumIdentificationItem>
+                    <cvParam accession="MS:1001371" cvRef="PSI-MS" value="22" name="mascot:identity threshold"/>
+                    <cvParam accession="MS:1001370" cvRef="PSI-MS" value="16" name="mascot:homology threshold"/>
+                    <cvParam accession="MS:1001030" cvRef="PSI-MS" value="164" name="number of peptide seqs compared to each spectrum"/>
+                    <cvParam accession="MS:1000796" cvRef="PSI-MS" value="Spectrum 1DFPIANGER_01.csv DRIFT_TIME=16.4366 16.0668 16.1296 15.9522 16.1348 16.3723 16.0212 16.3292 16.3657 16.299 16.1896 16.1564 16.1464 16.1072 16.4333 16.1523 16.3531 16.1059 16.0457 16.4886 16.1854 16.2811 16.2977 16.2125 17.9579 16.0404 16.0131 16.5339 16.2991 16.7011 16.0351 16.3732 16.2228 16.5265 16.1835 16.614 16.2637 16.5027 16.2424 16.5538 16.9455 16.5128 16.4427 16.504 16.5172 16.4946 16.6506 16.2569 16.4465 16.3097 16.2334 16.4799 16.4185 16.6821 16.5521 16.7076 16.8373 16.5955 16.9013 16.6262 16.8732 16.5744 16.4824 16.6092 16.7425 16.2777 16.6438 16.6755 17.2056 16.6546 16.8199 18.5099 16.7381 19.3351 16.7173 16.7993 17.8106 16.8006 17.6295 17.0892 17.4887 16.8521 16.8362 16.8052 17.021 17.0958 17.1398 16.8267 16.7905 18.158 18.2876 17.9338 17.8886 18.6295 17.5159 17.1394 17.8614 17.0721 17.1975 18.6513 17.5717 18.1964 17.5603 17.5171 17.2569 19.0292 17.2014 18.0792 18.1215 18.3299 18.4372 18.6563 17.9348 18.4628 18.5383 18.6872 17.5982 18.5492 17.2752 17.7869 17.382 17.4934 17.2737 17.5105 17.9576 18.5166 19.4338 18.8512 18.7492 18.8277 18.7924 18.7414 18.8859 18.4407 18.2679 18.2221 18.2693 19.0391 18.0341 18.6576 19.1025 18.3347 18.8041 19.0551 18.5764 16.5259 18.6705 16.8789 20.7183 19.1509 20.8341 19.4879 19.69 19.6526 16.2689 17.9569 20.7519 18.9054 19.0028 18.8734 18.9546 16.4157 18.8686 16.4758 16.4383 18.8662 19.9725 16.3481 20.0648 19.2964 24.4505 25.3642 17.1809 17.4485 20.5004 20.8615 18.6702 17.4445 18.0477 16.3858 18.7492 19.148 19.6988 19.6983 20.0398 19.107 19.6615 19.8557 19.297 19.4946 19.279 19.3982 19.5006 22.3458 22.1117 16.3585 17.9843 16.3841 19.8251 16.5005 19.7123 24.1029 20.7182 16.607 19.0377 20.5497 26.9279 21.364 22.4665 18.6781 20.4716 18.1457 18.6243 19.4691 20.0814 19.3812 16.6671 19.4312 19.6168 19.7082 19.2901 19.8789 24.8777 19.325 19.4094 16.7782 21.8069 16.3676 16.7568 16.3304 21.3988 16.3403 21.4441 16.5242 21.3296 18.7838 18.2625 24.3832 30.0549 22.7771 23.2063 29.8744 18.4899 20.173 22.2643 24.2363 30.4601 16.5366 22.3411 16.5088 23.5182 28.1852 16.4191 16.7044 23.7466 27.4421 16.5826 19.5965 22.5334 16.4745 22.7172 18.8848 16.2807 16.2563 24.0853 19.6772 24.1619 27.5235 19.7335 23.9838 19.5743 24.2862 18.6808 31.378601 23.1151 32.1553 18.3964 27.4747 19.0696 22.5149 26.5264 21.5972 21.4411 16.4699 21.6298 16.5379 21.4892 16.7473 21.4102 16.7099 21.3657 16.4888 19.9284 16.484 24.8378 16.4659 16.6108 25.366 20.288 17.2149 19.9555 16.5369 19.7271 28.5065 16.9932 29.1278 29.0623 15.9307 22.6192 16.4406 22.5504 22.5632 16.5646 16.2839 16.6806 16.663 22.9252 30.9679 20.086 30.828 20.2166 17.1079 20.5157 17.2257 17.341 20.1003 20.7806 18.713 21.2336 16.4809 18.9196 16.5461 16.4903 32.0891 32.5273 16.8403 16.9138 17.2671 33.6049 17.2109 17.1826 26.989 17.2021 16.6629 26.4873 31.624802 21.067 26.439 20.5531 26.5433 21.3119 26.0902 21.0267 26.4414 20.7284 17.1812 20.8692 16.8835 21.076 35.3372 34.6036 17.4362 25.6404 17.1667 17.5669 22.0875 18.0734 17.8971 16.4985 16.7867 16.5774 33.5019 32.9412 16.525 17.4927 27.1773 17.1822 17.4958 21.6956 27.1363 17.4345 17.2498 27.1788 18.0206 18.4786 27.1938 21.5594 26.8573 20.913 32.2196 17.4735 32.2868 17.9501 17.9596 17.7413 16.6199 17.6436 16.6102 17.6132 16.8416 36.5945 18.4538 18.2236 18.1321 17.6796 24.1456 30.3461 17.7073 17.718 23.944 17.7061 30.138 18.8294 29.5991 18.3411 39.4733 18.4784 16.7408 18.2431 39.2974 18.1356 19.732 19.2659 42.3266 42.0537 17.8769 17.7145 40.9887 17.5792 24.4062 16.3205 17.7016 16.6939 25.9906 19.6118 26.019 19.5616 19.3847 25.9455 18.3034 18.9418 22.6995 25.9244 19.2744 24.7596 18.7751 19.0283 24.7647 17.8746 17.9139 19.849 24.4392 17.921 18.3602 18.2522 18.0279 18.462 37.5353 20.2726 34.772 20.7936 20.8454 20.0649 19.7654 24.5747 26.7244 18.2951 18.8787 18.6372 18.7791 26.9946 18.7929 38.0728 20.6503 26.4568 20.6088 40.8703 20.696 20.3556 20.6263 27.0857 19.7201 19.5384 19.3671 19.0276 19.3154 39.3237 39.7386 19.5426 19.8518 19.9197 19.7871 34.1466 19.6941 19.8093 19.8028 19.5924 19.9938 20.6653 20.5375 20.0265 19.9286 20.0628 20.0199 27.9922 27.863 28.0202 38.606 18.6843 41.299 27.9152 40.9521 27.7741 40.9311 21.3566 21.1591 20.7842 20.4592 20.6183 20.7318 20.4289 20.6639 21.6887 22.8359 21.9001 21.8986 21.828 48.9659 21.3005 21.7931 22.7453 22.1849 47.0242 21.8656 29.0822 21.8862 21.5334 29.0605 21.5342 21.2762 29.2827 21.241 29.0166 47.1484 21.0763 20.7128 23.7725 23.2866 23.2427 22.5907 22.3763 22.6478 22.3892 22.6076 21.8565 21.1789 21.1976 21.3253 25.0633 44.5156 24.9635 51.64 69.2718 78.3511 24.1749 31.958199 23.6195 45.9292 50.1078 52.8794 29.742 23.59 32.017 23.5735 46.9565 23.1683 31.862602 23.2366 46.7062 52.0096 62.1432 22.2513 31.0136 22.6621 46.6802 62.7853 22.3722 31.283302 63.392303 46.2169 46.2961 46.3898 46.6357 48.2511 39.4897 51.3482 34.0533 51.6041 51.4097 33.935 51.7659 49.9901 48.5227 43.6891 59.4841 52.6559 59.7124 59.8349 59.8188 53.8634 54.8836 33.8293 62.319 61.5918 61.8489 62.9135 63.858 65.1735 65.206 64.2994 70.6629 31.626602 69.8454 70.053 72.2694 69.328 68.4604 34.0857 75.3138 78.4957 80.6284 83.9872 84.7375 86.6097 82.2471 78.174 77.831 77.6431 76.9445 76.7598 92.0995 102.3397 102.1087 104.0015 " name="spectrum title"/>
+                </SpectrumIdentificationResult>
+                <SpectrumIdentificationResult SpectraData_ref="SD_1" spectrumID="index=3" id="SIR_8">
+                    <SpectrumIdentificationItem passThreshold="true" rank="1" Peptide_ref="peptide_8_1" calculatedMassToCharge="673.852842" experimentalMassToCharge="673.856" chargeState="2" id="SII_8_1">
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="F" pre="K" end="224" start="213" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" id="PE_8_1_sp|P00921|CAH2_BOVIN_0_213_224"/>
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="F" pre="K" end="224" start="213" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" id="PE_8_1_sp|CAH2_BOVIN|_0_213_224"/>
+                        <cvParam accession="MS:1001171" cvRef="PSI-MS" value="22.72" name="mascot:score"/>
+                        <cvParam accession="MS:1001172" cvRef="PSI-MS" value="0.0264609357901501" name="mascot:expectation value"/>
+                        <cvParam accession="MS:1001363" cvRef="PSI-MS" name="peptide unique to one protein"/>
+                        <Fragmentation>
+                            <IonType charge="1" index="1 2">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="102.053 199.1028"/>
+                                <FragmentArray Measure_ref="m_intensity" values="730.0 866.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0020 -0.0049"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 16.5982"/>
+                            </IonType>
+                            <IonType charge="2" index="8">
+                                <cvParam accession="MS:1001235" cvRef="PSI-MS" name="frag: a ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="392.20096"/>
+                                <FragmentArray Measure_ref="m_intensity" values="1259.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0032"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0"/>
+                            </IonType>
+                            <IonType charge="1" index="1 2 3 4 6">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="130.06714 227.0973 340.1808 427.213 613.3057"/>
+                                <FragmentArray Measure_ref="m_intensity" values="1193.0 394.0 341.0 518.0 115.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0173 -0.0053 -0.0059 -0.0057 -0.0135"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 17.0061 27.934 0.0 59.717"/>
+                            </IonType>
+                            <IonType charge="2" index="2 11">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="114.0876 600.75275"/>
+                                <FragmentArray Measure_ref="m_intensity" values="285.0 412.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0326 -0.0473"/>
+                                <FragmentArray Measure_ref="m_mobility" values="16.1912 0.0"/>
+                            </IonType>
+                            <IonType charge="1" index="10 9 8 7 6 5 4 2 1">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="1120.581 1007.4916 920.4645 821.3935 734.371 647.3354 519.2889 260.1898 147.1087"/>
+                                <FragmentArray Measure_ref="m_intensity" values="632.0 3506.0 1465.0 6499.0 1784.0 681.0 907.0 1099.0 587.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0221 -0.0274 -0.0225 -0.0251 -0.0155 -0.0191 -0.0070 -0.0071 -0.0041"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 116.2686 114.0444 94.1323 0.0 67.1892 54.1465 21.8662 16.1416"/>
+                            </IonType>
+                            <IonType charge="2" index="11 10 9 7 4">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="609.30054 560.7873 504.25 411.20016 260.1898"/>
+                                <FragmentArray Measure_ref="m_intensity" values="1886.0 203.0 164.0 241.0 1099.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.031 -0.0179 -0.0131 -0.0128 0.0382"/>
+                                <FragmentArray Measure_ref="m_mobility" values="0.0 29.1625 0.0 0.0 21.8662"/>
+                            </IonType>
+                            <IonType charge="1" index="7 5 4 1">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="804.3785 630.3201 502.2624 130.06714"/>
+                                <FragmentArray Measure_ref="m_intensity" values="314.0 261.0 362.0 1193.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0135 -0.0079 -0.0070 -0.0191"/>
+                                <FragmentArray Measure_ref="m_mobility" values="87.6901 67.3043 50.137 0.0"/>
+                            </IonType>
+                            <IonType charge="2" index="9 2">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="495.7441 122.0786"/>
+                                <FragmentArray Measure_ref="m_intensity" values="136.0 1036.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0058 -0.0102"/>
+                                <FragmentArray Measure_ref="m_mobility" values="23.6497 16.1036"/>
+                            </IonType>
+                        </Fragmentation>
+                    </SpectrumIdentificationItem>
+                    <cvParam accession="MS:1001371" cvRef="PSI-MS" value="19" name="mascot:identity threshold"/>
+                    <cvParam accession="MS:1001030" cvRef="PSI-MS" value="99" name="number of peptide seqs compared to each spectrum"/>
+                    <cvParam accession="MS:1000796" cvRef="PSI-MS" value="Spectrum 1EPISVSSQQMLK.csv DRIFT_TIME=15.956001 16.0413 16.063 15.976 16.1912 16.1036 16.2214 16.5056 16.2146 16.1891 16.1416 16.1904 16.2072 16.5419 16.2187 16.724 16.484 16.1887 16.7123 16.3742 16.5896 16.514 16.5196 16.4102 16.4382 17.2503 17.1039 16.5982 16.6831 16.7214 16.6928 16.7248 16.5497 16.2964 17.0038 16.7175 16.4215 17.056 18.6427 17.3752 17.0061 18.5871 18.7516 17.7808 17.111 17.9683 18.504 17.3742 18.9584 18.8646 18.9648 16.8903 21.8662 22.1669 17.0296 18.2031 16.9322 17.9541 19.6119 20.5139 20.5819 19.0502 21.2986 17.1434 24.731 19.8001 19.3502 18.7052 18.8721 18.564 19.0161 20.4654 20.1904 25.4793 25.1843 23.219 21.6638 25.7751 18.6785 23.3995 24.3028 18.1516 18.5879 19.4262 23.8821 19.3711 19.2967 34.0937 19.2125 19.4744 19.4256 19.1379 19.4984 24.7308 23.3053 26.2528 18.572 24.4205 22.7586 22.238 20.2124 16.2785 22.1505 20.8872 27.934 30.0332 22.8738 23.0048 18.7257 20.4643 26.6706 21.6601 21.3561 21.2861 17.3683 27.2768 22.3356 29.2269 22.229 22.2635 29.6344 22.685 16.5587 35.1185 32.5356 19.9077 22.7218 26.3736 16.2114 26.4961 31.446602 22.619 16.3184 31.645699 26.3343 22.9739 26.3982 26.4729 26.2236 25.7013 31.641502 32.3085 37.7795 32.4242 36.9801 31.3275 36.9214 16.692 16.4953 16.6054 23.2167 16.601 26.9049 16.4948 23.0506 16.1908 16.3247 27.0403 26.5835 26.4446 26.5549 20.1653 31.8252 33.0362 33.0677 18.6289 33.2436 20.5884 16.6506 24.2009 30.2095 16.3899 25.7036 16.4472 24.8609 16.5159 29.7375 29.6432 17.8105 38.654 29.5553 31.011002 16.7661 20.5923 16.4883 29.928 36.7608 35.741 16.6549 36.6397 36.5077 24.4162 24.57 16.5035 19.9119 24.434 16.6165 16.5583 16.6254 17.8162 34.4327 16.5507 22.1839 29.5596 36.4667 16.8091 42.1239 26.5207 24.0189 23.7851 31.556198 26.0352 31.993698 16.9462 16.8653 22.5876 16.9948 44.1086 43.8134 16.6954 49.0811 16.5729 49.3779 35.9613 18.5492 17.0703 26.611 16.9496 16.8474 17.0111 24.2815 24.2051 27.8234 24.3715 43.12 19.279 16.9343 17.0471 16.9675 17.1265 45.721 45.9515 17.0669 33.4912 33.1941 32.9966 43.9641 19.339 16.9928 17.4242 43.1801 24.8676 44.2172 28.8489 44.2616 43.8191 54.009 29.1714 54.2062 20.9193 24.3106 23.6497 17.6983 17.623 47.5512 17.2642 17.3022 38.8074 17.1121 38.8871 38.3005 54.1617 50.137 20.723 21.4034 23.9943 23.9201 16.9561 17.5465 21.5927 28.1202 30.6062 21.9286 47.9671 54.3316 20.9135 32.0264 21.523 32.525 32.1668 32.5592 22.03 17.9478 32.1994 21.17 27.6356 21.0885 27.6234 21.2221 31.155098 37.9074 54.1465 24.1099 54.5869 22.8116 38.0706 23.1464 22.739 23.171 22.9869 23.3458 17.8838 24.6486 24.2808 50.4935 23.3075 23.0116 23.2816 37.4174 23.2545 23.2569 23.2905 23.2823 23.2382 23.1199 23.3479 28.5568 23.9352 49.6757 47.9451 34.2415 48.8356 40.8715 52.3561 34.3259 29.7521 29.284 28.801 44.3517 23.7922 44.6301 43.891 44.0901 22.2206 21.9786 29.1625 28.103 52.2542 52.8141 59.4214 33.4521 23.3315 32.8577 33.6736 55.0022 59.7219 47.9248 44.6823 46.0134 56.0924 45.1087 56.7295 58.1084 28.2929 33.9776 28.1957 33.9541 33.1297 33.2395 28.0741 28.3329 28.5389 34.1732 28.8172 34.3011 34.1311 33.7622 47.9116 59.717 57.0971 28.7861 29.2379 28.5179 65.8221 48.2453 67.3043 34.9145 67.1892 67.5261 50.1402 38.3674 39.1349 67.5006 65.4018 33.5071 35.6837 34.4036 39.1642 39.4017 40.5644 75.4635 38.7892 39.8698 72.9985 40.0335 70.1469 40.1403 78.4012 90.8405 39.6478 78.9948 34.7749 76.9053 93.9259 36.2748 36.2919 70.9149 70.0305 52.6514 49.7197 75.1323 81.0873 81.0887 80.6447 77.7516 54.0804 83.7462 85.034 91.5172 87.6901 94.1323 93.3684 94.6413 93.9324 101.1297 114.0444 111.8778 112.6281 100.6577 116.2686 116.6358 116.0473 115.6199 136.4382 137.5005 138.5704 " name="spectrum title"/>
+                </SpectrumIdentificationResult>
+                <SpectrumIdentificationResult SpectraData_ref="SD_1" spectrumID="index=11" id="SIR_12">
+                    <SpectrumIdentificationItem passThreshold="false" rank="1" Peptide_ref="peptide_12_1" calculatedMassToCharge="1127.081159" experimentalMassToCharge="1127.0825" chargeState="2" id="SII_12_1">
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="V" pre="K" end="148" start="127" DBSequence_Ref="DBSeq_1_sp|P00921|CAH2_BOVIN" id="PE_12_1_sp|P00921|CAH2_BOVIN_0_127_148"/>
+                        <PeptideEvidence missedCleavages="0" isDecoy="false" post="V" pre="K" end="148" start="127" DBSequence_Ref="DBSeq_1_sp|CAH2_BOVIN|" id="PE_12_1_sp|CAH2_BOVIN|_0_127_148"/>
+                        <cvParam accession="MS:1001171" cvRef="PSI-MS" value="4.89" name="mascot:score"/>
+                        <cvParam accession="MS:1001172" cvRef="PSI-MS" value="0.681113196433633" name="mascot:expectation value"/>
+                        <cvParam accession="MS:1001363" cvRef="PSI-MS" name="peptide unique to one protein"/>
+                        <Fragmentation>
+                            <IonType charge="1" index="1 2 4 5 6 7 8">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="136.0707 193.0945 455.1982 512.2225 613.2473 684.2766 755.3235"/>
+                                <FragmentArray Measure_ref="m_intensity" values="2141.0 203.0 380.0 216.0 247.0 228.0 149.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0050 -0.0027 0.0057 0.0085 -0.0144 -0.0222 -0.0124"/>
+                                <FragmentArray Measure_ref="m_mobility" values="11.4024 11.7362 29.9299 35.6245 43.7457 50.5527 56.3322"/>
+                            </IonType>
+                            <IonType charge="2" index="16">
+                                <cvParam accession="MS:1001229" cvRef="PSI-MS" name="frag: a ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="782.3462"/>
+                                <FragmentArray Measure_ref="m_intensity" values="114.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0293"/>
+                                <FragmentArray Measure_ref="m_mobility" values="56.5314"/>
+                            </IonType>
+                            <IonType charge="1" index="2 3 5 6 7 8 9 10">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="221.0811 336.1073 540.2051 641.2408 712.2737 783.3189 911.359 1039.4468"/>
+                                <FragmentArray Measure_ref="m_intensity" values="327.0 1747.0 468.0 559.0 757.0 388.0 314.0 262.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.011 -0.0117 -0.0038 -0.0158 -0.02 -0.0119 -0.0304 -0.0012"/>
+                                <FragmentArray Measure_ref="m_mobility" values="12.0923 19.5018 35.1252 46.7305 50.996 58.4485 0.0 80.4482"/>
+                            </IonType>
+                            <IonType charge="2" index="8 9 14">
+                                <cvParam accession="MS:1001224" cvRef="PSI-MS" name="frag: b ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="392.1362 456.2176 711.3624"/>
+                                <FragmentArray Measure_ref="m_intensity" values="234.0 163.0 155.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0328 0.0193 0.0422"/>
+                                <FragmentArray Measure_ref="m_mobility" values="23.7019 28.9118 52.927"/>
+                            </IonType>
+                            <IonType charge="2" index="15 17">
+                                <cvParam accession="MS:1001232" cvRef="PSI-MS" name="frag: b ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="738.2815 837.4275"/>
+                                <FragmentArray Measure_ref="m_intensity" values="134.0 103.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.044 0.0336"/>
+                                <FragmentArray Measure_ref="m_mobility" values="54.0345 64.0573"/>
+                            </IonType>
+                            <IonType charge="1" index="12 10 8 7 6 5 4 3 2 1">
+                                <cvParam accession="MS:1001220" cvRef="PSI-MS" name="frag: y ion"/>
+                                <FragmentArray Measure_ref="m_mz" values="1214.6702 1002.5995 832.5015 761.4665 662.406 563.33484 506.3229 407.24182 260.1892 147.1095"/>
+                                <FragmentArray Measure_ref="m_intensity" values="987.0 363.0 640.0 696.0 1768.0 2760.0 477.0 1995.0 761.0 240.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0441 -0.0351 -0.0276 -0.0255 -0.0176 -0.0203 -0.0108 -0.0235 -0.0077 -0.0033"/>
+                                <FragmentArray Measure_ref="m_mobility" values="137.2718 100.8141 68.0812 60.3051 0.0 0.0 39.4625 0.0 15.354 11.4431"/>
+                            </IonType>
+                            <IonType charge="1" index="13 1">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="1325.7081 130.0827"/>
+                                <FragmentArray Measure_ref="m_intensity" values="290.0 390.0"/>
+                                <FragmentArray Measure_ref="m_error" values="-0.0383 -0.0036"/>
+                                <FragmentArray Measure_ref="m_mobility" values="124.1956 11.332"/>
+                            </IonType>
+                            <IonType charge="2" index="13 12 8 2">
+                                <cvParam accession="MS:1001233" cvRef="PSI-MS" name="frag: y ion - NH3"/>
+                                <FragmentArray Measure_ref="m_mz" values="663.4053 599.3506 408.2585 122.076"/>
+                                <FragmentArray Measure_ref="m_intensity" values="817.0 249.0 497.0 1708.0"/>
+                                <FragmentArray Measure_ref="m_error" values="0.0285 0.0031 0.0036 -0.0128"/>
+                                <FragmentArray Measure_ref="m_mobility" values="52.9731 13.3379 27.4592 0.0"/>
+                            </IonType>
+                        </Fragmentation>
+                    </SpectrumIdentificationItem>
+                    <cvParam accession="MS:1001371" cvRef="PSI-MS" value="16" name="mascot:identity threshold"/>
+                    <cvParam accession="MS:1001030" cvRef="PSI-MS" value="42" name="number of peptide seqs compared to each spectrum"/>
+                    <cvParam accession="MS:1000796" cvRef="PSI-MS" value="Spectrum 1YGDFGTAAQQPDGLAVVGVFLK.csv DRIFT_TIME=11.2894 11.0708 11.1495 11.3452 11.2621 11.1312 11.3596 11.3537 11.394 11.241 11.2249 11.1512 11.3683 11.4485 11.3479 11.3924 11.332 11.4024 11.4466 11.3276 11.4431 11.4704 11.452 11.7623 11.5711 11.5771 11.7362 11.7586 11.7165 11.7283 11.8688 11.7976 11.7986 11.8816 12.0325 12.0923 12.1274 12.5461 13.0232 12.477 12.1462 12.2207 14.1426 13.4836 15.354 12.652 13.1897 15.652 14.2631 13.7055 17.6197 13.4985 16.0692 15.311401 16.2075 13.7373 13.6765 13.7052 13.6707 13.584 15.9016 16.8812 17.997 18.8381 19.5018 19.3661 15.219 15.103901 15.272701 23.0776 20.5703 21.7125 18.3173 21.4959 21.3042 18.7946 20.1769 18.6751 18.7463 24.0131 23.7019 19.0134 24.7418 19.2753 24.1321 25.8592 27.134 27.4592 16.9985 23.9368 21.1004 20.9039 24.6757 26.6495 25.2045 26.4215 27.2137 17.3979 17.5364 28.2999 17.2285 27.0234 28.3459 21.2516 28.0946 29.1974 22.8225 29.9299 28.9118 22.4032 28.5159 29.9858 24.7886 30.1968 19.7932 19.8772 30.3355 19.5864 30.0998 24.3893 30.8356 14.2446 31.309402 20.3674 20.5329 31.854797 20.3558 30.8811 32.1125 24.9296 12.0466 26.911 32.3027 27.0518 28.8136 28.036 39.4625 22.4992 32.8322 22.4678 22.5463 33.443 22.4543 35.6245 22.3018 33.6969 12.2873 37.2108 12.3299 34.8297 18.4298 37.3083 16.8191 16.4153 33.2541 34.1675 12.8526 12.6109 26.0952 25.3365 34.9656 16.2695 35.1252 35.3232 12.6724 35.3417 23.947 35.7705 23.7256 15.622799 36.5548 36.8568 15.178101 12.4094 13.0871 36.5129 12.834 13.1446 36.2884 13.2613 37.5211 31.2756 31.107101 36.5312 31.115501 37.0787 31.174599 31.0363 12.5448 37.2252 42.0385 17.487 42.2065 37.0078 41.6688 38.0333 16.6152 12.8329 13.7777 12.8235 13.8114 13.1426 13.5456 26.0856 32.7985 39.2365 39.7337 39.2279 13.2177 13.1474 13.2041 39.145 39.2007 13.0611 13.3313 13.2754 33.8271 39.6245 33.7636 41.5873 29.9625 40.5348 30.0479 40.5993 30.1092 41.3092 29.6632 30.0787 13.3385 13.3379 13.4219 13.3314 23.9313 13.1651 23.8872 13.1043 39.8195 24.0805 38.9622 23.6188 41.3063 41.5062 28.6906 34.1325 43.7457 34.2577 43.0859 34.0594 35.0571 12.8481 14.0881 34.7015 14.1195 14.0639 42.5299 14.005 13.8731 13.9196 14.2042 40.8765 41.7741 42.053 43.4097 43.8186 46.6594 29.1074 29.6747 33.08 32.3194 32.5838 32.4016 13.5642 14.5964 31.7667 14.6272 45.2341 14.8384 25.3699 44.0222 46.7305 45.6493 13.7178 13.7378 37.2263 47.0116 37.1114 47.003 35.7451 35.4005 46.3733 35.8284 14.1032 47.0392 15.3414 35.5508 46.233 15.2882 34.7681 15.0536 31.997498 31.5111 53.0329 29.2717 14.0363 52.9731 14.2101 47.0602 54.1066 14.103 46.8457 46.9612 47.6517 35.6975 47.2654 33.5552 21.8744 24.9206 48.3353 25.2616 48.9283 15.1064 24.14 48.9756 24.5406 24.0264 34.9472 50.5527 35.0664 49.8176 24.9854 35.0998 24.6689 24.9255 36.3634 35.1536 36.6932 26.3897 36.4834 26.4101 36.7329 25.5859 37.2197 48.9501 36.2261 48.7701 49.8142 50.1581 15.748901 15.6273 36.9289 51.101 50.6001 52.927 27.5338 50.996 51.3611 52.7077 51.2493 34.5433 39.9413 39.784 54.0345 38.7233 39.4462 38.5847 38.7094 39.0906 38.2117 38.7591 53.6287 56.3322 37.5678 42.9354 60.3051 36.8101 59.9222 43.0453 56.2302 54.5576 42.8613 56.906 56.874 37.9804 38.2972 59.4477 38.1963 56.3862 38.0576 56.5314 38.3599 58.4485 58.8108 59.7398 40.6219 40.2991 46.0413 59.4365 59.7035 45.2158 61.8134 61.3873 41.2428 41.1096 40.9914 41.1682 40.7515 42.3855 33.7351 33.3532 33.3825 68.0812 67.6463 42.2735 67.2902 64.0573 43.8735 44.142 43.7738 43.9735 43.7247 43.9417 43.262 42.077 46.7902 46.4457 46.4709 46.703 65.9445 42.5767 41.7056 69.6161 68.4361 50.9183 47.2293 67.3632 48.0801 47.0745 44.2137 45.5532 45.032 45.6755 44.6883 78.375 79.8379 45.1179 51.233 48.331 47.8896 48.6589 100.8141 99.0973 51.8913 49.7589 49.7268 48.6853 77.0396 49.4623 80.4482 53.3282 49.3506 54.0355 54.4058 51.3028 54.8969 54.4541 53.4195 137.2718 136.2905 139.6998 124.1956 " name="spectrum title"/>
+                </SpectrumIdentificationResult>
+            </SpectrumIdentificationList>
+            <ProteinDetectionList id="PDL_1">
+                <ProteinAmbiguityGroup id="PAG_hit_1">
+                    <ProteinDetectionHypothesis passThreshold="true" DBSequence_ref="DBSeq_1_sp|CAH2_BOVIN|" id="PDH_sp|CAH2_BOVIN|_0">
+                        <PeptideHypothesis PeptideEvidence_Ref="PE_2_1_sp|CAH2_BOVIN|_0_159_167"/>
+                        <PeptideHypothesis PeptideEvidence_Ref="PE_4_1_sp|CAH2_BOVIN|_0_28_36"/>
+                        <PeptideHypothesis PeptideEvidence_Ref="PE_5_1_sp|CAH2_BOVIN|_0_149_158"/>
+                        <PeptideHypothesis PeptideEvidence_Ref="PE_6_1_sp|CAH2_BOVIN|_0_19_27"/>
+                        <PeptideHypothesis PeptideEvidence_Ref="PE_8_1_sp|CAH2_BOVIN|_0_213_224"/>
+                        <PeptideHypothesis PeptideEvidence_Ref="PE_12_1_sp|CAH2_BOVIN|_0_127_148"/>
+                        <cvParam accession="MS:1001171" cvRef="PSI-MS" value="24.1" name="mascot:score"/>
+                        <cvParam accession="MS:1001097" cvRef="PSI-MS" value="6" name="distinct peptide sequences"/>
+                    </ProteinDetectionHypothesis>
+                </ProteinAmbiguityGroup>
+            </ProteinDetectionList>
+        </AnalysisData>
+    </DataCollection>
+    <BibliographicReference title="Probability-based protein identification by searching sequence databases using mass spectrometry data" pages="3551-3567" issue="18" volume="20" year="1999" editor="" publisher="Wiley VCH" publication="Electrophoresis" authors="David N. Perkins, Darryl J. C. Pappin, David M. Creasy, John S. Cottrell" name="Probability-based protein identification by searching sequence databases using mass spectrometry data" id="10.1002/(SICI)1522-2683(19991201)20:18&lt;3551::AID-ELPS3551&gt;3.0.CO;2-2"/>
+</mzIdentML>
