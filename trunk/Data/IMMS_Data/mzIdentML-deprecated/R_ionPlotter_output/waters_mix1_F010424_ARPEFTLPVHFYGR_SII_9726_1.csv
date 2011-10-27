@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+ARPEFTLPVHFYGR,0.0196336027683605,frag: y ion,2,545.7939,29940.0,52.2,1,true
+ARPEFTLPVHFYGR,0.0196336027683605,frag: y ion,2,438.2269,143300.0,43.6,1,true
+ARPEFTLPVHFYGR,0.0196336027683605,no id,0,355.068,83594,43.8,1,true

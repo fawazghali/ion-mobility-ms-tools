@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+LMEHLMTK,1.7189834952343,frag: y ion,2,380.089,1360.0,18.3296,1,false
+LMEHLMTK,1.7189834952343,frag: y ion,2,190.1173,1480.0,16.76,1,false
+LMEHLMTK,1.7189834952343,no id,0,183.3156,722,16.3647,1,false

@@ -1,0 +1,6 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+VVEEVHWR,0.43532832279914,frag: a ion,1,72.0915,1244.0,16.5103,2,false
+VVEEVHWR,0.43532832279914,frag: a ion,1,171.0987,244.0,18.7797,2,false
+VVEEVHWR,0.43532832279914,frag: a ion,2,86.1086,2623.0,16.8103,2,false
+VVEEVHWR,0.43532832279914,frag: a ion,2,151.0337,555.0,17.274,2,false
+VVEEVHWR,0.43532832279914,no id,0,136.0989,129,18.3897,2,false

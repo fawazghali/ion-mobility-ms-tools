@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+LDGPLQRVR,0.346590714698024,frag: a ion,2,129.0844,342.0,17.0322,2,false
+LDGPLQRVR,0.346590714698024,frag: a ion,2,178.0785,328.0,19.1654,2,false
+LDGPLQRVR,0.346590714698024,frag: y ion - NH3,2,129.0844,342.0,17.0322,2,false
+LDGPLQRVR,0.346590714698024,no id,0,136.0989,129,18.3897,2,false

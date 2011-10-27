@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+CACTIHSLR,7.7659733871641,frag: b ion,2,116.0905,189.0,17.1099,2,false
+CACTIHSLR,7.7659733871641,frag: b ion,2,246.9441,189.0,31.964302,2,false
+CACTIHSLR,7.7659733871641,no id,0,357.6888,101,26.3091,2,false
+CACTIHSLR,7.7659733871641,no id,0,357.6888,101,26.3091,2,false
