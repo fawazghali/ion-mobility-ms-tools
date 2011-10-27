@@ -33,8 +33,8 @@ ionPlot<-function(inputFile,outputFile,title){
 		twoMZ<-testCSV$M_Z[o]		
 	
 	
-	jpeg(filename = outputFile, width = 15, height = 10,
-		 units = "in", pointsize = 15, quality = 75, bg = "white",
+	jpeg(filename = outputFile, width = 10, height = 7,
+		 units = "in", pointsize = 10, quality = 75, bg = "white",
 		 res = 300, restoreConsole = TRUE) 								# create a jpeg file for plotting
 
  
