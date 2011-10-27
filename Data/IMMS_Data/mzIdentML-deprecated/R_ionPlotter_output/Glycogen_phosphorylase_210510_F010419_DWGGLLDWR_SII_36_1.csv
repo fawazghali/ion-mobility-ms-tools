@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+DWGGLLDWR,0.746785536269777,frag: b ion,1,359.1784,158.0,24.381,1,false
+DWGGLLDWR,0.746785536269777,frag: b ion,1,642.4073,158.0,77.9882,1,false
+DWGGLLDWR,0.746785536269777,no id,0,357.6888,101,26.3091,1,false
+DWGGLLDWR,0.746785536269777,no id,0,357.6888,101,26.3091,1,false

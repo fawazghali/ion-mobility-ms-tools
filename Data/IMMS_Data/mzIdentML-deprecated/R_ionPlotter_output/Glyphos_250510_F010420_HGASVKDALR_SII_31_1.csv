@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+HGASVKDALR,5.79184490339108,frag: a ion,1,110.0902,232.0,16.4632,1,false
+HGASVKDALR,5.79184490339108,frag: a ion,1,738.4088,198.0,60.9893,1,false
+HGASVKDALR,5.79184490339108,frag: y ion - NH3,2,421.2685,211.0,34.7316,1,false
+HGASVKDALR,5.79184490339108,no id,0,136.0989,129,18.3897,1,false

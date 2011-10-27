@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+TGHESGVER,0.429976018113307,frag: a ion,1,131.0118,130.0,35.0898,1,false
+TGHESGVER,0.429976018113307,frag: a ion,2,243.0769,130.0,50.1709,1,false
+TGHESGVER,0.429976018113307,frag: a ion,2,271.1017,125.0,62.536,1,false
+TGHESGVER,0.429976018113307,no id,0,242.0954,105,53.9967,1,false

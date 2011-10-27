@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+EEQGEEKCNSLR,2.99471791766863,frag: a ion,2,481.4186,215.0,25.0769,1,false
+EEQGEEKCNSLR,2.99471791766863,frag: a ion,2,582.4736,215.0,32.6679,1,false
+EEQGEEKCNSLR,2.99471791766863,no id,0,583.4627,103,57.8238,1,false

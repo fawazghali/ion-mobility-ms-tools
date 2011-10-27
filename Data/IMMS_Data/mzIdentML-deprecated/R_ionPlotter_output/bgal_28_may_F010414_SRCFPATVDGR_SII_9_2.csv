@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+SRCFPATVDGR,0.604225913675522,frag: b ion,2,123.0614,251.0,16.2782,2,false
+SRCFPATVDGR,0.604225913675522,frag: b ion,2,276.1418,250.0,22.3518,2,false
+SRCFPATVDGR,0.604225913675522,no id,0,296.1437,104,23.8938,2,false

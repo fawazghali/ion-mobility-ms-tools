@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+GLGGALLENK,0.183418962902999,frag: a ion,2,72.0871,456.0,23.805,1,false
+GLGGALLENK,0.183418962902999,frag: a ion,2,101.0667,452.0,23.7088,1,false
+GLGGALLENK,0.183418962902999,frag: a ion,2,342.1707,404.0,94.6016,1,false
+GLGGALLENK,0.183418962902999,no id,0,242.0954,105,53.9967,1,false

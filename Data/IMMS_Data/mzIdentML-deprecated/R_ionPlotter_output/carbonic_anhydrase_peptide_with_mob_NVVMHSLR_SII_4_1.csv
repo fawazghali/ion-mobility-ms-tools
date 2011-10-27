@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+NVVMHSLR,1.52912938274677,frag: b ion,1,115.0614,227.0,23.8623,1,false
+NVVMHSLR,1.52912938274677,frag: b ion,1,313.1182,220.0,73.0212,1,false
+NVVMHSLR,1.52912938274677,frag: y ion,1,375.7129,213.0,111.0744,1,false
+NVVMHSLR,1.52912938274677,no id,0,242.0954,105,53.9967,1,false

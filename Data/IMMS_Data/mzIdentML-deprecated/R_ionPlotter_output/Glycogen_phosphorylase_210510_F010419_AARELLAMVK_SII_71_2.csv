@@ -1,0 +1,4 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+AARELLAMVK,1.67569856577817,frag: y ion,2,74.072,669.0,16.6189,2,false
+AARELLAMVK,1.67569856577817,no id,0,357.6888,101,26.3091,2,false
+AARELLAMVK,1.67569856577817,no id,0,357.6888,101,26.3091,2,false

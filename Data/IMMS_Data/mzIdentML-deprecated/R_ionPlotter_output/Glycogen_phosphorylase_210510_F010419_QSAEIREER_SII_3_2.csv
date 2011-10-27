@@ -1,0 +1,5 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+QSAEIREER,3.35116566669804,frag: y ion,2,451.7562,135.0,35.7302,2,false
+QSAEIREER,3.35116566669804,frag: y ion,2,351.2329,135.0,28.9091,2,false
+QSAEIREER,3.35116566669804,no id,0,357.6888,101,26.3091,2,false
+QSAEIREER,3.35116566669804,no id,0,357.6888,101,26.3091,2,false

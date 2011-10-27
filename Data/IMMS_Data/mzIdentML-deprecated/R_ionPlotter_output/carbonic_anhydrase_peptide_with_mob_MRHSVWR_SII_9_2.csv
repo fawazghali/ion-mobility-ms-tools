@@ -1,0 +1,6 @@
+Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
+MRHSVWR,0.635981135102557,frag: a ion,2,131.0118,130.0,35.0898,2,false
+MRHSVWR,0.635981135102557,frag: a ion,2,243.0769,130.0,50.1709,2,false
+MRHSVWR,0.635981135102557,frag: a ion - NH3,1,243.0769,130.0,50.1709,2,false
+MRHSVWR,0.635981135102557,frag: b ion - NH3,1,271.1017,125.0,62.536,2,false
+MRHSVWR,0.635981135102557,no id,0,242.0954,105,53.9967,2,false
