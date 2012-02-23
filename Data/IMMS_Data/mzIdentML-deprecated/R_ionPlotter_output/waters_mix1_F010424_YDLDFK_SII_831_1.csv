@@ -1,5 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-YDLDFK,0.042854852039744,frag: b ion,1,391.68677,18080.0,36.3,1,true
-YDLDFK,0.042854852039744,frag: b ion,1,507.20264,21300.0,70.6,1,true
-YDLDFK,0.042854852039744,frag: y ion - NH3,1,391.68677,18080.0,36.3,1,true
-YDLDFK,0.042854852039744,no id,0,631.945,77287,58.5,1,true

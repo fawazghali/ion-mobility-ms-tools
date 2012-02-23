@@ -1,5 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-GCALPSFSR,0.349274813512461,frag: b ion,1,218.1301,114.0,25.7227,1,false
-GCALPSFSR,0.349274813512461,frag: b ion,1,499.306,109.0,56.4474,1,false
-GCALPSFSR,0.349274813512461,no id,0,218.1301,114,25.7227,1,false
-GCALPSFSR,0.349274813512461,no id,0,499.306,109,56.4474,1,false

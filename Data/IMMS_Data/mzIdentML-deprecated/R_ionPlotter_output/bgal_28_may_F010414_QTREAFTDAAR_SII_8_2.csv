@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-QTREAFTDAAR,1.31280235494283,frag: y ion,2,267.1472,310.0,20.9039,2,false
-QTREAFTDAAR,1.31280235494283,frag: y ion,2,159.0953,318.0,16.4072,2,false
-QTREAFTDAAR,1.31280235494283,no id,0,296.1437,104,23.8938,2,false

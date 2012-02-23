@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-EPSEYPQGM,0.346590714698024,frag: a ion,1,199.1009,132.0,22.257,1,false
-EPSEYPQGM,0.346590714698024,frag: a ion,1,578.3727,130.0,79.5834,1,false
-EPSEYPQGM,0.346590714698024,no id,0,136.0989,129,18.3897,1,false

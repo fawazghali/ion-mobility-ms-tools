@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-DERAETAAR,0.544843415600342,frag: y ion,1,547.5649,2561.0,55.235,2,false
-DERAETAAR,0.544843415600342,frag: y ion,1,175.1466,2607.0,16.2343,2,false
-DERAETAAR,0.544843415600342,no id,0,183.3156,722,16.3647,2,false
