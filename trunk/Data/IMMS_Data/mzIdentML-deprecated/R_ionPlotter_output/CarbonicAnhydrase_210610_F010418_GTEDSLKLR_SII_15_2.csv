@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-GTEDSLKLR,0.80960225070594,frag: y ion,1,529.3201,2197.0,51.2426,2,false
-GTEDSLKLR,0.80960225070594,frag: y ion,1,175.1132,2499.0,16.316,2,false
-GTEDSLKLR,0.80960225070594,no id,0,183.3156,722,16.3647,2,false

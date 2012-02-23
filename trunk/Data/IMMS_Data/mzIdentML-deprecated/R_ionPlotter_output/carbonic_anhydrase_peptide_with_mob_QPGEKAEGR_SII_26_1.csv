@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-QPGEKAEGR,0.429976018113307,frag: b ion,2,142.0904,266.0,25.6661,1,false
-QPGEKAEGR,0.429976018113307,frag: b ion,2,270.2032,266.0,72.5118,1,false
-QPGEKAEGR,0.429976018113307,no id,0,242.0954,105,53.9967,1,false

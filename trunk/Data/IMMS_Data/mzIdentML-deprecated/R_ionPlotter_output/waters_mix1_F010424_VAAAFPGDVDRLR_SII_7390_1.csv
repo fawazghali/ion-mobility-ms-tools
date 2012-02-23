@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-VAAAFPGDVDRLR,0.0171001531509029,frag: y ion,2,644.33075,26670.0,85.6,1,true
-VAAAFPGDVDRLR,0.0171001531509029,frag: y ion,2,464.37415,30160.0,45.9,1,true
-VAAAFPGDVDRLR,0.0171001531509029,no id,0,371.09875,97534,47.7,1,true

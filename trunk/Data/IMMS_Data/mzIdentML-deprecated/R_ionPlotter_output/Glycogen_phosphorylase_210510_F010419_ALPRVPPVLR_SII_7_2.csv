@@ -1,5 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-ALPRVPPVLR,12.223509037297,frag: a ion,2,254.9333,120.0,32.8899,2,false
-ALPRVPPVLR,12.223509037297,frag: a ion,2,352.238,120.0,29.9099,2,false
-ALPRVPPVLR,12.223509037297,no id,0,357.6888,101,26.3091,2,false
-ALPRVPPVLR,12.223509037297,no id,0,357.6888,101,26.3091,2,false

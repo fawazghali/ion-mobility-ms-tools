@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-APEGHERPGSRASK,4.99293510060974,frag: b ion,2,389.2503,121.0,32.4262,1,false
-APEGHERPGSRASK,4.99293510060974,frag: b ion,2,509.3491,121.0,49.3972,1,false
-APEGHERPGSRASK,4.99293510060974,no id,0,583.4627,103,57.8238,1,false

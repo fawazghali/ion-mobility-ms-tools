@@ -1,3 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-EFFNDMAALNVR,0.264240875732195,frag: y ion,2,251.10127,55500.0,36.4,1,false
-EFFNDMAALNVR,0.264240875732195,no id,0,507.94406,26577,48.1,1,false

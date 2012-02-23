@@ -1,6 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-VYLPR,2.67134800742065,frag: y ion,1,548.3727,2974.0,145.144,1,false
-VYLPR,2.67134800742065,frag: y ion,1,385.29276,6498.0,0.0,1,false
-VYLPR,2.67134800742065,no id,0,205.0441,9905,56.861,1,false
-VYLPR,2.67134800742065,no id,0,324.2252,6992,70.9962,1,false
-VYLPR,2.67134800742065,no id,0,385.2945,2015,106.1203,1,false
