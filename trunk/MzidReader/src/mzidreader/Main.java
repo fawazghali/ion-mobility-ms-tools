@@ -258,7 +258,7 @@ public class Main {
                 }
 
                 int exitVal = pr.waitFor();
-                System.out.println("Exited with error code "+exitVal);
+                System.out.println("Exited with error code "+exitVal + " (error code 0 indicates that R has run successfully)");
 
             }
             catch(Exception e) {

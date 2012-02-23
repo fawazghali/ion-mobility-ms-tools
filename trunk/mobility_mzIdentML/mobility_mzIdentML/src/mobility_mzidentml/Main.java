@@ -20,6 +20,7 @@ import uk.ac.ebi.jmzidml.model.mzidml.FragmentationTable;
 import uk.ac.ebi.jmzidml.model.mzidml.IonType;
 import uk.ac.ebi.jmzidml.model.mzidml.Measure;
 import uk.ac.ebi.jmzidml.model.mzidml.MzIdentML;
+import uk.ac.ebi.jmzidml.model.mzidml.Cv;
 import uk.ac.ebi.jmzidml.model.mzidml.SpectrumIdentificationItem;
 import uk.ac.ebi.jmzidml.model.mzidml.SpectrumIdentificationList;
 import uk.ac.ebi.jmzidml.model.mzidml.SpectrumIdentificationResult;
@@ -660,6 +661,16 @@ public class Main {
 
             MzIdentMLUnmarshaller unmarshaller = new MzIdentMLUnmarshaller(new File(mzid));
             MzIdentML mzIdentML_whole = unmarshaller.unmarshal(MzIdentML.class);
+            List<Cv> cvList = mzIdentML_whole.getCvList().getCv();
+            Cv psiCv = null;
+            
+            for(Cv cv : cvList){                
+                if(cv.getUri().contains("psi-ms")){                    
+                    psiCv = cv;
+                }                       
+            }
+            
+            
             AnalysisData analysisData = mzIdentML_whole.getDataCollection().getAnalysisData();
             List<SpectrumIdentificationList> spectrumIdentificationList = analysisData.getSpectrumIdentificationList();
 
@@ -669,7 +680,7 @@ public class Main {
                 e.setId("m_mobility");
                 CvParam cvParam = new CvParam();
                 cvParam.setAccession("MS:TODO");
-                cvParam.setCvRef("PSI-MS");
+                cvParam.setCv(psiCv);
                 cvParam.setName("product ion mobility");
                 e.getCvParam().add(cvParam);
                 ft.getMeasure().add(e);
