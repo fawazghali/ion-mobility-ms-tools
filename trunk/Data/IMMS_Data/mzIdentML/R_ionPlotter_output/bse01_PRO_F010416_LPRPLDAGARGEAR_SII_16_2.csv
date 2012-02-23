@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-LPRPLDAGARGEAR,8.65677083796412,frag: y ion,2,634.4065,143.0,31.4538,2,false
-LPRPLDAGARGEAR,8.65677083796412,frag: y ion,2,451.5943,144.0,16.744,2,false
-LPRPLDAGARGEAR,8.65677083796412,no id,0,583.4627,103,57.8238,2,false

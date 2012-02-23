@@ -1,5 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-GKRPDAMK,1.87495038881664,frag: y ion,1,147.1357,159.0,17.9599,2,false
-GKRPDAMK,1.87495038881664,frag: y ion,2,147.1357,159.0,17.9599,2,false
-GKRPDAMK,1.87495038881664,no id,0,73.0406,126,16.211,2,false
-GKRPDAMK,1.87495038881664,no id,0,214.1452,116,24.3507,2,false

@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-STSSGKETEK,1.16095910956849,frag: y ion,1,506.3324,307.0,68.6336,2,false
-STSSGKETEK,1.16095910956849,frag: y ion,1,147.136,318.0,18.1989,2,false
-STSSGKETEK,1.16095910956849,no id,0,136.0989,129,18.3897,2,false

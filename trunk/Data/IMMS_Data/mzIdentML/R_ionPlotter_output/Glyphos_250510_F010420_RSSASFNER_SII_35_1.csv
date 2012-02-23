@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-RSSASFNER,1.1798231775753,frag: a ion,1,129.121,161.0,17.6794,1,false
-RSSASFNER,1.1798231775753,frag: a ion,1,461.2316,160.0,59.1291,1,false
-RSSASFNER,1.1798231775753,no id,0,136.0989,129,18.3897,1,false

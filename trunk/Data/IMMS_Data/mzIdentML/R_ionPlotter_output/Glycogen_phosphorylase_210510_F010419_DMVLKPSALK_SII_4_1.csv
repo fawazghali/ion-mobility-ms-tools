@@ -1,5 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-DMVLKPSALK,11.646512521645,frag: y ion,1,515.6378,114.0,30.5316,1,false
-DMVLKPSALK,11.646512521645,frag: y ion,1,331.1879,114.0,23.4986,1,false
-DMVLKPSALK,11.646512521645,no id,0,357.6888,101,26.3091,1,false
-DMVLKPSALK,11.646512521645,no id,0,357.6888,101,26.3091,1,false
