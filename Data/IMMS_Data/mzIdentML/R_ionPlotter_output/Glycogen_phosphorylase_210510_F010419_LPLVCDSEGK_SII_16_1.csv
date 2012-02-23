@@ -1,5 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-LPLVCDSEGK,7.7659733871641,frag: y ion,1,420.141,128.0,28.1162,1,false
-LPLVCDSEGK,7.7659733871641,frag: y ion,1,333.2179,128.0,27.8492,1,false
-LPLVCDSEGK,7.7659733871641,no id,0,357.6888,101,26.3091,1,false
-LPLVCDSEGK,7.7659733871641,no id,0,357.6888,101,26.3091,1,false

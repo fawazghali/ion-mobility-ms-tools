@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-ENEASLLMLFRR,10.3837905876618,frag: b ion,1,373.2583,200.0,30.0035,1,false
-ENEASLLMLFRR,10.3837905876618,frag: b ion,1,1001.8353,200.0,122.8229,1,false
-ENEASLLMLFRR,10.3837905876618,no id,0,583.4627,103,57.8238,1,false

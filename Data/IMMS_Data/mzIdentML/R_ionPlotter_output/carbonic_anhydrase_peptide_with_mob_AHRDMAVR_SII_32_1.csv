@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-AHRDMAVR,0.429976018113307,frag: b ion,2,105.0776,646.0,23.7696,1,false
-AHRDMAVR,0.429976018113307,frag: b ion,2,183.0867,606.0,23.2476,1,false
-AHRDMAVR,0.429976018113307,no id,0,242.0954,105,53.9967,1,false

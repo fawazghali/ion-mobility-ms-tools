@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-FPMALFRR,0.956790652166948,frag: a ion,2,109.0048,404.0,16.4183,1,false
-FPMALFRR,0.956790652166948,frag: b ion,2,74.0716,416.0,16.4309,1,false
-FPMALFRR,0.956790652166948,no id,0,136.0989,129,18.3897,1,false

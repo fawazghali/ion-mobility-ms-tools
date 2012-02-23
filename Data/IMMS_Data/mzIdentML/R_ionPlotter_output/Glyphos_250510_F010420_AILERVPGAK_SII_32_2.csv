@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-AILERVPGAK,1.55173274074299,frag: y ion,2,186.1949,403.0,24.269,2,false
-AILERVPGAK,1.55173274074299,frag: y ion,2,74.0716,416.0,16.4309,2,false
-AILERVPGAK,1.55173274074299,no id,0,136.0989,129,18.3897,2,false

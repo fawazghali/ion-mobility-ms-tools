@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-DYYFALAHTVR,0.0171001531509029,frag: b ion,2,491.21924,22940.0,38.6,1,true
-DYYFALAHTVR,0.0171001531509029,frag: b ion,2,541.7859,23180.0,49.0,1,true
-DYYFALAHTVR,0.0171001531509029,no id,0,631.945,77287,58.5,1,true

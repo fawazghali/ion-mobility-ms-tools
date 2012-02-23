@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-AGKFSGTPGDVLDSK,8.22916785615261,frag: b ion,2,202.9012,191.0,18.5572,2,false
-AGKFSGTPGDVLDSK,8.22916785615261,frag: b ion,2,325.2766,191.0,28.0879,2,false
-AGKFSGTPGDVLDSK,8.22916785615261,no id,0,583.4627,103,57.8238,2,false

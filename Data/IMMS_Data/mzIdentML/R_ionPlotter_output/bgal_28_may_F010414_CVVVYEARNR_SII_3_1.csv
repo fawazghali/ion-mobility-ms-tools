@@ -1,5 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-CVVVYEARNR,0.140993582970525,frag: b ion,2,81.0476,266.0,16.0876,1,false
-CVVVYEARNR,0.140993582970525,frag: b ion,2,229.1344,264.0,17.6142,1,false
-CVVVYEARNR,0.140993582970525,frag: b ion,2,411.2271,264.0,37.3171,1,false
-CVVVYEARNR,0.140993582970525,no id,0,296.1437,104,23.8938,1,false

@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-YLSPPAAPR,1.48745636186271,frag: b ion,2,139.1044,701.0,27.4264,1,false
-YLSPPAAPR,1.48745636186271,frag: b ion,2,183.0501,693.0,30.1505,1,false
-YLSPPAAPR,1.48745636186271,no id,0,242.0954,105,53.9967,1,false

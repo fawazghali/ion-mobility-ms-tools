@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-MLNFIPKR,0.544843415600342,frag: a ion,1,217.1336,2085.0,17.4526,1,false
-MLNFIPKR,0.544843415600342,frag: a ion,1,478.2747,2077.0,24.1752,1,false
-MLNFIPKR,0.544843415600342,no id,0,183.3156,722,16.3647,1,false

@@ -1,4 +1,0 @@
-Peptide,E-value,Ion_type,charge,M_Z,Intensity,Mobility,Rank,PassMascotThreshold
-MAAATPAPGGK,0.504015895729257,frag: a ion,2,53.0192,579.0,23.6446,1,false
-MAAATPAPGGK,0.504015895729257,frag: a ion,2,342.1753,563.0,88.287,1,false
-MAAATPAPGGK,0.504015895729257,no id,0,242.0954,105,53.9967,1,false
