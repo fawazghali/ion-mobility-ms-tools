@@ -1,1 +1,2 @@
-java -jar "C:\Work\IonMobility\Code\Jan2011\src\mobility_mzIdentML\mobility_mzIdentML\dist\mobility_mzIdentML.jar"
+REM This batch file runs under Windows to enter the command line interactive mode for calling the code's various options
+java -jar "dist\mobility_mzIdentML.jar"
