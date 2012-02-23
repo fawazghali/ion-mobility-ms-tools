@@ -3,17 +3,17 @@ README.txt
 
 There are several modes of operation for the the mobility parsers.
 
-
-
-
-
-
 Command line menu mode
 ***********************
 
-If you run the following command, you will get a command line menu of options:
+If you run the following command, you will get a command line menu of options (assuming a Windows operating system):
 
-java -jar "C:\Work\IonMobility\Code\Jan2011\src\mobility_mzIdentML\mobility_mzIdentML\dist\mobility_mzIdentML.jar"
+java -jar "dist\mobility_mzIdentML.jar"
+
+Under Linux or Mac, the script will be as follows:
+
+java -jar "dist/mobility_mzIdentML.jar"
+
 
 The menu gives the following options:
 1- to convert from CSV to MGF without drift time.

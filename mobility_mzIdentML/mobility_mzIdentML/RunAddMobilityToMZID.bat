@@ -1,1 +1,2 @@
-java -jar "C:\Work\IonMobility\Code\Jan2011\src\mobility_mzIdentML\mobility_mzIdentML\dist\mobility_mzIdentML.jar" 3 test.csv mz.mzid output3.mzid
+REM This batch file runs under Windows to insert mobility values into the example mzIdentML file following a Mascot search
+java -jar "dist\mobility_mzIdentML.jar" 3 test.csv mz.mzid output.mzid

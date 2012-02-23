@@ -1,1 +1,2 @@
-java -jar "C:\Work\IonMobility\Code\Jan2011\src\mobility_mzIdentML\mobility_mzIdentML\dist\mobility_mzIdentML.jar" 2 test.csv result.mgf
+REM This batch file runs under Windows, calling the mobility mzIdentML code to create an MGF file from the CSV with mobility values encoded in MGF
+java -jar "dist\mobility_mzIdentML.jar" 2 test.csv result.mgf
