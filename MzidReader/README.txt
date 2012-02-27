@@ -22,7 +22,7 @@ INSTRUCTIONS FOR USE
 
 On a windows operating system, the following command will parse the mzIdentML file, apply the second argument as a filename prefix in R and use the MGF file supplied to retrieve all other ions that were searched to complete the ion plot:
 
-java -jar "dist\MzidReader.jar" "..\Data\IMMS_Data\temp_mascot_results\300610-CARBONIC_ANHYDRASE_JUNE_2010_02F011348_plusMob.mzid" "300610-CARBONIC_ANHYDRASE_JUNE_2010_02F011348_temp"  ..\Data\IMMS_Data\final_mgf\300610-CARBONIC_ANHYDRASE_JUNE_2010_02combined_ppmShift.mgf
+java -jar "dist\MzidReader.jar" "..\Data\IMMS_Data\temp_mascot_res\300610-CARBONIC_ANHYDRASE_JUNE_2010_02F011348_plusMob.mzid" "300610-CARBONIC_ANHYDRASE_JUNE_2010_02F011348_temp"  ..\Data\IMMS_Data\final_mgf\300610-CARBONIC_ANHYDRASE_JUNE_2010_02combined_ppmShift.mgf
 
 The three arguments are mandatory:
 java -jar "dist\MzidReader.jar" [INPUT_MZID_FILE] [DIR_FILE_PREFIX] [INPUT_MGF_FILE]
