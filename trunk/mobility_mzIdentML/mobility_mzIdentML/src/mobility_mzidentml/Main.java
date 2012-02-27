@@ -663,6 +663,7 @@ public class Main {
             MzIdentML mzIdentML_whole = unmarshaller.unmarshal(MzIdentML.class);
             List<Cv> cvList = mzIdentML_whole.getCvList().getCv();
             Cv psiCv = null;
+            Measure mobilityMeasure = null;
             
             for(Cv cv : cvList){                
                 if(cv.getUri().contains("psi-ms")){                    
@@ -676,14 +677,14 @@ public class Main {
 
             if (spectrumIdentificationList != null && !spectrumIdentificationList.isEmpty()) {
                 FragmentationTable ft = spectrumIdentificationList.get(0).getFragmentationTable();
-                Measure e = new Measure();
-                e.setId("m_mobility");
+                mobilityMeasure = new Measure();
+                mobilityMeasure.setId("m_mobility");
                 CvParam cvParam = new CvParam();
                 cvParam.setAccession("MS:TODO");
                 cvParam.setCv(psiCv);
                 cvParam.setName("product ion mobility");
-                e.getCvParam().add(cvParam);
-                ft.getMeasure().add(e);
+                mobilityMeasure.getCvParam().add(cvParam);                
+                ft.getMeasure().add(mobilityMeasure);
                 for (SpectrumIdentificationList sIdentList : spectrumIdentificationList) {
                     for (SpectrumIdentificationResult spectrumIdentResult : sIdentList.getSpectrumIdentificationResult()) {
 
@@ -745,9 +746,7 @@ public class Main {
                                 }
                                 if (m_mobility.size() > 0) {
                                     FragmentArray fragmentArray = new FragmentArray();
-                                    Measure measure = new Measure();
-                                    measure.setId("m_mobility");
-                                    fragmentArray.setMeasure(measure);
+                                    fragmentArray.setMeasure(mobilityMeasure);
                                     ionType.getFragmentArray().add(fragmentArray);
                                     for (Float m_mobility_s : m_mobility) {
                                         ionType.getFragmentArray().get(3).getValues().add(m_mobility_s);

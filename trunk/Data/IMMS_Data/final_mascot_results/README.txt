@@ -1,5 +1,5 @@
 This directory contains the output of the Mascot search in mzIdentML format plus the insertion of drift time values into mzIdentML files (stages 3 and 4 below). 
-The CSV files were required as the source of the mobility data.  
+We have also exported the Mascot results to the Mascot native CSV format for comparison.
 
 There are two versions for each peptide-spectrum match (PSM), with and without the filter_ions mode switched on. As such, comparing the same PSM shows the effectiveness of the filter_ions module.
 
