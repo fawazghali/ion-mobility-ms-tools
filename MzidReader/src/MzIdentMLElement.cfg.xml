@@ -1,0 +1,25 @@
+<mzIdentMLElementProperties>
+	<configurations>
+		<autoRefResolving>true</autoRefResolving>
+		<cached>false</cached>
+		<clazz>uk.ac.ebi.jmzidml.model.mzidml.SpectrumIdentificationItem</clazz>
+		<cvParamClass>uk.ac.ebi.jmzidml.model.mzidml.params.SpectrumIdentificationItemCvParam</cvParamClass>
+		<idMapped>true</idMapped>
+		<indexed>true</indexed>
+		<refResolverClass>uk.ac.ebi.jmzidml.xml.jaxb.resolver.SpectrumIdentificationItemRefResolver</refResolverClass>
+		<tagName>SpectrumIdentificationItem</tagName>
+		<userParamClass>uk.ac.ebi.jmzidml.model.mzidml.params.SpectrumIdentificationItemUserParam</userParamClass>
+		<xpath>/MzIdentML/DataCollection/AnalysisData/SpectrumIdentificationList/SpectrumIdentificationResult/SpectrumIdentificationItem</xpath>
+	</configurations>
+	<configurations>
+            <autoRefResolving>true</autoRefResolving>
+            <cached>false</cached>
+            <clazz>uk.ac.ebi.jmzidml.model.mzidml.Peptide</clazz>
+            <cvParamClass>uk.ac.ebi.jmzidml.model.mzidml.params.PeptideCvParam</cvParamClass>
+            <idMapped>true</idMapped>
+            <indexed>true</indexed>
+            <tagName>Peptide</tagName>
+            <userParamClass>uk.ac.ebi.jmzidml.model.mzidml.params.PeptideUserParam</userParamClass>
+            <xpath>/MzIdentML/SequenceCollection/Peptide</xpath>
+	</configurations>
+</mzIdentMLElementProperties>
