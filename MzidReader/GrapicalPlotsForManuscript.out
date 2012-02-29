@@ -1,0 +1,329 @@
+
+C:\Work\IonMobility\svn\MzidReader>REM The scripts used to generate the final ion plots 
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\300610-CARBONIC_ANHYDRASE_JUNE_2010_02F011348_plusMob.mzid ../Data/IMMS_Data/ion_plots/300610-CARBONIC_ANHYDRASE_JUNE_2010_02 ..\Data\IMMS_data\final_mgf\300610-CARBONIC_ANHYDRASE_JUNE_2010_02combined_ppmShift.mgf  
+2012-02-29 12:03:48,984 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_1_1 peptide:VLDALDSIK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_1_2 peptide:ALLTELEGK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_2_1 peptide:VLDALDSIK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_2_2 peptide:LTLAEVEAK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_3_1 peptide:DGPLTGTYR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:DGPLTGTYR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_2 peptide:TANSGQFVR
+Processing identification SII:SII_6_1 peptide:QSPVDIDTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_2 peptide:GGTHAPVHAR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_1 peptide:QSPVDIDTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_2 peptide:QSPSGARGSR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_2 peptide:RDVSVPSPR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_2 peptide:RDVSVPSPR
+Processing identification SII:SII_10_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_10_2 peptide:RDVSVPSPR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_11_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_12_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_13_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_13_2 peptide:AGEGTGAGRSR
+Processing identification SII:SII_14_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_15_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_16_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_17_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_18_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_19_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_19_2 peptide:SLGASAAGAPPAGERAAK
+Processing identification SII:SII_20_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\CarbonicAnhydrase_210610F011350_plusMob.mzid ../Data/IMMS_Data/ion_plots/CarbonicAnhydrase_210610 ..\Data\IMMS_data\final_mgf\CarbonicAnhydrase_210610combined_ppmShift.mgf 
+2012-02-29 12:04:06,116 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_1_1 peptide:VLDALDSIK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_1_2 peptide:LTLAEVEAK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_2_1 peptide:DGPLTGTYR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_3_1 peptide:QSPVDIDTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_5_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_5_2 peptide:RAMNQGWR
+Processing identification SII:SII_6_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_2 peptide:RAMNQGWR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_10_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_11_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_13_1 peptide:MVNNGHSFNVEYDDSQDK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_14_1 peptide:AVVQDPALKPLALVYGEATSR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_15_1 peptide:YGDFGTAAQQPDGLAVVGVFLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_16_1 peptide:YGDFGTAAQQPDGLAVVGVFLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\carbonic_anhydrase_peptideF011349_plusMob.mzid ../Data/IMMS_Data/ion_plots/carbonic_anhydrase_peptide ..\Data\IMMS_data\final_mgf\carbonic_anhydrase_peptidecombined_ppmShift.mgf 
+2012-02-29 12:04:17,012 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_2_1 peptide:VLDALDSIK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:QSPVDIDTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_5_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_1 peptide:DFPIANGER
+Processing identification SII:SII_8_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_12_1 peptide:YGDFGTAAQQPDGLAVVGVFLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\filter_ions300610-CARBONIC_ANHYDRASE_JUNE_2010_02F011358_plusMob.mzid ../Data/IMMS_Data/ion_plots/filter_ions300610-CARBONIC_ANHYDRASE_JUNE_2010_02 ..\Data\IMMS_data\final_mgf\filter_ions300610-CARBONIC_ANHYDRASE_JUNE_2010_02_1plusOnlycombined_ppmShift.mgf 
+2012-02-29 12:04:20,905 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_1_1 peptide:VLDALDSIK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_1_2 peptide:ALLTELEGK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_2_1 peptide:VLDALDSIK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_2_2 peptide:LTLAEVEAK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_3_1 peptide:DGPLTGTYR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:DGPLTGTYR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_1 peptide:QSPVDIDTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_2 peptide:GGTHAPVHAR
+Processing identification SII:SII_7_1 peptide:QSPVDIDTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_2 peptide:QSPSGARGSR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_2 peptide:RDVSVPSPR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_2 peptide:RDVSVPSPR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_10_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_10_2 peptide:RDVSVPSPR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_11_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_12_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_12_2 peptide:GGTAGEAGSRR
+Processing identification SII:SII_13_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_13_2 peptide:AGEGTGAGRSR
+Processing identification SII:SII_14_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_15_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_15_2 peptide:LASMAAPGCVVVR
+Processing identification SII:SII_16_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_17_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_18_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_19_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_19_2 peptide:SLGASAAGAPPAGERAAK
+Processing identification SII:SII_20_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\filter_ionsCarbonicAnhydrase_210610F011360_plusMob.mzid ../Data/IMMS_Data/ion_plots/filter_ionsCarbonicAnhydrase_210610 ..\Data\IMMS_data\final_mgf\filter_ionsCarbonicAnhydrase_210610_1plusOnlycombined_ppmShift.mgf 
+2012-02-29 12:04:36,805 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_1_1 peptide:VLDALDSIK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_1_2 peptide:LTLAEVEAK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_2_1 peptide:DGPLTGTYR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_3_1 peptide:QSPVDIDTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_2 peptide:VDPAVQQQK
+Processing identification SII:SII_5_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_5_2 peptide:RAMNQGWR
+Processing identification SII:SII_6_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_2 peptide:RAMNQGWR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_2 peptide:ALPDFWNR
+Processing identification SII:SII_8_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_2 peptide:LASMAAPGCVVVR
+Processing identification SII:SII_10_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_11_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_13_1 peptide:MVNNGHSFNVEYDDSQDK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_14_1 peptide:AVVQDPALKPLALVYGEATSR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_15_1 peptide:YGDFGTAAQQPDGLAVVGVFLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_16_1 peptide:YGDFGTAAQQPDGLAVVGVFLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\filter_ionscarbonic_anhydrase_peptideF011359_plusMob.mzid ../Data/IMMS_Data/ion_plots/filter_ionscarbonic_anhydrase_peptide ..\Data\IMMS_data\final_mgf\filter_ionscarbonic_anhydrase_peptide_1plusOnlycombined_ppmShift.mgf 
+2012-02-29 12:04:48,169 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_2_1 peptide:VLDALDSIK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:QSPVDIDTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_5_1 peptide:VGDANPALQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_1 peptide:DFPIANGER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_1 peptide:EPISVSSQQMLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_1 peptide:YAAELHLVHWNTK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_10_1 peptide:MVNNGHSFNVEYDDSQDK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_11_1 peptide:AVVQDPALKPLALVYGEATSR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_12_1 peptide:YGDFGTAAQQPDGLAVVGVFLK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\filter_ionsGlycogen_phosphorylaseF011361_plusMob.mzid ../Data/IMMS_Data/ion_plots/filter_ionsGlycogen_phosphorylase ..\Data\IMMS_data\final_mgf\filter_ionsGlycogen_phosphorylase_210510_1plusOnlycombined_ppmShift.mgf 
+2012-02-29 12:04:54,366 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_2_1 peptide:YEFGIFNQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_3_1 peptide:DFYELEPHK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:VFADYEEYVK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_5_1 peptide:DYYFALAHTVR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_1 peptide:HLQIIYEINQR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_1 peptide:LLSYVDDEAFIR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_1 peptide:VLYPNDNFFEGK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_1 peptide:WPVHLLETLLPR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\filter_ionsGlyphos_250510F011357_plusMob.mzid ../Data/IMMS_Data/ion_plots/filter_ionsGlyphos_250510 ..\Data\IMMS_data\final_mgf\filter_ionsGlyphos_250510_1plusOnlycombined_ppmShift.mgf 
+2012-02-29 12:04:59,813 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_1_1 peptide:VIRWNR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_1_2 peptide:VLPKDGSK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:RAAEASGVR
+Processing identification SII:SII_4_2 peptide:NLAENISR
+Processing identification SII:SII_6_1 peptide:HLHFTLVK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_1 peptide:TPVAAAHASTK
+Processing identification SII:SII_8_1 peptide:WLSATTVER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_2 peptide:MSLVEEGAVK
+Processing identification SII:SII_9_1 peptide:EIWGVEPSR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_2 peptide:RTEERPER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_10_1 peptide:IGEEYISDLDQLR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_12_1 peptide:DFNVGGYIQAVLDR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_13_1 peptide:QIIEQLSSGFFSPK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_14_1 peptide:VHINPNSLFDVQVK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_15_1 peptide:ICGGWQMEEADDWLR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_16_1 peptide:LITAIGDVVNHDPVVGDR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_16_2 peptide:SLLIDKEAALNSALMER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\Glycogen_phosphorylase_210510F011356_plusMob.mzid ../Data/IMMS_Data/ion_plots/Glycogen_phosphorylase_210510 ..\Data\IMMS_data\final_mgf\Glycogen_phosphorylase_210510combined_ppmShift.mgf 
+2012-02-29 12:05:08,017 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_2_1 peptide:YEFGIFNQK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_3_1 peptide:DFYELEPHK
+Processing identification SII:SII_4_1 peptide:VFADYEEYVK
+Processing identification SII:SII_5_1 peptide:DYYFALAHTVR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_6_1 peptide:HLQIIYEINQR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_7_1 peptide:LLSYVDDEAFIR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_1 peptide:VLYPNDNFFEGK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_1 peptide:WPVHLLETLLPR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+
+C:\Work\IonMobility\svn\MzidReader>java -jar "dist\MzidReader.jar" ..\Data\IMMS_Data\final_mascot_results\Glyphos_250510F011347_plusMob.mzid ../Data/IMMS_Data/ion_plots/Glyphos_250510 ..\Data\IMMS_data\final_mgf\Glyphos_250510combined_ppmShift.mgf 
+2012-02-29 12:05:12,458 WARN MzIdentMLElement - MzIdentML Configuration file: jar:file:/C:/Work/IonMobility/svn/MzidReader/dist/MzidReader.jar!/MzIdentMLElement.cfg.xml
+Processing identification SII:SII_1_1 peptide:VIRWNR
+Processing identification SII:SII_1_2 peptide:VLPKDGSK
+Processing identification SII:SII_2_1 peptide:FAAYLER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_4_1 peptide:RAAEASGVR
+Processing identification SII:SII_4_2 peptide:NLAENISR
+Processing identification SII:SII_6_1 peptide:HLHFTLVK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_8_1 peptide:MSLVEEGAVK
+Processing identification SII:SII_8_2 peptide:WLSATTVER
+Processing identification SII:SII_9_1 peptide:EIWGVEPSR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_9_2 peptide:RTEERPER
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_10_1 peptide:IGEEYISDLDQLR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_12_1 peptide:DFNVGGYIQAVLDR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_13_1 peptide:QIIEQLSSGFFSPK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_14_1 peptide:VHINPNSLFDVQVK
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_15_1 peptide:ICGGWQMEEADDWLR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
+Processing identification SII:SII_16_1 peptide:LITAIGDVVNHDPVVGDR
+Exited with error code 0 (error code 0 indicates that R has run successfully)
