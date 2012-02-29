@@ -84,16 +84,15 @@ public class Main {
                                     
                                     if(spectrumIdentItem.getRank() <= RANK_CUTOFF){
                                         
-                                        System.out.println("SII:" + spectrumIdentItem.getId());
+                                        
 
                                         Fragmentation fragmentation = spectrumIdentItem.getFragmentation();
                                         String pepRef = spectrumIdentItem.getPeptideRef();
-                                        System.out.println("pep:" + pepRef);
                                         
                                         Peptide pep = spectrumIdentItem.getPeptide();
-                                        System.out.println("pep:" + pep.getId());
                                         String pepSeq = pep.getPeptideSequence();
-                                        System.out.println("pep:" + pepSeq);
+                                        System.out.println("Processing identification SII:" + spectrumIdentItem.getId() + " peptide:" + pepSeq);
+                                        
                                         String specID = spectrumIdentItem.getId();         
 
                                         String evalue = "";
