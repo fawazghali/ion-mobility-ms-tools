@@ -57,12 +57,17 @@ java -jar "dist\mobility_mzIdentML.jar" 1 [input.csv] [output.mgf]
 2- to convert from CSV to MGF with drift time, with the following example command
 java -jar "dist\mobility_mzIdentML.jar" 2 [input.csv] [output.mgf] [filter_ions| ]
 
-If the filter_ions flag is given, only predicted 1+ ions will be exported to the CSV file. Otherwise, leave this parameter blank. To use this parameter, an output file name for the MGF file must be given.
+If the filter_ions flag is given, only predicted 1+ ions will be exported to the MGF file. Otherwise, leave this parameter blank. To use this parameter, an output file name for the MGF file must be given.
 
-3- to add drift time to mzIdentML from CSV.
+3- to convert from CSV to MGF with drift time (inserting charge assignment), with the following example command
+java -jar "dist\mobility_mzIdentML.jar" 2 [input.csv] [output.mgf] [insert_ions| ]
+
+If the insert_ions flag is given, the predicted charge will be exported as a third column of the MGF file after each intensity value. Please note, many search engines may not accept this format
+
+4- to add drift time to mzIdentML from CSV.
 java -jar "dist\mobility_mzIdentML.jar" 3 [input.csv] [input.mzid] [output.mzid]
 
-4- to add drift time to mzIdentML from MGF.
+5- to add drift time to mzIdentML from MGF.
 java -jar "dist\mobility_mzIdentML.jar" 4 [input.mgf] [input.mzid] [output.mzid]
 
 Here the input.mgf must have been created by the script above (option 2)

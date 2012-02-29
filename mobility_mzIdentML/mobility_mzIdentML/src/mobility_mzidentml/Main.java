@@ -72,13 +72,18 @@ public class Main {
                     }
 
                     Boolean removeNon1PlusIons = false;
+                    Boolean insertIonAssignment= false;
                     if(args.length>3){
                         if(args[3].equals("filter_ions")){
                             removeNon1PlusIons = true;
                         }
+                        else if(args[3].equals("insert_ions")){
+                            removeNon1PlusIons = false;
+                            insertIonAssignment = true;
+                        }
                     }
 
-                    convertFromCSVtoMGF(csv, 0, outputFile,removeNon1PlusIons);
+                    convertFromCSVtoMGF(csv, 0, outputFile,removeNon1PlusIons,insertIonAssignment);
                 }
             }else if (args[0].equals("2")){
                 csv = args[1];
@@ -92,13 +97,18 @@ public class Main {
                     }
 
                     Boolean removeNon1PlusIons = false;
+                    Boolean insertIonAssignment= false;
                     if(args.length>3){
                         if(args[3].equals("filter_ions")){
                             removeNon1PlusIons = true;
                         }
+                        else if(args[3].equals("insert_ions")){
+                            removeNon1PlusIons = false;
+                            insertIonAssignment = true;
+                        }
                     }
 
-                    convertFromCSVtoMGF(csv, 1, outputFile,removeNon1PlusIons);
+                    convertFromCSVtoMGF(csv, 1, outputFile,removeNon1PlusIons,insertIonAssignment);
                 }
 
             }else if (args[0].equals("3")){
@@ -162,7 +172,7 @@ public class Main {
                 if (csv == null || !csv.endsWith("csv")) {
                     System.out.println("Your input CSV file is either empty or invalid");
                 } else {
-                    convertFromCSVtoMGF(csv, 0, "result.mgf",false);        //Filter ions only available in command line mode
+                    convertFromCSVtoMGF(csv, 0, "result.mgf",false,false);        //Filter ions only available in command line mode
                 }
 
             } else if (selection.equals("2")) {
@@ -171,7 +181,7 @@ public class Main {
                 if (csv == null || !csv.endsWith("csv")) {
                     System.out.println("Your input CSV file is either empty or invalid");
                 } else {
-                    convertFromCSVtoMGF(csv, 1, "result.mgf", false);       //Filter ions only available in command line mode
+                    convertFromCSVtoMGF(csv, 1, "result.mgf", false, false);       //Filter ions only available in command line mode
                 }
 
             } else if (selection.equals("3")) {
@@ -217,7 +227,7 @@ public class Main {
         }
     }
 
-    private static void convertFromCSVtoMGF(String csv, int mobility, String outputFile, Boolean removeNon1PlusIons) {
+    private static void convertFromCSVtoMGF(String csv, int mobility, String outputFile, Boolean removeNon1PlusIons, Boolean insertIonAssignment) {
         try {
             String stringLine = null;
             String[] tokens;
@@ -262,7 +272,7 @@ public class Main {
                 tokens = stringLine.split(",");
 
                 //System.out.println("mz:" + tokens[m_z_index] + " mob: " + tokens[mobility_index]);
-                if(removeNon1PlusIons){
+                if(removeNon1PlusIons || insertIonAssignment){
 
 
                     mz_mob[counter][0] = Double.parseDouble(tokens[m_z_index]);
@@ -282,7 +292,7 @@ public class Main {
             }
 
             double maxScaleFactor = 2;
-            if(removeNon1PlusIons){
+            if(removeNon1PlusIons  || insertIonAssignment){
                 Comparator<double[]> compMZMob = new MZMobComparator();
 
                 java.util.Arrays.sort(mz_mob,compMZMob);    //Sort by Mz/Mob - the fact that these are sorted is not used yet
@@ -394,6 +404,11 @@ public class Main {
                         builder_m_z_intensity.append(m_z_list.get(i));
                         builder_m_z_intensity.append(" ");
                         builder_m_z_intensity.append(intensity_list.get(i));
+                        
+                        if(insertIonAssignment){
+                            builder_m_z_intensity.append(" " + predictedCharges.get(m_z_list.get(i)));                            
+                        }
+                        
                         builder_m_z_intensity.append("\r\n");
                     }
                     else{
@@ -409,6 +424,9 @@ public class Main {
                         builder_m_z_intensity.append(m_z_list.get(i));
                         builder_m_z_intensity.append(" ");
                         builder_m_z_intensity.append(intensity_list.get(i));
+                        if(insertIonAssignment){
+                            builder_m_z_intensity.append(" " + predictedCharges.get(m_z_list.get(i)));                            
+                        }
                         builder_m_z_intensity.append("\r\n");
 
                         builder_mobility.append(mobility_list.get(i));
@@ -441,6 +459,9 @@ public class Main {
                         builder_m_z_intensity.append(m_z_list.get(i));
                         builder_m_z_intensity.append(" ");
                         builder_m_z_intensity.append(intensity_list.get(i));
+                        if(insertIonAssignment){
+                            builder_m_z_intensity.append(" " + predictedCharges.get(m_z_list.get(i)));                            
+                        }
                         builder_m_z_intensity.append("\r\n");
 
                         builder_mobility.append(mobility_list.get(i));
