@@ -2,6 +2,8 @@ This directory contains the MGF files that were searched in Mascot (stages 1 and
 
 We observed that on certain runs there was a systematic shift in the m/z values so a ppm shift has been made on all peaks prior to searching.
 
+One file has been created to show that charge assignments can be inserted into file (file prefix insert_charge) but this has not been searched via Mascot, since it is likely this data type will not be recognized.
+
 *******************************
 
 Files have been processed as follows in the complete pipeline:
