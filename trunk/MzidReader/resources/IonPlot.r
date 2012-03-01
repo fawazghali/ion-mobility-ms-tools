@@ -44,7 +44,7 @@ ionPlot<-function(inputFile,outputFile,title){
 
 	
 		
-	plot(rx,ry, ylab="M_Z", xlab="Mobility", main=title, type="n") 
+	plot(rx,ry, ylab="m/z", xlab="Mobility", main=title, type="n") 
 		points(allMob,allMZ, col="black", pch=3, lwd=1)
 		points(bMob,bMZ, col="blue", pch=20)					
 		points(yMob,yMZ, col="green", pch=20)	
