@@ -1,0 +1,26 @@
+External requirements:
+
+You will need to download and install Java if you do not have installed already: http://java.com/en/download/index.jsp
+You will also need to download and install R: http://www.r-project.org/
+
+Finally, R will need to run from the command line. As such, you need to make sure that the R path e.g. C:\Program Files\R\R-2.14.1\bin is added to your environment variables. For a help guide on how to do this, see http://support.microsoft.com/kb/310519 or http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/environment_variables.mspx?mfr=true
+
+Installation instructions:
+
+First, make sure Java and R are installed and can be run from the command line (see above).
+
+Please note, this software should be platform independent but it has only been tested on Windows (XP 32bit), Windows 7 (64bit). If you require support for Linux/Mac installations, please get in touch. The software is maintained by the research group of Andy Jones: http://pcwww.liv.ac.uk/~jonesar/jonesar.html
+
+To download the software, visit the download page: http://code.google.com/p/ion-mobility-ms-tools/downloads/
+
+Download the zip files, unzip to any location on your hard drive.
+
+Inside both mobiliy\_mzIdentML and MzidReader there are various batch files (.bat extension) that contain example commands for running the softare on Windows. If you double-click these, they should run automatically. Try opening these batch files in a text editor, e.g. Notepad, and change the location of the input files to your own local files that you would like to test.
+
+Please note, the software only supports mzIdentML version 1.1 - which is the stable release of this format.
+
+
+
+
+
+
